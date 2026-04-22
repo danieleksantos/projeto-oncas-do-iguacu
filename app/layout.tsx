@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import Header from "@/src/components/Header";
 
 const avantGarde = localFont({
   src: [
@@ -39,8 +40,9 @@ export default function RootLayout({
       lang="pt-br" 
       className={`${avantGarde.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col font-sans">
-        {children}
+<body className="min-h-full flex flex-col font-sans">
+        <Header />
+        <main className="grow">{children}</main>
       </body>
     </html>
   );
