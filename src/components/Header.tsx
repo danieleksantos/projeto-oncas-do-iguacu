@@ -21,11 +21,11 @@ const navigation = [
     name: 'Atuação',
     href: '/atuacao',
     children: [
-      { name: 'Pesquisa', href: '/atuacao/pesquisa' },
-      { name: 'Engajamento', href: '/atuacao/engajamento' },
-      { name: 'Coexistência', href: '/atuacao/coexistencia' },
-      { name: 'Educação', href: '/atuacao/educacao' },
-      { name: 'Comunicação', href: '/atuacao/comunicacao' },
+      { name: 'Pesquisa', href: '/atuacao/#pesquisa' },
+      { name: 'Engajamento', href: '/atuacao/#engajamento' },
+      { name: 'Coexistência', href: '/atuacao/#coexistencia' },
+      { name: 'Capacitação', href: '/atuacao/#capacitacao' },
+      { name: 'Comunicação', href: '/atuacao/#comunicacao' },
     ],
   },
   {
@@ -62,13 +62,14 @@ const navigation = [
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [forceHide, setForceHide] = useState<string | null>(null);
 
   return (
     <header
       className="sticky top-0 z-50 w-full bg-onca-laranja-escuro shadow-md"
       role="banner"
     >
-      <div className="mx-auto flex max-w-7xl items-center justify-between p-4 lg:px-8">
+      <div className="flex w-full items-center justify-between p-4 px-6 lg:px-12">
         <div className="flex lg:flex-1">
           <Link
             href="/"
@@ -80,7 +81,7 @@ export default function Header() {
               alt="Logo Onças do Iguaçu"
               width={200}
               height={50}
-              className="h-12 w-auto brightness-0"
+              className="h-12 lg:h-22 w-auto brightness-0"
               priority
             />
           </Link>
@@ -115,14 +116,18 @@ export default function Header() {
         </div>
 
         <nav
-          className="hidden lg:flex lg:gap-x-6"
+          className="hidden lg:flex lg:gap-x-6 justify-center"
           aria-label="Navegação desktop"
         >
           {navigation.map((item) => (
-            <div key={item.name} className="group relative py-2">
+            <div
+              key={item.name}
+              className="group relative py-2"
+              onMouseLeave={() => setForceHide(null)}
+            >
               <Link
                 href={item.href}
-                className="text-[14px] font-bold tracking-tight text-onca-preto uppercase flex items-center gap-1 outline-none transition-all hover:underline decoration-onca-preto decoration-2 underline-offset-8 focus-visible:underline"
+                className="text-[16px] font-bold tracking-tight text-onca-preto uppercase flex items-center gap-1 outline-none transition-all hover:underline decoration-onca-preto decoration-2 underline-offset-8 focus-visible:underline"
                 aria-haspopup={item.children ? 'true' : 'false'}
               >
                 {item.name}
@@ -139,7 +144,11 @@ export default function Header() {
 
               {item.children && (
                 <div
-                  className="absolute left-0 top-full hidden w-64 pt-2 group-hover:block group-focus-within:block animate-in fade-in slide-in-from-top-2 duration-200"
+                  className={`absolute left-0 top-full w-64 pt-2 ${
+                    forceHide === item.name
+                      ? 'hidden'
+                      : 'hidden group-hover:block group-focus-within:block'
+                  } animate-in fade-in slide-in-from-top-2 duration-200`}
                   role="menu"
                 >
                   <div className="bg-onca-laranja-escuro rounded-lg shadow-xl overflow-hidden border border-onca-preto/10">
@@ -149,6 +158,10 @@ export default function Header() {
                         href={sub.href}
                         role="menuitem"
                         className="block px-4 py-3 text-[13px] font-bold text-onca-preto outline-none transition-all hover:underline decoration-onca-preto decoration-1 underline-offset-4 focus:underline border-b border-onca-preto/5 last:border-0"
+                        onClick={(e) => {
+                          (e.currentTarget as HTMLElement).blur();
+                          setForceHide(item.name);
+                        }}
                       >
                         {sub.name}
                       </Link>
@@ -163,7 +176,7 @@ export default function Header() {
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <Link
             href="/apoie/doacao"
-            className="rounded-full bg-onca-preto px-6 py-2.5 text-sm font-bold text-white shadow-sm outline-none transition-transform duration-200 hover:scale-105 active:scale-95 focus-visible:ring-2 focus-visible:ring-white"
+            className="rounded-full bg-onca-preto px-6 py-2.5 text-sm font-bold text-white shadow-sm outline-none transition-transform duration-200 hover:scale-105 active:scale-95 focus-visible:ring-2 focus-visible:ring-white whitespace-nowrap"
           >
             DOE AGORA
           </Link>

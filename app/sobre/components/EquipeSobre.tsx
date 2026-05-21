@@ -25,7 +25,7 @@ const membros = [
     nome: 'Aline Kotz',
     cargo: 'Gestora de Coexistência | Gestora Ambiental',
     foto: '/logo-laranja.png',
-    bio: 'Gestora Ambiental pela UTFPR (Medianeira), com experiência em coexistência humano–grandes felinos, mediação de conflitos, engajamento comunitário e educação ambiental com crianças e adultos.',
+    bio: 'Gestora Ambiental pela UTFPR (Medianeira), com experiência em coexistência humano-grandes felinos, mediação de conflitos, engajamento comunitário e educação ambiental com crianças e adultos.',
   },
   {
     nome: 'Patrícia Gomes',
@@ -83,7 +83,7 @@ const membros = [
   },
 ];
 
-export default function Team() {
+export default function EquipeSobre() {
   return (
     <div className="space-y-24 lg:space-y-32">
       {membros.map((membro, index) => {

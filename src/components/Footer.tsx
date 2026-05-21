@@ -95,10 +95,26 @@ const footerNavigation = {
     { name: 'Parcerias', href: '/apoie/parcerias' },
   ],
   social: [
-    { name: 'Instagram', href: '#', Icon: Icons.Instagram },
-    { name: 'Facebook', href: '#', Icon: Icons.Facebook },
-    { name: 'YouTube', href: '#', Icon: Icons.Youtube },
-    { name: 'LinkedIn', href: '#', Icon: Icons.Linkedin },
+    {
+      name: 'Instagram',
+      href: 'https://www.instagram.com/oncasdoiguacu',
+      Icon: Icons.Instagram,
+    },
+    {
+      name: 'Facebook',
+      href: 'https://www.facebook.com/oncasdoiguacu',
+      Icon: Icons.Facebook,
+    },
+    {
+      name: 'YouTube',
+      href: 'https://www.youtube.com/@oncasdoiguacu',
+      Icon: Icons.Youtube,
+    },
+    {
+      name: 'LinkedIn',
+      href: 'https://www.linkedin.com/company/projetooncasdoiguacu/',
+      Icon: Icons.Linkedin,
+    },
   ],
 };
 

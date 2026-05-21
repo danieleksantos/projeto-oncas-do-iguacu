@@ -10,7 +10,7 @@ const partnersLogos = [
   '/partners/zooparc-beauval-logo.webp',
 ];
 
-export default function PartnersAbout() {
+export default function ParceirosSobre() {
   return (
     <section className="py-24 bg-white text-onca-preto overflow-hidden">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -41,7 +41,7 @@ export default function PartnersAbout() {
             {partnersLogos.map((logo, index) => (
               <div
                 key={index}
-                className={`group relative flex justify-center items-center w-32 h-32 md:w-40 md:h-40 bg-white rounded-[2rem] shadow-[0_4px_20px_rgb(0,0,0,0.04)] border border-gray-100 hover:border-onca-laranja/40 transition-all duration-500 hover:scale-110 hover:shadow-xl hover:shadow-onca-laranja/15
+                className={`group relative flex justify-center items-center w-32 h-32 md:w-40 md:h-40 bg-white rounded-4xl shadow-[0_4px_20px_rgb(0,0,0,0.04)] border border-gray-100 hover:border-onca-laranja/40 transition-all duration-500 hover:scale-110 hover:shadow-xl hover:shadow-onca-laranja/15
                   ${index % 2 === 0 ? 'translate-y-4 md:translate-y-6' : '-translate-y-4 md:-translate-y-6'}
                 `}
               >
@@ -49,6 +49,7 @@ export default function PartnersAbout() {
                   src={logo}
                   alt={`Logo Parceiro ${index + 1}`}
                   fill
+                  sizes="(max-width: 768px) 128px, 160px"
                   className="object-contain p-6 opacity-90 group-hover:opacity-100 transition-opacity duration-500"
                 />
               </div>

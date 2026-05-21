@@ -1,8 +1,8 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import Counter from '@/src/components/Counter';
-import Team from '@/src/components/Team';
-import PartnersAbout from '@/src/components/PartnersAbout';
+import CounterSobre from '@/app/sobre/components/CounterSobre';
+import EquipeSobre from '@/app/sobre/components/EquipeSobre';
+import ParceirosSobre from '@/app/sobre/components/ParceirosSobre';
 
 export default function SobrePage() {
   return (
@@ -60,7 +60,7 @@ export default function SobrePage() {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
               <div className="border-t border-gray-200 pt-6">
                 <dd className="text-5xl font-bold text-onca-laranja flex items-baseline">
-                  <Counter end={30} prefix="+" />{' '}
+                  <CounterSobre end={30} prefix="+" />{' '}
                   <span className="ml-2 text-lg">anos</span>
                 </dd>
                 <dt className="text-xs font-bold uppercase text-gray-500 mt-2">
@@ -69,7 +69,7 @@ export default function SobrePage() {
               </div>
               <div className="border-t border-gray-200 pt-6">
                 <dd className="text-5xl font-bold text-onca-laranja">
-                  <Counter end={10} />
+                  <CounterSobre end={10} />
                 </dd>
                 <dt className="text-xs font-bold uppercase text-gray-500 mt-2">
                   Municípios de atuação no entorno do Parque
@@ -211,12 +211,12 @@ export default function SobrePage() {
               forma integrada em pesquisa, coexistência e engajamento.
             </p>
           </div>
-          <Team />
+          <EquipeSobre />
         </div>
       </section>
 
       <div id="parceiros">
-        <PartnersAbout />
+        <ParceirosSobre />
       </div>
 
       <section

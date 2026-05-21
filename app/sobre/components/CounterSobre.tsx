@@ -9,7 +9,7 @@ interface CounterProps {
   suffix?: string;
 }
 
-export default function Counter({
+export default function CounterSobre({
   end,
   duration = 2000,
   prefix = '',
@@ -28,7 +28,6 @@ export default function Counter({
         if (!startTimestamp) startTimestamp = timestamp;
         const progress = Math.min((timestamp - startTimestamp) / duration, 1);
 
-        // Efeito de desaceleração (ease-out) para ficar mais elegante
         const easeProgress = 1 - Math.pow(1 - progress, 3);
 
         setCount(Math.floor(easeProgress * end));
@@ -44,10 +43,8 @@ export default function Counter({
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          // Quando entra na tela, inicia a contagem
           startAnimation();
         } else {
-          // Quando sai da tela, reseta para zero
           setCount(0);
           if (animationFrameId) {
             window.cancelAnimationFrame(animationFrameId);
@@ -55,7 +52,7 @@ export default function Counter({
         }
       },
       {
-        threshold: 0.1, // Ativa quando 10% do número estiver visível
+        threshold: 0.1,
       },
     );
 
