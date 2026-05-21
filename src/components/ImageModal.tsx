@@ -46,7 +46,7 @@ export default function ImageModal({ modalData, onClose }: ImageModalProps) {
       </button>
 
       <div
-        className="relative w-full max-w-7xl h-full max-h-[85vh] flex flex-col items-center justify-center cursor-default gap-6 animate-in zoom-in-95 duration-300"
+        className="relative w-full max-w-7xl h-full max-h-[80vh] flex flex-col items-center justify-center cursor-default gap-6 animate-in zoom-in-95 duration-300"
         onClick={(e) => e.stopPropagation()}
       >
         <h4 className="text-white text-lg md:text-2xl font-medium tracking-wide text-center drop-shadow-lg px-8 md:px-24 pt-10 lg:pt-2">
@@ -58,7 +58,7 @@ export default function ImageModal({ modalData, onClose }: ImageModalProps) {
             src={modalData.src}
             alt={modalData.caption}
             fill
-            sizes="100vw"
+            sizes="90vw"
             className="object-contain drop-shadow-[0_0_40px_rgba(0,0,0,0.5)] select-none"
           />
         </div>
