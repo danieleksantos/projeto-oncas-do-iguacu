@@ -22,7 +22,7 @@ export default function ImageModal({ modalData, onClose }: ImageModalProps) {
       onClick={onClose}
     >
       <button
-        className="absolute top-6 right-6 sm:top-8 sm:right-8 flex items-center justify-center w-12 h-12 bg-white/10 hover:bg-onca-laranja text-white hover:text-onca-preto rounded-full backdrop-blur-md transition-all duration-300 z-50 group shadow-xl cursor-pointer"
+        className="absolute top-6 right-6 sm:top-8 sm:right-8 flex items-center justify-center w-12 h-12 lg:bg-white/20 bg-onca-laranja hover:bg-onca-laranja lg:text-white text-onca-preto hover:text-onca-preto rounded-full backdrop-blur-md transition-all duration-300 z-50 group shadow-xl cursor-pointer"
         onClick={(e) => {
           e.stopPropagation();
           onClose();
@@ -49,7 +49,7 @@ export default function ImageModal({ modalData, onClose }: ImageModalProps) {
         className="relative w-full max-w-7xl h-full max-h-[85vh] flex flex-col items-center justify-center cursor-default gap-6 animate-in zoom-in-95 duration-300"
         onClick={(e) => e.stopPropagation()}
       >
-        <h4 className="text-white text-lg md:text-2xl font-medium tracking-wide text-center drop-shadow-lg px-8 md:px-24">
+        <h4 className="text-white text-lg md:text-2xl font-medium tracking-wide text-center drop-shadow-lg px-8 md:px-24 pt-10 lg:pt-2">
           {modalData.caption}
         </h4>
 
