@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import HeroFauna from './components/HeroFauna';
 import OncaPintadaFauna from './components/OncaPintadaFauna';
+import OncaPardaFauna from './components/OncaPardaFauna';
 
 export default function FaunaPage() {
   return (
@@ -71,6 +72,7 @@ export default function FaunaPage() {
 
       {/* 3. AS ONÇAS */}
       <OncaPintadaFauna />
+      <OncaPardaFauna />
     </div>
   );
 }

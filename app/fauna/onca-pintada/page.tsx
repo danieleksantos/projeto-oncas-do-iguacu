@@ -213,17 +213,20 @@ export default function OncaPintadaDetalhesPage() {
               podem ser ouvidos por quilômetros."
             </blockquote>
 
-            <div className="bg-gray-50 border border-gray-200 rounded-2xl p-4 flex flex-col gap-3 w-full max-w-sm shadow-sm">
+            <div className="bg-gray-50 border border-gray-200 rounded-2xl p-4 flex flex-col gap-3 w-full max-w-[sm] shadow-sm">
               <span className="flex items-center gap-2 text-sm font-bold uppercase tracking-widest text-onca-preto">
                 <Volume2 size={18} className="text-onca-laranja" />
-                Ouça o esturro da onça-pintada
+                Ouça o esturro da onça-pintada Cacirra
               </span>
               <audio
                 controls
                 controlsList="nodownload"
                 className="w-full h-10 outline-none"
               >
-                <source src="/fauna/esturro-onca.mp3" type="audio/mpeg" />
+                <source
+                  src="/fauna/Cacirra-esturrando.mp3.mpeg"
+                  type="audio/mpeg"
+                />
                 Sinto muito, mas seu navegador não suporta o elemento de áudio.
               </audio>
             </div>

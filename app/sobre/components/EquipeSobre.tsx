@@ -13,19 +13,19 @@ const membros = [
     nome: 'Thiago Reginato',
     cargo: 'Coordenador de Coexistência | Gestor Ambiental',
     foto: '/logo-laranja.png',
-    bio: 'Gestor Ambiental pela UTFPR (Medianeira), com experiência em coexistência entre pessoas e grandes felinos, mediação de conflitos, relações públicas, engajamento e educação ambiental com diferentes públicos.',
-  },
-  {
-    nome: 'Vânia Foster',
-    cargo: 'Coordenadora de Pesquisa | Bióloga',
-    foto: '/logo-laranja.png',
-    bio: 'Bióloga, mestre em Ecologia, Biodiversidade e Gestão de Ecossistemas pela Universidade de Aveiro (Portugal) e doutora em Ecologia e Conservação pela UFMS. Durante o doutorado, trabalhou com carnívoros do Pantanal, analisando uso de habitat, padrões de atividade e coexistência entre espécies.',
+    bio: 'Gestor Ambiental pela UTFPR (Medianeira), com 10 anos de experiência na área de coexistência entre pessoas e grandes felinos. Atua na mediação de conflitos entre comunidades e grandes felinos, no diagnóstico socioambiental e na implementação de estratégias de manejo voltadas à prevenção de predação e à redução de riscos no meio rural. Coordena a Rede Trinacional de Coexistência, articulando ações entre Brasil, Paraguai e Argentina, com foco na troca de experiências, capacitação de profissionais e fortalecimento de iniciativas na área. Possui experiência em monitoramento de fauna, engajamento comunitário, pesquisa social e educação ambiental, além de atuar na capacitação de diferentes públicos para atuação em contextos de conflito. Também possui conhecimento prático nas áreas agrícola e pecuária, contribuindo para a construção de soluções aplicáveis à realidade do campo.',
   },
   {
     nome: 'Aline Kotz',
     cargo: 'Gestora de Coexistência | Gestora Ambiental',
     foto: '/logo-laranja.png',
-    bio: 'Gestora Ambiental pela UTFPR (Medianeira), com experiência em coexistência humano-grandes felinos, mediação de conflitos, engajamento comunitário e educação ambiental com crianças e adultos.',
+    bio: 'Gestora Ambiental pela UTFPR (Medianeira), com experiência em coexistência humano–grandes felinos, mediação de conflitos, engajamento comunitário e educação ambiental com crianças e adultos.',
+  },
+  {
+    nome: 'Vânia Foster',
+    cargo: 'Coordenadora de Pesquisa | Bióloga',
+    foto: '/logo-laranja.png',
+    bio: 'Graduada em Ciências Biológicas pelo Centro Universitário Barão de Mauá (2006), mestre em Biologia, ramo Ecologia, Biodiversidade e Gestão de Ecossistemas, pela Universidade de Aveiro (2012) e doutora em Ecologia e Conservação pela Universidade Federal de Mato Grosso do Sul (2017). Atualmente é pesquisadora no Projeto Onças do Iguaçu, onde atua desde 2019. Responsável pela área de Pesquisa do projeto, desenvolvendo atividades de monitoramento da flutuação populacional dos grandes felinos (onça-pintada e onça-parda) e de suas bases de presas, monitoramento dos corredores de vegetação adjacentes ao Parque Nacional do Iguaçu e estudos de dieta, deslocamento, uso do hábitat e coocorrência dos felinos.',
   },
   {
     nome: 'Patrícia Gomes',
@@ -43,13 +43,25 @@ const membros = [
     nome: 'Ranter Ramos',
     cargo: 'Assistente de Pesquisa',
     foto: '/logo-laranja.png',
-    bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+    bio: 'Cursando Análise e Desenvolvimento de sistemas pela UNIFATECIE, ex-agente ambiental do ICMBio, com experiência em manejo de fogo, proteção e conservação ambiental.',
   },
   {
     nome: 'Katlin Fernandes',
     cargo: 'Coordenadora de Educação e Engajamento',
     foto: '/logo-laranja.png',
     bio: 'Bióloga, mestre em Biodiversidade Neotropical pela UNILA, com especializações em Gestão Ambiental e Ensino de Biologia. Ao longo da sua trajetória profissional, já trabalhou com licenciamento e gestão ambiental em obras de infraestrutura, conservação ex situ, inventário de anuros durante a graduação e também como professora de Ciências e Biologia na rede pública estadual.',
+  },
+  {
+    nome: 'Tainah de Souza',
+    cargo: 'Gestora de Educação e Engajamento',
+    foto: '/logo-laranja.png',
+    bio: 'Bióloga graduada pela União Dinâmica de Faculdades Cataratas (UDC Anglo Americano), com dupla especialização: pós-graduação em Bem-Estar de Animais Silvestres e Exóticos e em Manejo de Animais Silvestres e Exóticos. Possui sólida experiência no desenvolvimento de programas de educação ambiental voltados a zoológicos, além de atuar na comunicação estratégica e turismo institucional. Complementa sua atuação técnica com competências em design e ilustração, aplicando recursos visuais para promover a acessibilidade e a divulgação do conhecimento biológico.',
+  },
+  {
+    nome: 'Luiz Gustavo Betanin',
+    cargo: 'Coordenador de Comunicação',
+    foto: '/logo-laranja.png',
+    bio: 'Documentarista de natureza, formado em Cinema e Audiovisual pela UFPE. Vencedor do Prêmio Vasconcelos Sobrinho 2025 (Governo de Pernambuco), na categoria Destaque em Comunicação Ambiental. Dirigiu documentários e séries voltados à vida selvagem e conservação. Atuou na concepção e execução de projetos de comunicação audiovisual para Ibama/PE, ICMBio/PE, GRAD e instituições de pesquisa. Possui experiência na interface entre audiovisual, ciência e conservação da biodiversidade.',
   },
   {
     nome: 'Igor Moreno',
@@ -61,48 +73,36 @@ const membros = [
     nome: 'Ana Catarine Franzini',
     cargo: 'Assessora Técnica',
     foto: '/logo-laranja.png',
-    bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-  },
-  {
-    nome: 'Tainah de Souza',
-    cargo: 'Gestora de Educação e Engajamento',
-    foto: '/logo-laranja.png',
-    bio: 'Tainah de Souza é bióloga graduada pela União Dinâmica de Faculdades Cataratas (UDC Anglo Americano), com dupla especialização: pós-graduação em Bem-Estar de Animais Silvestres e Exóticos e em Manejo de Animais Silvestres e Exóticos. Possui sólida experiência no desenvolvimento de programas de educação ambiental voltados a zoológicos, além de atuar na comunicação estratégica e turismo institucional. Complementa sua atuação técnica com competências em design e ilustração, aplicando recursos visuais para promover a acessibilidade e a divulgação do conhecimento biológico.',
-  },
-  {
-    nome: 'Luiz Gustavo Betanin',
-    cargo: 'Coordenador de Comunicação',
-    foto: '/logo-laranja.png',
-    bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+    bio: 'Bióloga e Gestora Ambiental, pós-graduada em Ecologia e Biodiversidade e Mestranda em Conservação e Manejo pela UNIOESTE. Possui experiência em projetos de pesquisa e atuação técnica nas áreas de gestão ambiental pública, adaptação climática, áreas protegidas e conservação e manejo de fauna silvestre. Atua também como analista ambiental em atividades de assessoria e consultoria.',
   },
   {
     nome: 'Claudiani Tavares',
     cargo: 'Coordenadora das Crocheteiras da Onça',
     foto: '/logo-laranja.png',
-    bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+    bio: 'Agricultora e artesã. Atualmente é Coordenadora do grupo Crocheteiras da Onça e do grupo Artesãs da Onça.',
   },
 ];
 
 export default function EquipeSobre() {
   return (
-    <div className="space-y-24 lg:space-y-32">
+    <div className="space-y-24 lg:space-y-32 min-[2000px]:space-y-64">
       {membros.map((membro, index) => {
         const isEven = index % 2 !== 0;
 
         return (
           <div
             key={membro.nome}
-            className={`flex flex-col md:flex-row items-center gap-12 lg:gap-20 
+            className={`flex flex-col md:flex-row items-center gap-12 lg:gap-20 min-[2000px]:gap-40 
               ${isEven ? 'md:flex-row-reverse' : ''}`}
           >
-            <div className="relative h-64 w-64 lg:h-80 lg:w-80 shrink-0">
-              <div className="absolute inset-0 rounded-full border-[6px] border-onca-laranja/10 scale-110" />
-              <div className="relative h-full w-full overflow-hidden rounded-full bg-gray-50 shadow-xl border-4 border-white">
+            <div className="relative h-64 w-64 lg:h-80 lg:w-80 min-[2000px]:h-150 min-[2000px]:w-150 shrink-0">
+              <div className="absolute inset-0 rounded-full border-[6px] min-[2000px]:border-12px border-onca-laranja/10 scale-110" />
+              <div className="relative h-full w-full overflow-hidden rounded-full bg-gray-50 shadow-xl border-4 min-[2000px]:border-8 border-white">
                 <Image
                   src={membro.foto}
                   alt={membro.nome}
                   fill
-                  className="object-contain p-8 grayscale hover:grayscale-0 transition-all duration-700 ease-in-out"
+                  className="object-contain p-8 min-[2000px]:p-16 grayscale hover:grayscale-0 transition-all duration-700 ease-in-out"
                 />
               </div>
             </div>
@@ -111,18 +111,18 @@ export default function EquipeSobre() {
               className={`flex flex-col text-center 
               ${isEven ? 'md:text-right md:items-end' : 'md:text-left md:items-start'}`}
             >
-              <div className="mb-6">
-                <h3 className="text-3xl lg:text-4xl font-bold text-onca-preto uppercase tracking-tighter">
+              <div className="mb-6 min-[2000px]:mb-12">
+                <h3 className="text-3xl lg:text-4xl min-[2000px]:text-7xl font-bold text-onca-preto uppercase tracking-tighter">
                   {membro.nome}
                 </h3>
-                <p className="text-onca-laranja font-bold uppercase tracking-[0.2em] text-xs lg:text-sm mt-2">
+                <p className="text-onca-laranja font-bold uppercase tracking-[0.2em] text-xs lg:text-sm min-[2000px]:text-3xl mt-2 min-[2000px]:mt-6">
                   {membro.cargo}
                 </p>
               </div>
 
-              <div className="h-1.5 w-16 bg-onca-laranja mb-8" />
+              <div className="h-1.5 min-[2000px]:h-3 w-16 min-[2000px]:w-32 bg-onca-laranja mb-8 min-[2000px]:mb-16" />
 
-              <p className="text-gray-600 leading-relaxed text-base lg:text-lg max-w-2xl">
+              <p className="text-gray-600 leading-relaxed min-[2000px]:leading-normal text-base lg:text-lg min-[2000px]:text-4xl max-w-2xl min-[2000px]:max-w-6xl">
                 {membro.bio}
               </p>
             </div>

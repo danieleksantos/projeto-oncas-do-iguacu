@@ -2,45 +2,56 @@ import Image from 'next/image';
 
 export default function HeroAtuacao() {
   return (
-    <section className="relative flex min-h-screen lg:min-h-[85vh] border-b border-white/10 overflow-hidden bg-onca-preto">
-      <div className="absolute bottom-0 w-full h-[55vh] lg:h-full lg:inset-0 z-0">
-        <Image
-          src="/atuacao/floresta.png"
-          alt="Interior da densa floresta da Mata Atlântica"
-          fill
-          priority
-          className="object-cover object-bottom lg:object-center"
-        />
-        <div className="absolute inset-0 bg-linear-to-b from-onca-preto via-onca-preto/50 to-transparent lg:bg-linear-to-l lg:from-onca-preto lg:from-10% lg:via-onca-preto/80 lg:via-50% lg:to-transparent lg:to-100%"></div>
-      </div>
+    <section className="relative bg-onca-preto w-full flex justify-center overflow-hidden">
+      <div className="w-full max-w-7xl min-[2000px]:max-w-600 flex flex-col md:flex-row items-stretch relative">
+        <div className="relative z-10 hidden md:block md:w-[60%] min-h-125 min-[2000px]:min-h-275 shrink-0">
+          <div className="absolute inset-y-0 left-0 w-24 min-[2000px]:w-48 bg-linear-to-r from-onca-preto to-transparent z-20 pointer-events-none"></div>
 
-      <div className="absolute bottom-0 left-0 lg:-left-52 w-full lg:w-[55%] h-[45vh] lg:h-[80vh] z-10 pointer-events-none">
-        <Image
-          src="/atuacao/pesquisadora.png"
-          alt="Pesquisadora do Projeto Onças do Iguaçu fazendo anotações"
-          fill
-          sizes="(max-width: 1024px) 100vw, 50vw"
-          priority
-          className="object-contain object-bottom lg:object-bottom-left scale-x-[-1] lg:scale-x-100 drop-shadow-[0_20px_50px_rgba(0,0,0,0.7)] z-10 relative"
-        />
-      </div>
+          <div className="absolute inset-y-0 right-0 w-48 min-[2000px]:w-80 bg-linear-to-l from-onca-preto via-onca-preto/90 to-transparent z-20 pointer-events-none"></div>
 
-      <div className="relative z-20 mx-auto max-w-7xl px-6 lg:px-8 w-full h-full flex items-start lg:items-center justify-center lg:justify-end pt-12 lg:pt-35 pb-[55vh] lg:pb-0 pointer-events-auto">
-        <div className="max-w-xl text-center lg:text-left mx-auto lg:mx-0 relative z-20">
-          <span className="inline-block text-onca-laranja text-sm font-bold uppercase tracking-[0.3em] mb-4 drop-shadow-md">
-            Como Trabalhamos
-          </span>
+          <Image
+            src="/atuacao/hero-atuacao.jpeg"
+            alt="Atuação do Projeto Onças do Iguaçu na floresta"
+            fill
+            priority
+            className="object-cover object-center z-10"
+            sizes="(max-width: 1280px) 60vw, 1500px"
+          />
+        </div>
 
-          <h1 className="text-white text-5xl lg:text-8xl font-bold uppercase tracking-tighter leading-none mb-6 drop-shadow-lg lg:leading-[0.9]">
-            Nossa <br />
-            <span className="text-onca-laranja leading-[0.9]">Atuação</span>
-          </h1>
+        <div className="relative z-20 w-full md:w-[40%] flex flex-col justify-center shrink-0 py-12 md:py-32 min-[2000px]:py-64">
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[80%] bg-onca-laranja/10 blur-[100px] min-[2000px]:blur-[200px] rounded-full z-0 mix-blend-screen pointer-events-none"></div>
 
-          <p className="text-gray-200 text-base lg:text-lg leading-relaxed max-w-lg lg:max-w-xl font-medium drop-shadow-md italic lg:opacity-90 mx-auto lg:mx-0">
-            A conservação da onça-pintada exige uma abordagem integrada.
-            Trabalhamos em quatro pilares fundamentais: Pesquisa, Engajamento,
-            Coexistência e Comunicação.
-          </p>
+          <div className="relative z-10 mx-auto w-full px-0 md:px-6 lg:pr-12 lg:pl-8 min-[2000px]:pr-24 min-[2000px]:pl-16">
+            <div className="max-w-xl min-[2000px]:max-w-3xl text-center md:text-left mx-auto md:mx-0 px-6 md:px-0">
+              <span className="inline-block text-onca-laranja text-sm min-[2000px]:text-2xl font-bold uppercase tracking-[0.3em] mb-4 min-[2000px]:mb-8 drop-shadow-md">
+                Como Trabalhamos
+              </span>
+              <h1 className="text-white text-5xl md:text-6xl min-[2000px]:text-[140px] font-bold uppercase tracking-tighter leading-tight lg:leading-[0.9] mb-2 md:mb-6 min-[2000px]:mb-12 drop-shadow-lg">
+                Nossa <br />
+                <span className="text-onca-laranja">Atuação</span>
+              </h1>
+            </div>
+
+            <div className="relative w-full h-[45vh] md:hidden my-8">
+              <Image
+                src="/atuacao/hero-atuacao.jpeg"
+                alt="Atuação do Projeto Onças do Iguaçu na floresta"
+                fill
+                priority
+                className="object-cover"
+                sizes="100vw"
+              />
+            </div>
+
+            <div className="max-w-xl min-[2000px]:max-w-4xl text-center md:text-left mx-auto md:mx-0 px-6 md:px-0">
+              <p className="text-gray-300 text-lg min-[2000px]:text-4xl min-[2000px]:leading-normal drop-shadow-md font-medium">
+                A conservação da onça-pintada exige uma abordagem integrada.
+                Trabalhamos em quatro pilares fundamentais: Pesquisa,
+                Engajamento, Coexistência e Comunicação.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>

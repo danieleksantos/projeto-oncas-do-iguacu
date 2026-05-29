@@ -98,11 +98,11 @@ export default function OncaPintadaFauna() {
 
               <Link
                 href="/fauna/onca-pintada"
-                className="flex items-center justify-center gap-3 w-full py-4 mt-4 bg-onca-preto text-white rounded-full font-bold uppercase tracking-widest hover:bg-onca-laranja hover:text-onca-preto transition-colors group"
+                className="flex items-center justify-center gap-2 md:gap-3 w-full px-4 sm:px-6 py-4 mt-4 bg-onca-preto text-white rounded-full font-bold uppercase tracking-wide md:tracking-widest text-[11px] sm:text-sm md:text-base text-center shadow-sm outline-none transition-transform duration-200 hover:scale-105 active:scale-95 focus-visible:ring-2 focus-visible:ring-onca-preto group"
               >
-                Ver ficha completa da onça-pintada
+                <span>Ver ficha completa da onça-pintada</span>
                 <svg
-                  className="w-5 h-5 transition-transform group-hover:translate-x-1"
+                  className="w-4 h-4 md:w-5 md:h-5 shrink-0 transition-transform duration-200 group-hover:translate-x-1"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"

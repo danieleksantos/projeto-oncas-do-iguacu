@@ -24,7 +24,7 @@ export default function HeroFauna() {
             Fauna do <br />
             <span className="text-onca-laranja">Iguaçu</span>
           </h1>
-          <p className="text-gray-100 text-lg lg:text-xl leading-relaxed font-medium drop-shadow-md pt-2">
+          <p className="text-gray-100 text-lg lg:text-xl leading-relaxed font-medium drop-shadow-md pt-2 pb-15 lg:pb-0">
             Conheça os magníficos felinos que habitam o Corredor Verde da Mata
             Atlântica e descubra a importância de cada espécie para o equilíbrio
             do nosso ecossistema.

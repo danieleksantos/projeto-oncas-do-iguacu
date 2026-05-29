@@ -5,13 +5,15 @@ import { useEffect, useState, useRef } from 'react';
 interface CounterProps {
   end: number;
   duration?: number;
+  delay?: number;
   prefix?: string;
   suffix?: string;
 }
 
 export default function CounterSobre({
   end,
-  duration = 2000,
+  duration = 2500,
+  delay = 300,
   prefix = '',
   suffix = '',
 }: CounterProps) {
@@ -20,6 +22,7 @@ export default function CounterSobre({
 
   useEffect(() => {
     let animationFrameId: number;
+    let timeoutId: NodeJS.Timeout;
 
     const startAnimation = () => {
       let startTimestamp: number | null = null;
@@ -28,7 +31,10 @@ export default function CounterSobre({
         if (!startTimestamp) startTimestamp = timestamp;
         const progress = Math.min((timestamp - startTimestamp) / duration, 1);
 
-        const easeProgress = 1 - Math.pow(1 - progress, 3);
+        const easeProgress =
+          progress < 0.5
+            ? 4 * progress * progress * progress
+            : 1 - Math.pow(-2 * progress + 2, 3) / 2;
 
         setCount(Math.floor(easeProgress * end));
 
@@ -43,8 +49,11 @@ export default function CounterSobre({
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          startAnimation();
+          timeoutId = setTimeout(() => {
+            startAnimation();
+          }, delay);
         } else {
+          clearTimeout(timeoutId);
           setCount(0);
           if (animationFrameId) {
             window.cancelAnimationFrame(animationFrameId);
@@ -52,7 +61,7 @@ export default function CounterSobre({
         }
       },
       {
-        threshold: 0.1,
+        threshold: 0.5,
       },
     );
 
@@ -62,11 +71,12 @@ export default function CounterSobre({
 
     return () => {
       observer.disconnect();
+      clearTimeout(timeoutId);
       if (animationFrameId) {
         window.cancelAnimationFrame(animationFrameId);
       }
     };
-  }, [end, duration]);
+  }, [end, duration, delay]);
 
   return (
     <div ref={elementRef} className="tabular-nums inline-block">

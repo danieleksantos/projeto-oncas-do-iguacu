@@ -84,9 +84,9 @@ const footerNavigation = {
   ],
   atuacao: [
     { name: 'Pesquisa', href: '/atuacao/pesquisa' },
-    { name: 'Educação', href: '/atuacao/educacao' },
+    { name: 'Engajamento', href: '/atuacao/engajamento' },
     { name: 'Coexistência', href: '/atuacao/coexistencia' },
-    { name: 'Boletim Voz da Onça', href: '/conteudos/boletim' },
+    { name: 'Comunicação', href: '/conteudos/boletim' },
   ],
   ajude: [
     { name: 'Doação', href: '/apoie/doacao' },
