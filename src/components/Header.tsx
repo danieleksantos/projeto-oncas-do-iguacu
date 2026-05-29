@@ -81,8 +81,7 @@ export default function Header() {
               alt="Logo Onças do Iguaçu"
               width={200}
               height={50}
-              // Logo ganha o triplo do tamanho em 5K
-              className="h-12 lg:h-22 min-[2000px]:h-32 w-auto brightness-0"
+              className="h-12 lg:h-15 min-[2000px]:h-32 w-auto brightness-0"
               priority
             />
           </Link>
@@ -177,7 +176,6 @@ export default function Header() {
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <Link
             href="/apoie/doacao"
-            // Botão "DOE AGORA" dobra em preenchimento e tamanho da fonte
             className="rounded-full bg-onca-preto px-6 py-2.5 min-[2000px]:px-12 min-[2000px]:py-5 text-sm min-[2000px]:text-2xl font-bold text-white shadow-sm outline-none transition-transform duration-200 hover:scale-105 active:scale-95 focus-visible:ring-2 focus-visible:ring-white whitespace-nowrap"
           >
             DOE AGORA
