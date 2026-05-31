@@ -32,8 +32,8 @@ const navigation = [
     name: 'Fauna do Iguaçu',
     href: '/fauna',
     children: [
-      { name: 'As onças', href: '/fauna/as-oncas' },
-      { name: 'Outros felinos', href: '/fauna/outros-felinos' },
+      { name: 'Onça-Pintada', href: '/fauna/#onca-pintada' },
+      { name: 'Outros felinos', href: '/fauna/#gato-mourisco' },
     ],
   },
   {
