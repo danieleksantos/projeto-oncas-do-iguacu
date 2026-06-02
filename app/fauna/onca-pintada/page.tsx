@@ -158,13 +158,13 @@ export default function OncaPintadaDetalhesPage() {
               className="relative w-full aspect-square rounded-3xl overflow-hidden shadow-xl cursor-zoom-in group"
               onClick={() =>
                 setModalData({
-                  src: '/fauna/onca-atiaia.webp',
+                  src: '/fauna/onca-indira-aritana.jpg',
                   caption: 'Onça-pintada Atiaia. Foto: Emílio White',
                 })
               }
             >
               <Image
-                src="/fauna/onca-atiaia.webp"
+                src="/fauna/onca-indira-aritana.jpg"
                 alt="Onça-pintada Atiaia"
                 fill
                 className="object-cover transition-transform duration-500 group-hover:scale-105"

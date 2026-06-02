@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -63,6 +63,20 @@ const navigation = [
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [forceHide, setForceHide] = useState<string | null>(null);
+
+  // Trava a rolagem da página quando o menu mobile está aberto
+  useEffect(() => {
+    if (mobileMenuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+
+    // Cleanup para garantir que o scroll volte se o componente desmontar
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [mobileMenuOpen]);
 
   return (
     <header
@@ -129,6 +143,12 @@ export default function Header() {
                 href={item.href}
                 className="text-[14px] font-bold tracking-tight text-onca-preto uppercase flex items-center gap-1 outline-none transition-all hover:underline decoration-onca-preto decoration-2 underline-offset-8 focus-visible:underline"
                 aria-haspopup={item.children ? 'true' : 'false'}
+                onClick={(e) => {
+                  (e.currentTarget as HTMLElement).blur();
+                  if (item.children) {
+                    setForceHide(item.name);
+                  }
+                }}
               >
                 {item.name}
                 {item.children && (
@@ -185,10 +205,10 @@ export default function Header() {
 
       {mobileMenuOpen && (
         <nav
-          className="lg:hidden bg-onca-laranja-escuro border-t border-onca-preto/10 px-6 py-8"
+          className="lg:hidden bg-onca-laranja-escuro border-t border-onca-preto/10 px-6 py-8 max-h-[calc(100vh-80px)] overflow-y-auto"
           aria-label="Navegação mobile"
         >
-          <div className="mx-auto max-w-7xl flex flex-col gap-y-6">
+          <div className="mx-auto max-w-7xl flex flex-col gap-y-6 pb-6">
             {navigation.map((item) => (
               <div key={item.name} className="flex flex-col">
                 <Link
