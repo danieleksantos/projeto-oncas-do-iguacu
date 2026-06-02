@@ -11,17 +11,17 @@ export default function EngajamentoAtuacao() {
     <>
       <section
         id="engajamento"
-        className="w-full py-24 min-[2000px]:py-48 bg-white text-onca-preto scroll-mt-20 flex justify-center"
+        className="w-full py-24 bg-white text-onca-preto scroll-mt-20 flex justify-center"
       >
-        <div className="mx-auto w-full max-w-7xl min-[2000px]:max-w-600 px-6 lg:px-8 min-[2000px]:px-24 space-y-24 min-[2000px]:space-y-48">
-          <div className="max-w-3xl min-[2000px]:max-w-6xl mx-auto text-center space-y-6 min-[2000px]:space-y-12">
-            <span className="inline-block text-onca-laranja text-sm min-[2000px]:text-3xl font-bold uppercase tracking-[0.3em]">
+        <div className="mx-auto w-full max-w-7xl px-6 lg:px-8 space-y-24">
+          <div className="max-w-3xl mx-auto text-center space-y-6">
+            <span className="inline-block text-onca-laranja text-sm font-bold uppercase tracking-[0.3em]">
               O Lado Humano da Conservação
             </span>
-            <h2 className="text-4xl lg:text-5xl min-[2000px]:text-[100px] font-bold uppercase tracking-tighter text-onca-preto">
+            <h2 className="text-4xl lg:text-5xl font-bold uppercase tracking-tighter text-onca-preto">
               Engajamento
             </h2>
-            <p className="text-xl min-[2000px]:text-4xl text-gray-600 leading-relaxed min-[2000px]:leading-normal font-medium">
+            <p className="text-xl text-gray-600 leading-relaxed font-medium">
               O engajamento é uma das bases do Projeto Onças do Iguaçu. As ações
               são voltadas às comunidades dos municípios do entorno do Parque
               Nacional do Iguaçu, com o objetivo de transformar o medo em
@@ -30,11 +30,11 @@ export default function EngajamentoAtuacao() {
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 min-[2000px]:gap-48 items-center">
-            <div className="grid grid-cols-2 gap-4 lg:gap-6 min-[2000px]:gap-12 relative">
-              <div className="flex flex-col gap-3 min-[2000px]:gap-6 mt-8 lg:mt-16 min-[2000px]:mt-32">
+          <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+            <div className="grid grid-cols-2 gap-4 lg:gap-6 relative">
+              <div className="flex flex-col gap-3 mt-8 lg:mt-16">
                 <div
-                  className="relative w-full aspect-4/5 cursor-zoom-in overflow-hidden rounded-3xl min-[2000px]:rounded-[3rem] shadow-xl group"
+                  className="relative w-full aspect-4/5 cursor-zoom-in overflow-hidden rounded-3xl shadow-xl group"
                   onClick={() =>
                     setModalData({
                       src: '/atuacao/onca-na-escola.webp',
@@ -51,14 +51,14 @@ export default function EngajamentoAtuacao() {
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                 </div>
-                <p className="text-xs min-[2000px]:text-2xl text-gray-500 text-center italic px-2">
+                <p className="text-xs text-gray-500 text-center italic px-2">
                   Atividades lúdicas do programa Onça na Escola
                 </p>
               </div>
 
-              <div className="flex flex-col gap-3 min-[2000px]:gap-6">
+              <div className="flex flex-col gap-3">
                 <div
-                  className="relative w-full aspect-4/5 cursor-zoom-in overflow-hidden rounded-3xl min-[2000px]:rounded-[3rem] shadow-xl group"
+                  className="relative w-full aspect-4/5 cursor-zoom-in overflow-hidden rounded-3xl shadow-xl group"
                   onClick={() =>
                     setModalData({
                       src: '/atuacao/trilha-da-onca.webp',
@@ -74,18 +74,18 @@ export default function EngajamentoAtuacao() {
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                 </div>
-                <p className="text-xs min-[2000px]:text-2xl text-gray-500 text-center italic px-2">
+                <p className="text-xs text-gray-500 text-center italic px-2">
                   Imersão na natureza durante a Trilha da Onça
                 </p>
               </div>
             </div>
 
-            <div className="space-y-12 min-[2000px]:space-y-24">
-              <div className="space-y-4 min-[2000px]:space-y-8">
-                <h3 className="text-3xl min-[2000px]:text-6xl font-bold uppercase tracking-tight border-l-4 min-[2000px]:border-l-8 border-onca-laranja pl-4 min-[2000px]:pl-8">
+            <div className="space-y-12">
+              <div className="space-y-4">
+                <h3 className="text-3xl font-bold uppercase tracking-tight border-l-4 border-onca-laranja pl-4">
                   Conexão com a comunidade
                 </h3>
-                <p className="text-gray-600 leading-relaxed min-[2000px]:leading-normal text-lg min-[2000px]:text-3xl">
+                <p className="text-gray-600 leading-relaxed text-lg">
                   O projeto desenvolve iniciativas voltadas a diferentes
                   públicos, levando informação e experiência direta com a
                   temática da conservação. O programa{' '}
@@ -98,11 +98,11 @@ export default function EngajamentoAtuacao() {
                 </p>
               </div>
 
-              <div className="space-y-4 min-[2000px]:space-y-8">
-                <h3 className="text-3xl min-[2000px]:text-6xl font-bold uppercase tracking-tight border-l-4 min-[2000px]:border-l-8 border-onca-laranja pl-4 min-[2000px]:pl-8">
+              <div className="space-y-4">
+                <h3 className="text-3xl font-bold uppercase tracking-tight border-l-4 border-onca-laranja pl-4">
                   Experiência no território
                 </h3>
-                <p className="text-gray-600 leading-relaxed min-[2000px]:leading-normal text-lg min-[2000px]:text-3xl">
+                <p className="text-gray-600 leading-relaxed text-lg">
                   A aproximação com o ambiente natural é promovida por meio da{' '}
                   <strong className="text-onca-preto">Trilha da Onça</strong>,
                   que proporciona vivências no Parque Nacional do Iguaçu,
@@ -115,21 +115,21 @@ export default function EngajamentoAtuacao() {
         </div>
       </section>
 
-      <section className="w-full py-24 min-[2000px]:py-48 bg-gray-50 text-onca-preto border-y border-gray-200 flex justify-center">
-        <div className="mx-auto w-full max-w-7xl min-[2000px]:max-w-600 px-6 lg:px-8 min-[2000px]:px-24 space-y-16 min-[2000px]:space-y-32">
-          <div className="max-w-2xl min-[2000px]:max-w-5xl">
-            <h3 className="text-4xl min-[2000px]:text-7xl font-bold uppercase tracking-tight mb-4 min-[2000px]:mb-8 text-onca-preto">
+      <section className="w-full py-24 bg-gray-50 text-onca-preto border-y border-gray-200 flex justify-center">
+        <div className="mx-auto w-full max-w-7xl px-6 lg:px-8 space-y-16">
+          <div className="max-w-2xl">
+            <h3 className="text-4xl font-bold uppercase tracking-tight mb-4 text-onca-preto">
               Engajamento Ampliado
             </h3>
-            <p className="text-gray-600 text-lg min-[2000px]:text-3xl leading-relaxed min-[2000px]:leading-normal">
+            <p className="text-gray-600 text-lg leading-relaxed">
               Outras iniciativas reforçam essa conexão de forma contínua,
               levando a mensagem da conservação para os mais diversos ambientes
               e parceiros.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8 lg:gap-10 min-[2000px]:gap-20">
-            <div className="bg-white rounded-3xl min-[2000px]:rounded-[3rem] shadow-sm border border-gray-100 hover:shadow-lg transition-shadow duration-300 flex flex-col h-full overflow-hidden">
+          <div className="grid md:grid-cols-2 gap-8 lg:gap-10">
+            <div className="bg-white rounded-3xl shadow-sm border border-gray-100 hover:shadow-lg transition-shadow duration-300 flex flex-col h-full overflow-hidden">
               <div
                 className="relative w-full aspect-video cursor-zoom-in group overflow-hidden bg-gray-200"
                 onClick={() =>
@@ -148,11 +148,11 @@ export default function EngajamentoAtuacao() {
                   className="object-cover transition-transform duration-500 group-hover:scale-105"
                 />
               </div>
-              <div className="p-8 min-[2000px]:p-16 flex flex-col grow space-y-4 min-[2000px]:space-y-8">
-                <h4 className="text-2xl min-[2000px]:text-5xl font-bold uppercase tracking-tight text-onca-preto">
+              <div className="p-8 flex flex-col grow space-y-4">
+                <h4 className="text-2xl font-bold uppercase tracking-tight text-onca-preto">
                   Bafo de Onça
                 </h4>
-                <p className="text-gray-600 leading-relaxed min-[2000px]:leading-normal min-[2000px]:text-3xl grow">
+                <p className="text-gray-600 leading-relaxed grow">
                   Leva o debate sobre conservação para espaços informais, como
                   bares, utilizando uma linguagem acessível para dialogar
                   diretamente com a comunidade de forma descontraída.
@@ -160,7 +160,7 @@ export default function EngajamentoAtuacao() {
               </div>
             </div>
 
-            <div className="bg-white rounded-3xl min-[2000px]:rounded-[3rem] shadow-sm border border-gray-100 hover:shadow-lg transition-shadow duration-300 flex flex-col h-full overflow-hidden">
+            <div className="bg-white rounded-3xl shadow-sm border border-gray-100 hover:shadow-lg transition-shadow duration-300 flex flex-col h-full overflow-hidden">
               <div
                 className="relative w-full aspect-video cursor-zoom-in group overflow-hidden bg-gray-200"
                 onClick={() =>
@@ -179,11 +179,11 @@ export default function EngajamentoAtuacao() {
                   className="object-cover transition-transform duration-500 group-hover:scale-105"
                 />
               </div>
-              <div className="p-8 min-[2000px]:p-16 flex flex-col grow space-y-4 min-[2000px]:space-y-8">
-                <h4 className="text-2xl min-[2000px]:text-5xl font-bold uppercase tracking-tight text-onca-preto">
+              <div className="p-8 flex flex-col grow space-y-4">
+                <h4 className="text-2xl font-bold uppercase tracking-tight text-onca-preto">
                   Mutirão da Onça
                 </h4>
-                <p className="text-gray-600 leading-relaxed min-[2000px]:leading-normal min-[2000px]:text-3xl grow">
+                <p className="text-gray-600 leading-relaxed grow">
                   Promove ações colaborativas com as comunidades locais, atuando
                   lado a lado para contribuir diretamente para a resolução de
                   demandas estruturais e de convívio na região.
@@ -191,7 +191,7 @@ export default function EngajamentoAtuacao() {
               </div>
             </div>
 
-            <div className="bg-white rounded-3xl min-[2000px]:rounded-[3rem] shadow-sm border border-gray-100 hover:shadow-lg transition-shadow duration-300 flex flex-col h-full overflow-hidden">
+            <div className="bg-white rounded-3xl shadow-sm border border-gray-100 hover:shadow-lg transition-shadow duration-300 flex flex-col h-full overflow-hidden">
               <div
                 className="relative w-full aspect-video cursor-zoom-in group overflow-hidden bg-gray-200"
                 onClick={() =>
@@ -209,11 +209,11 @@ export default function EngajamentoAtuacao() {
                   className="object-cover transition-transform duration-500 group-hover:scale-105"
                 />
               </div>
-              <div className="p-8 min-[2000px]:p-16 flex flex-col grow space-y-4 min-[2000px]:space-y-8">
-                <h4 className="text-2xl min-[2000px]:text-5xl font-bold uppercase tracking-tight text-onca-preto">
+              <div className="p-8 flex flex-col grow space-y-4">
+                <h4 className="text-2xl font-bold uppercase tracking-tight text-onca-preto">
                   Onça Grafiteira
                 </h4>
-                <p className="text-gray-600 leading-relaxed min-[2000px]:leading-normal min-[2000px]:text-3xl grow">
+                <p className="text-gray-600 leading-relaxed grow">
                   Utiliza a arte urbana como ferramenta de sensibilização. A
                   criação de murais temáticos nos municípios do entorno
                   fortalece o engajamento comunitário e aproxima diferentes
@@ -222,7 +222,7 @@ export default function EngajamentoAtuacao() {
               </div>
             </div>
 
-            <div className="bg-white rounded-3xl min-[2000px]:rounded-[3rem] shadow-sm border border-gray-100 hover:shadow-lg transition-shadow duration-300 flex flex-col h-full overflow-hidden">
+            <div className="bg-white rounded-3xl shadow-sm border border-gray-100 hover:shadow-lg transition-shadow duration-300 flex flex-col h-full overflow-hidden">
               <div
                 className="relative w-full aspect-video cursor-zoom-in group overflow-hidden bg-gray-200"
                 onClick={() =>
@@ -241,11 +241,11 @@ export default function EngajamentoAtuacao() {
                   className="object-cover transition-transform duration-500 group-hover:scale-105"
                 />
               </div>
-              <div className="p-8 min-[2000px]:p-16 flex flex-col grow space-y-4 min-[2000px]:space-y-8">
-                <h4 className="text-2xl min-[2000px]:text-5xl font-bold uppercase tracking-tight text-onca-preto">
+              <div className="p-8 flex flex-col grow space-y-4">
+                <h4 className="text-2xl font-bold uppercase tracking-tight text-onca-preto">
                   Aeroporto Amigo da Onça
                 </h4>
-                <p className="text-gray-600 leading-relaxed min-[2000px]:leading-normal min-[2000px]:text-3xl grow">
+                <p className="text-gray-600 leading-relaxed grow">
                   Uma parceria pioneira com o Aeroporto Internacional de Foz do
                   Iguaçu que integra o setor privado. Amplia a conscientização
                   de milhares de passageiros e consolida o apoio institucional à
@@ -257,14 +257,14 @@ export default function EngajamentoAtuacao() {
         </div>
       </section>
 
-      <section className="w-full py-24 min-[2000px]:py-48 bg-onca-preto text-white relative overflow-hidden flex justify-center">
-        <div className="absolute top-0 left-0 w-150 h-150 min-[2000px]:w-200 min-[2000px]:h-200 bg-onca-laranja/10 rounded-full blur-[120px] min-[2000px]:blur-[240px] -translate-y-1/2 -translate-x-1/2 pointer-events-none"></div>
+      <section className="w-full py-24 bg-onca-preto text-white relative overflow-hidden flex justify-center">
+        <div className="absolute top-0 left-0 w-150 h-150 bg-onca-laranja/10 rounded-full blur-[120px] -translate-y-1/2 -translate-x-1/2 pointer-events-none"></div>
 
-        <div className="mx-auto w-full max-w-7xl min-[2000px]:max-w-600 px-6 lg:px-8 min-[2000px]:px-24 relative z-10">
-          <div className="grid lg:grid-cols-2 gap-16 min-[2000px]:gap-32 items-center">
-            <div className="order-2 lg:order-1 flex flex-col items-center space-y-4 min-[2000px]:space-y-8">
+        <div className="mx-auto w-full max-w-7xl px-6 lg:px-8 relative z-10">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            <div className="order-2 lg:order-1 flex flex-col items-center space-y-4">
               <div
-                className="w-full max-w-150 min-[2000px]:max-w-300 relative aspect-video cursor-zoom-in overflow-hidden rounded-3xl min-[2000px]:rounded-[3rem] shadow-[0_0_40px_rgba(0,0,0,0.5)] border border-white/10 group"
+                className="w-full max-w-150 relative aspect-video cursor-zoom-in overflow-hidden rounded-3xl shadow-[0_0_40px_rgba(0,0,0,0.5)] border border-white/10 group"
                 onClick={() =>
                   setModalData({
                     src: '/atuacao/peter-rei-do-role.webp',
@@ -281,28 +281,27 @@ export default function EngajamentoAtuacao() {
                   className="object-cover transition-transform duration-500 group-hover:scale-105"
                 />
               </div>
-              <p className="text-xs min-[2000px]:text-2xl text-gray-400 text-center italic px-4">
+              <p className="text-xs text-gray-400 text-center italic px-4">
                 Registros enviados pelo grupo Amigos da Onça auxiliam no
                 monitoramento
               </p>
             </div>
 
-            <div className="order-1 lg:order-2 space-y-6 min-[2000px]:space-y-12">
-              <h3 className="text-4xl min-[2000px]:text-7xl font-bold uppercase tracking-tight text-onca-laranja mb-8 min-[2000px]:mb-16">
+            <div className="order-1 lg:order-2 space-y-6">
+              <h3 className="text-4xl font-bold uppercase tracking-tight text-onca-laranja mb-8">
                 Participação Ativa
               </h3>
-              <p className="text-gray-300 leading-relaxed min-[2000px]:leading-normal text-lg min-[2000px]:text-3xl">
+              <p className="text-gray-300 leading-relaxed text-lg">
                 A conservação só é efetiva quando feita a várias mãos. O projeto
                 estimula a participação direta da sociedade, transformando
                 cidadãos comuns em aliados da ciência.
               </p>
 
-              <div className="bg-white/5 border border-white/10 p-6 sm:p-8 min-[2000px]:p-16 rounded-3xl min-[2000px]:rounded-[3rem] mt-8 min-[2000px]:mt-16 backdrop-blur-sm">
-                <h4 className="text-2xl min-[2000px]:text-5xl font-bold text-white mb-3 min-[2000px]:mb-6 flex items-center gap-3 min-[2000px]:gap-6">
-                  <span className="text-3xl min-[2000px]:text-6xl">📱</span>{' '}
-                  Amigos da Onça
+              <div className="bg-white/5 border border-white/10 p-6 sm:p-8 rounded-3xl mt-8 backdrop-blur-sm">
+                <h4 className="text-2xl font-bold text-white mb-3 flex items-center gap-3">
+                  <span className="text-3xl">📱</span> Amigos da Onça
                 </h4>
-                <p className="text-gray-300 min-[2000px]:text-2xl leading-relaxed min-[2000px]:leading-normal">
+                <p className="text-gray-300 leading-relaxed">
                   Um grupo que reúne motoristas, guias e profissionais que atuam
                   no Parque Nacional Iguaçu. Eles atuam como os "olhos" do
                   projeto em campo, contribuindo com registros frequentes,

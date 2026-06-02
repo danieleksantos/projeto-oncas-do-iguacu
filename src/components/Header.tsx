@@ -69,7 +69,7 @@ export default function Header() {
       className="sticky top-0 z-50 w-full bg-onca-laranja-escuro shadow-md"
       role="banner"
     >
-      <div className="mx-auto max-w-7xl min-[2000px]:max-w-600 flex w-full items-center justify-between p-4 px-6 lg:px-8 min-[2000px]:px-24 min-[2000px]:py-8">
+      <div className="mx-auto max-w-7xl flex w-full items-center justify-between p-4 px-6 lg:px-8">
         <div className="flex lg:flex-1">
           <Link
             href="/"
@@ -81,7 +81,7 @@ export default function Header() {
               alt="Logo Onças do Iguaçu"
               width={200}
               height={50}
-              className="h-12 lg:h-15 min-[2000px]:h-32 w-auto brightness-0"
+              className="h-12 lg:h-15 w-auto brightness-0"
               priority
             />
           </Link>
@@ -116,7 +116,7 @@ export default function Header() {
         </div>
 
         <nav
-          className="hidden lg:flex lg:gap-x-6 min-[2000px]:gap-x-12 justify-center"
+          className="hidden lg:flex lg:gap-x-6 justify-center"
           aria-label="Navegação desktop"
         >
           {navigation.map((item) => (
@@ -127,13 +127,13 @@ export default function Header() {
             >
               <Link
                 href={item.href}
-                className="text-[14px] min-[2000px]:text-2xl font-bold tracking-tight text-onca-preto uppercase flex items-center gap-1 min-[2000px]:gap-3 outline-none transition-all hover:underline decoration-onca-preto decoration-2 min-[2000px]:decoration-4 underline-offset-8 min-[2000px]:underline-offset-16px focus-visible:underline"
+                className="text-[14px] font-bold tracking-tight text-onca-preto uppercase flex items-center gap-1 outline-none transition-all hover:underline decoration-onca-preto decoration-2 underline-offset-8 focus-visible:underline"
                 aria-haspopup={item.children ? 'true' : 'false'}
               >
                 {item.name}
                 {item.children && (
                   <svg
-                    className="w-3.5 h-3.5 min-[2000px]:w-6 min-[2000px]:h-6 fill-current opacity-50"
+                    className="w-3.5 h-3.5 fill-current opacity-50"
                     viewBox="0 0 20 20"
                     aria-hidden="true"
                   >
@@ -144,20 +144,20 @@ export default function Header() {
 
               {item.children && (
                 <div
-                  className={`absolute left-0 top-full w-64 min-[2000px]:w-96 pt-2 min-[2000px]:pt-6 ${
+                  className={`absolute left-0 top-full w-64 pt-2 ${
                     forceHide === item.name
                       ? 'hidden'
                       : 'hidden group-hover:block group-focus-within:block'
                   } animate-in fade-in slide-in-from-top-2 duration-200`}
                   role="menu"
                 >
-                  <div className="bg-onca-laranja-escuro rounded-lg min-[2000px]:rounded-2xl shadow-xl overflow-hidden border border-onca-preto/10">
+                  <div className="bg-onca-laranja-escuro rounded-lg shadow-xl overflow-hidden border border-onca-preto/10">
                     {item.children.map((sub) => (
                       <Link
                         key={sub.name}
                         href={sub.href}
                         role="menuitem"
-                        className="block px-4 py-3 min-[2000px]:px-8 min-[2000px]:py-6 text-[13px] min-[2000px]:text-xl font-bold text-onca-preto outline-none transition-all hover:underline decoration-onca-preto decoration-1 min-[2000px]:decoration-2 underline-offset-4 min-[2000px]:underline-offset-8 focus:underline border-b border-onca-preto/5 last:border-0"
+                        className="block px-4 py-3 text-[13px] font-bold text-onca-preto outline-none transition-all hover:underline decoration-onca-preto decoration-1 underline-offset-4 focus:underline border-b border-onca-preto/5 last:border-0"
                         onClick={(e) => {
                           (e.currentTarget as HTMLElement).blur();
                           setForceHide(item.name);
@@ -176,7 +176,7 @@ export default function Header() {
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <Link
             href="/apoie/doacao"
-            className="rounded-full bg-onca-preto px-6 py-2.5 min-[2000px]:px-12 min-[2000px]:py-5 text-sm min-[2000px]:text-2xl font-bold text-white shadow-sm outline-none transition-transform duration-200 hover:scale-105 active:scale-95 focus-visible:ring-2 focus-visible:ring-white whitespace-nowrap"
+            className="rounded-full bg-onca-preto px-6 py-2.5 text-sm font-bold text-white shadow-sm outline-none transition-transform duration-200 hover:scale-105 active:scale-95 focus-visible:ring-2 focus-visible:ring-white whitespace-nowrap"
           >
             DOE AGORA
           </Link>

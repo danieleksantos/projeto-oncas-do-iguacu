@@ -4,7 +4,7 @@ export default function VoltarLinkFauna() {
   return (
     <Link
       href="/fauna"
-      className="inline-flex items-center gap-2 font-bold uppercase tracking-widest text-onca-laranja-escuro  hover:underline decoration-onca-laranja-escuro decoration-2 underline-offset-8 focus-visible:underline group"
+      className="inline-flex items-center gap-2 font-bold uppercase tracking-widest text-onca-laranja-escuro hover:underline decoration-onca-laranja-escuro decoration-2 underline-offset-8 focus-visible:underline group"
     >
       <svg
         className="w-5 h-5 transition-transform group-hover:-translate-x-1"

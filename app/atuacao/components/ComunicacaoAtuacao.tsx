@@ -6,30 +6,30 @@ export default function ComunicacaoAtuacao() {
   return (
     <section
       id="comunicacao"
-      className="w-full py-24 min-[2000px]:py-48 bg-gray-50 text-onca-preto scroll-mt-20 border-t border-gray-200 flex justify-center"
+      className="w-full py-24 bg-gray-50 text-onca-preto scroll-mt-20 border-t border-gray-200 flex justify-center"
     >
-      <div className="mx-auto w-full max-w-7xl min-[2000px]:max-w-600 px-6 lg:px-8 min-[2000px]:px-24 space-y-16 min-[2000px]:space-y-32">
-        <div className="max-w-3xl min-[2000px]:max-w-6xl mx-auto text-center space-y-6 min-[2000px]:space-y-12">
-          <span className="inline-block text-onca-laranja-escuro text-sm min-[2000px]:text-3xl font-bold uppercase tracking-[0.3em]">
+      <div className="mx-auto w-full max-w-7xl px-6 lg:px-8 space-y-16">
+        <div className="max-w-3xl mx-auto text-center space-y-6">
+          <span className="inline-block text-onca-laranja-escuro text-sm font-bold uppercase tracking-[0.3em]">
             Conexão e Emoção
           </span>
-          <h2 className="text-4xl lg:text-5xl min-[2000px]:text-[100px] font-bold uppercase tracking-tighter text-onca-preto">
+          <h2 className="text-4xl lg:text-5xl font-bold uppercase tracking-tighter text-onca-preto">
             Comunicação
           </h2>
-          <p className="text-xl min-[2000px]:text-4xl text-gray-700 leading-relaxed min-[2000px]:leading-normal font-medium">
+          <p className="text-xl text-gray-700 leading-relaxed font-medium">
             A comunicação do Projeto Onças do Iguaçu é orientada pela construção
             de conexão emocional entre as pessoas e as onças, buscando
             transformar percepções e aproximar a sociedade da conservação.
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-12 gap-12 lg:gap-16 min-[2000px]:gap-32 items-center pt-8 min-[2000px]:pt-16">
-          <div className="lg:col-span-7 space-y-10 min-[2000px]:space-y-20">
-            <div className="space-y-4 min-[2000px]:space-y-8">
-              <h3 className="text-3xl min-[2000px]:text-6xl font-bold uppercase tracking-tight border-l-4 min-[2000px]:border-l-8 border-onca-laranja pl-4 min-[2000px]:pl-8">
+        <div className="grid lg:grid-cols-12 gap-12 lg:gap-16 items-center pt-8">
+          <div className="lg:col-span-7 space-y-10">
+            <div className="space-y-4">
+              <h3 className="text-3xl font-bold uppercase tracking-tight border-l-4 border-onca-laranja pl-4">
                 Estratégia
               </h3>
-              <p className="text-gray-700 leading-relaxed text-lg min-[2000px]:text-3xl min-[2000px]:leading-normal">
+              <p className="text-gray-700 leading-relaxed text-lg">
                 A abordagem prioriza a linguagem acessível e a narrativa
                 sensível, reduzindo barreiras entre ciência e público. Em vez de
                 uma comunicação técnica, o projeto compartilha experiências de
@@ -38,11 +38,11 @@ export default function ComunicacaoAtuacao() {
               </p>
             </div>
 
-            <div className="space-y-4 min-[2000px]:space-y-8">
-              <h3 className="text-3xl min-[2000px]:text-6xl font-bold uppercase tracking-tight border-l-4 min-[2000px]:border-l-8 border-onca-laranja pl-4 min-[2000px]:pl-8">
+            <div className="space-y-4">
+              <h3 className="text-3xl font-bold uppercase tracking-tight border-l-4 border-onca-laranja pl-4">
                 Objetivo
               </h3>
-              <p className="text-gray-700 leading-relaxed text-lg min-[2000px]:text-3xl min-[2000px]:leading-normal">
+              <p className="text-gray-700 leading-relaxed text-lg">
                 Essa estratégia busca substituir o medo pelo encantamento,
                 ampliar o entendimento sobre a importância da espécie e
                 fortalecer o apoio às ações de conservação.
@@ -50,16 +50,16 @@ export default function ComunicacaoAtuacao() {
             </div>
           </div>
 
-          <div className="lg:col-span-5 grid gap-4 min-[2000px]:gap-8">
+          <div className="lg:col-span-5 grid gap-4">
             <Link
               href="https://www.instagram.com/oncasdoiguacu"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-6 min-[2000px]:gap-12 p-5 min-[2000px]:p-10 rounded-3xl min-[2000px]:rounded-[3rem] lg:bg-white bg-onca-laranja shadow-sm border border-gray-100 hover:border-onca-laranja hover:shadow-md transition-all duration-300 group"
+              className="flex items-center gap-6 p-5 rounded-3xl lg:bg-white bg-onca-laranja shadow-sm border border-gray-100 hover:border-onca-laranja hover:shadow-md transition-all duration-300 group"
             >
-              <div className="w-14 h-14 min-[2000px]:w-24 min-[2000px]:h-24 bg-gray-50 rounded-2xl min-[2000px]:rounded-3xl flex items-center justify-center shrink-0 group-hover:bg-[#E1306C] group-hover:text-white transition-colors duration-300 lg:text-onca-preto text-[#E1306C]">
+              <div className="w-14 h-14 bg-gray-50 rounded-2xl flex items-center justify-center shrink-0 group-hover:bg-[#E1306C] group-hover:text-white transition-colors duration-300 lg:text-onca-preto text-[#E1306C]">
                 <svg
-                  className="w-7 h-7 min-[2000px]:w-12 min-[2000px]:h-12"
+                  className="w-7 h-7"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                 >
@@ -71,10 +71,10 @@ export default function ComunicacaoAtuacao() {
                 </svg>
               </div>
               <div className="flex flex-col">
-                <span className="text-sm min-[2000px]:text-2xl text-gray-700 font-medium">
+                <span className="text-sm text-gray-700 font-medium">
                   Siga no Instagram
                 </span>
-                <span className="text-lg min-[2000px]:text-3xl font-bold text-onca-preto group-hover:text-onca-laranja-escuro transition-colors">
+                <span className="text-lg font-bold text-onca-preto group-hover:text-onca-laranja-escuro transition-colors">
                   @oncasdoiguacu
                 </span>
               </div>
@@ -84,11 +84,11 @@ export default function ComunicacaoAtuacao() {
               href="https://www.facebook.com/oncasdoiguacu"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-6 min-[2000px]:gap-12 p-5 min-[2000px]:p-10 rounded-3xl min-[2000px]:rounded-[3rem] lg:bg-white bg-onca-laranja shadow-sm border border-gray-100 hover:border-onca-laranja hover:shadow-md transition-all duration-300 group"
+              className="flex items-center gap-6 p-5 rounded-3xl lg:bg-white bg-onca-laranja shadow-sm border border-gray-100 hover:border-onca-laranja hover:shadow-md transition-all duration-300 group"
             >
-              <div className="w-14 h-14 min-[2000px]:w-24 min-[2000px]:h-24 bg-gray-50 rounded-2xl min-[2000px]:rounded-3xl flex items-center justify-center shrink-0 group-hover:bg-[#1877F2] group-hover:text-white transition-colors duration-300 lg:text-onca-preto text-[#1877F2]">
+              <div className="w-14 h-14 bg-gray-50 rounded-2xl flex items-center justify-center shrink-0 group-hover:bg-[#1877F2] group-hover:text-white transition-colors duration-300 lg:text-onca-preto text-[#1877F2]">
                 <svg
-                  className="w-7 h-7 min-[2000px]:w-12 min-[2000px]:h-12"
+                  className="w-7 h-7"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                 >
@@ -100,10 +100,10 @@ export default function ComunicacaoAtuacao() {
                 </svg>
               </div>
               <div className="flex flex-col">
-                <span className="text-sm min-[2000px]:text-2xl text-gray-700 font-medium">
+                <span className="text-sm text-gray-700 font-medium">
                   Acompanhe no Facebook
                 </span>
-                <span className="text-lg min-[2000px]:text-3xl font-bold text-onca-preto group-hover:text-onca-laranja-escuro transition-colors">
+                <span className="text-lg font-bold text-onca-preto group-hover:text-onca-laranja-escuro transition-colors">
                   /oncasdoiguacu
                 </span>
               </div>
@@ -113,11 +113,11 @@ export default function ComunicacaoAtuacao() {
               href="https://www.youtube.com/@oncasdoiguacu"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-6 min-[2000px]:gap-12 p-5 min-[2000px]:p-10 rounded-3xl min-[2000px]:rounded-[3rem] lg:bg-white bg-onca-laranja shadow-sm border border-gray-100 hover:border-onca-laranja hover:shadow-md transition-all duration-300 group"
+              className="flex items-center gap-6 p-5 rounded-3xl lg:bg-white bg-onca-laranja shadow-sm border border-gray-100 hover:border-onca-laranja hover:shadow-md transition-all duration-300 group"
             >
-              <div className="w-14 h-14 min-[2000px]:w-24 min-[2000px]:h-24 bg-gray-50 rounded-2xl min-[2000px]:rounded-3xl flex items-center justify-center shrink-0 group-hover:bg-[#FF0000] group-hover:text-white transition-colors duration-300 lg:text-onca-preto text-[#FF0000]">
+              <div className="w-14 h-14 bg-gray-50 rounded-2xl flex items-center justify-center shrink-0 group-hover:bg-[#FF0000] group-hover:text-white transition-colors duration-300 lg:text-onca-preto text-[#FF0000]">
                 <svg
-                  className="w-8 h-8 min-[2000px]:w-14 min-[2000px]:h-14"
+                  className="w-8 h-8"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                 >
@@ -129,10 +129,10 @@ export default function ComunicacaoAtuacao() {
                 </svg>
               </div>
               <div className="flex flex-col">
-                <span className="text-sm min-[2000px]:text-2xl text-gray-700 font-medium">
+                <span className="text-sm text-gray-700 font-medium">
                   Inscreva-se no YouTube
                 </span>
-                <span className="text-lg min-[2000px]:text-3xl font-bold text-onca-preto group-hover:text-onca-laranja-escuro transition-colors">
+                <span className="text-lg font-bold text-onca-preto group-hover:text-onca-laranja-escuro transition-colors">
                   @oncasdoiguacu
                 </span>
               </div>
@@ -142,11 +142,11 @@ export default function ComunicacaoAtuacao() {
               href="https://www.linkedin.com/company/projetooncasdoiguacu/"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-6 min-[2000px]:gap-12 p-5 min-[2000px]:p-10 rounded-3xl min-[2000px]:rounded-[3rem] lg:bg-white bg-onca-laranja shadow-sm border border-gray-100 hover:border-onca-laranja hover:shadow-md transition-all duration-300 group"
+              className="flex items-center gap-6 p-5 rounded-3xl lg:bg-white bg-onca-laranja shadow-sm border border-gray-100 hover:border-onca-laranja hover:shadow-md transition-all duration-300 group"
             >
-              <div className="w-14 h-14 min-[2000px]:w-24 min-[2000px]:h-24 bg-gray-50 rounded-2xl min-[2000px]:rounded-3xl flex items-center justify-center shrink-0 group-hover:bg-[#0A66C2] group-hover:text-white transition-colors duration-300 lg:text-onca-preto text-[#0A66C2]">
+              <div className="w-14 h-14 bg-gray-50 rounded-2xl flex items-center justify-center shrink-0 group-hover:bg-[#0A66C2] group-hover:text-white transition-colors duration-300 lg:text-onca-preto text-[#0A66C2]">
                 <svg
-                  className="w-6 h-6 min-[2000px]:w-10 min-[2000px]:h-10"
+                  className="w-6 h-6"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                 >
@@ -158,10 +158,10 @@ export default function ComunicacaoAtuacao() {
                 </svg>
               </div>
               <div className="flex flex-col">
-                <span className="text-sm min-[2000px]:text-2xl text-gray-700 font-medium">
+                <span className="text-sm text-gray-700 font-medium">
                   Conecte-se no LinkedIn
                 </span>
-                <span className="text-lg min-[2000px]:text-3xl font-bold text-onca-preto group-hover:text-onca-laranja-escuro transition-colors">
+                <span className="text-lg font-bold text-onca-preto group-hover:text-onca-laranja-escuro transition-colors">
                   /projetooncasdoiguacu
                 </span>
               </div>

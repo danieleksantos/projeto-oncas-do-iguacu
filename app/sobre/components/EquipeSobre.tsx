@@ -85,24 +85,24 @@ const membros = [
 
 export default function EquipeSobre() {
   return (
-    <div className="space-y-24 lg:space-y-32 min-[2000px]:space-y-64">
+    <div className="space-y-24 lg:space-y-32">
       {membros.map((membro, index) => {
         const isEven = index % 2 !== 0;
 
         return (
           <div
             key={membro.nome}
-            className={`flex flex-col md:flex-row items-center gap-12 lg:gap-20 min-[2000px]:gap-40 
+            className={`flex flex-col md:flex-row items-center gap-12 lg:gap-20 
               ${isEven ? 'md:flex-row-reverse' : ''}`}
           >
-            <div className="relative h-64 w-64 lg:h-80 lg:w-80 min-[2000px]:h-150 min-[2000px]:w-150 shrink-0">
-              <div className="absolute inset-0 rounded-full border-[6px] min-[2000px]:border-12px border-onca-laranja/10 scale-110" />
-              <div className="relative h-full w-full overflow-hidden rounded-full bg-gray-50 shadow-xl border-4 min-[2000px]:border-8 border-white">
+            <div className="relative h-64 w-64 lg:h-80 lg:w-80 shrink-0">
+              <div className="absolute inset-0 rounded-full border-[6px] border-onca-laranja/10 scale-110" />
+              <div className="relative h-full w-full overflow-hidden rounded-full bg-gray-50 shadow-xl border-4 border-white">
                 <Image
                   src={membro.foto}
                   alt={membro.nome}
                   fill
-                  className="object-contain p-8 min-[2000px]:p-16 grayscale hover:grayscale-0 transition-all duration-700 ease-in-out"
+                  className="object-contain p-8 grayscale hover:grayscale-0 transition-all duration-700 ease-in-out"
                 />
               </div>
             </div>
@@ -111,18 +111,18 @@ export default function EquipeSobre() {
               className={`flex flex-col text-center 
               ${isEven ? 'md:text-right md:items-end' : 'md:text-left md:items-start'}`}
             >
-              <div className="mb-6 min-[2000px]:mb-12">
-                <h3 className="text-3xl lg:text-4xl min-[2000px]:text-7xl font-bold text-onca-preto uppercase tracking-tighter">
+              <div className="mb-6">
+                <h3 className="text-3xl lg:text-4xl font-bold text-onca-preto uppercase tracking-tighter">
                   {membro.nome}
                 </h3>
-                <p className="text-onca-laranja font-bold uppercase tracking-[0.2em] text-xs lg:text-sm min-[2000px]:text-3xl mt-2 min-[2000px]:mt-6">
+                <p className="text-onca-laranja font-bold uppercase tracking-[0.2em] text-xs lg:text-sm mt-2">
                   {membro.cargo}
                 </p>
               </div>
 
-              <div className="h-1.5 min-[2000px]:h-3 w-16 min-[2000px]:w-32 bg-onca-laranja mb-8 min-[2000px]:mb-16" />
+              <div className="h-1.5 w-16 bg-onca-laranja mb-8" />
 
-              <p className="text-gray-600 leading-relaxed min-[2000px]:leading-normal text-base lg:text-lg min-[2000px]:text-4xl max-w-2xl min-[2000px]:max-w-6xl">
+              <p className="text-gray-600 leading-relaxed text-base lg:text-lg max-w-2xl">
                 {membro.bio}
               </p>
             </div>
