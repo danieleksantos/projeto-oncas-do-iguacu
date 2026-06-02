@@ -33,7 +33,11 @@ const navigation = [
     href: '/fauna',
     children: [
       { name: 'Onça-Pintada', href: '/fauna/#onca-pintada' },
-      { name: 'Outros felinos', href: '/fauna/#gato-mourisco' },
+      { name: 'Onça-Parda', href: '/fauna/#onca-parda' },
+      { name: 'Jaguatirica', href: '/fauna/#jaguatirica' },
+      { name: 'Gato-Mourisco', href: '/fauna/#gato-mourisco' },
+      { name: 'Gato-Maracajá', href: '/fauna/#gato-maracaja' },
+      { name: 'Gato-do-Mato', href: '/fauna/#gato-do-mato-pequeno' },
     ],
   },
   {

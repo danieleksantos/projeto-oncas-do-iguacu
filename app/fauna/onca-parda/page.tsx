@@ -35,23 +35,29 @@ export default function OncaPardaDetalhesPage() {
           </p>
         </div>
 
-        <div
-          className="relative w-full aspect-video md:aspect-21/9 rounded-3xl overflow-hidden shadow-2xl cursor-zoom-in group"
-          onClick={() =>
-            setModalData({
-              src: '/fauna/onca-parda-galeria-2.webp',
-              caption: 'Onça-parda (Puma concolor) em seu habitat natural',
-            })
-          }
-        >
-          <Image
-            src="/fauna/onca-parda-galeria-2.webp"
-            alt="Onça-parda em seu habitat natural"
-            fill
-            sizes="100vw"
-            className="object-cover transition-transform duration-500 group-hover:scale-105"
-            priority
-          />
+        <div className="space-y-2">
+          <div
+            className="relative w-full aspect-video md:aspect-21/9 rounded-3xl overflow-hidden shadow-2xl cursor-zoom-in group"
+            onClick={() =>
+              setModalData({
+                src: '/fauna/onca-parda-manual.png',
+                caption:
+                  'Onça-parda (Puma concolor) em seu habitat natural - Autor: Adriano Gambarini.',
+              })
+            }
+          >
+            <Image
+              src="/fauna/onca-parda-manual.png"
+              alt="Onça-parda em seu habitat natural"
+              fill
+              sizes="100vw"
+              className="object-cover transition-transform duration-500 group-hover:scale-105"
+              priority
+            />
+          </div>
+          <p className="text-xs text-gray-500 text-center italic lg:pt-3">
+            Autor: Adriano Gambarini.
+          </p>
         </div>
 
         <p className="text-xl md:text-2xl font-medium text-gray-700 leading-relaxed max-w-4xl pt-4">
@@ -160,7 +166,7 @@ export default function OncaPardaDetalhesPage() {
               </h3>
               <p>
                 Assim como a onça-pintada, a onça-parda apresenta uma ampla
-                variedade de presas, que vai desde aves a mamíferos de maior
+                variidade de presas, que vai desde aves a mamíferos de maior
                 porte como catetos e veados. A onça-parda é considerada um{' '}
                 <strong className="text-onca-preto">
                   predador oportunista
