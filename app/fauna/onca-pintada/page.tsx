@@ -216,7 +216,7 @@ export default function OncaPintadaDetalhesPage() {
             <div className="bg-gray-50 border border-gray-200 rounded-2xl p-4 flex flex-col gap-3 w-full max-w-sm shadow-sm">
               <span className="flex items-center gap-2 text-sm font-bold uppercase tracking-widest text-onca-preto">
                 <Volume2 className="text-onca-laranja w-5 h-5" />
-                Ouça o esturro da onça-pintada Cacirra
+                Ouça o esturro da onça-pintada Cacira
               </span>
               <audio
                 controls

@@ -19,22 +19,27 @@ export default function JaguatiricaFauna() {
             {/* 1. COLUNA ESQUERDA (IMAGEM E CURIOSIDADE) */}
             {/* Fisicamente primeiro no grid -> Esquerda no Desktop, Topo no Mobile */}
             <div className="space-y-6 lg:sticky lg:top-32">
-              <div
-                className="relative w-full aspect-4/3 cursor-zoom-in overflow-hidden rounded-3xl shadow-xl border border-gray-200 group"
-                onClick={() =>
-                  setModalData({
-                    src: '/fauna/jaguatirica.webp',
-                    caption: 'Jaguatirica (Leopardus pardalis)',
-                  })
-                }
-              >
-                <Image
-                  src="/fauna/jaguatirica.webp"
-                  alt="Jaguatirica"
-                  fill
-                  sizes="(max-width: 1024px) 100vw, 50vw"
-                  className="object-cover transition-transform duration-500 group-hover:scale-105"
-                />
+              <div className="space-y-2">
+                <div
+                  className="relative w-full aspect-4/3 cursor-zoom-in overflow-hidden rounded-3xl shadow-xl border border-gray-200 group"
+                  onClick={() =>
+                    setModalData({
+                      src: '/fauna/jaguatirica.webp',
+                      caption: 'Jaguatirica (Leopardus pardalis)',
+                    })
+                  }
+                >
+                  <Image
+                    src="/fauna/jaguatirica.webp"
+                    alt="Jaguatirica"
+                    fill
+                    sizes="(max-width: 1024px) 100vw, 50vw"
+                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                </div>
+                <p className="text-xs text-gray-500 text-center italic px-2">
+                  Autor: Joel Sartore
+                </p>
               </div>
 
               {/* Quadro de Curiosidade */}

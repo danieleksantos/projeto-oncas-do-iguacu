@@ -144,6 +144,9 @@ export default function OncaPardaDetalhesPage() {
                 className="object-cover transition-transform duration-500 group-hover:scale-105"
               />
             </div>
+            <p className="text-xs text-gray-500 text-center italic">
+              Autor: Rogério Cunha de Paula
+            </p>
           </div>
         </div>
       </section>

@@ -4,7 +4,7 @@ export default function HeroFauna() {
   return (
     <section className="relative bg-onca-preto w-full flex justify-center overflow-hidden border-b border-white/10">
       <div className="w-full max-w-7xl flex flex-col md:flex-row items-stretch relative">
-        <div className="relative z-20 w-full md:w-[35%] flex flex-col justify-center shrink-0 py-8 md:py-8 lg:py-12">
+        <div className="relative z-20 w-full md:w-[40%] flex flex-col justify-center shrink-0 py-8 md:py-8 lg:py-12">
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[80%] bg-onca-laranja/10 blur-[100px] rounded-full z-0 mix-blend-screen pointer-events-none"></div>
 
           <div className="relative z-10 mx-auto w-full px-0 md:px-6 lg:pl-12 lg:pr-8">
@@ -40,7 +40,7 @@ export default function HeroFauna() {
           </div>
         </div>
 
-        <div className="relative z-10 hidden md:flex md:w-[65%] shrink-0 items-center justify-end">
+        <div className="relative z-10 hidden md:flex md:w-[60%] shrink-0 items-center justify-end">
           <div className="absolute inset-y-0 left-0 w-32 bg-linear-to-r from-onca-preto via-onca-preto/90 to-transparent z-20 pointer-events-none"></div>
           <div className="absolute inset-y-0 right-0 w-16 bg-linear-to-l from-onca-preto to-transparent z-20 pointer-events-none"></div>
 

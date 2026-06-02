@@ -67,22 +67,27 @@ export default function GatoMouriscoFauna() {
             </div>
 
             <div className="space-y-6 lg:sticky lg:top-32 order-1 lg:order-2">
-              <div
-                className="relative w-full aspect-4/3 cursor-zoom-in overflow-hidden rounded-3xl shadow-xl border border-gray-200 group"
-                onClick={() =>
-                  setModalData({
-                    src: '/fauna/gato-mourisco.webp',
-                    caption: 'Gato-Mourisco (Herpailurus yagouaroundi)',
-                  })
-                }
-              >
-                <Image
-                  src="/fauna/gato-mourisco.webp"
-                  alt="Gato-Mourisco"
-                  fill
-                  sizes="(max-width: 1024px) 100vw, 50vw"
-                  className="object-cover transition-transform duration-500 group-hover:scale-105"
-                />
+              <div className="space-y-2">
+                <div
+                  className="relative w-full aspect-4/3 cursor-zoom-in overflow-hidden rounded-3xl shadow-xl border border-gray-200 group"
+                  onClick={() =>
+                    setModalData({
+                      src: '/fauna/gato-mourisco.webp',
+                      caption: 'Gato-Mourisco (Herpailurus yagouaroundi)',
+                    })
+                  }
+                >
+                  <Image
+                    src="/fauna/gato-mourisco.webp"
+                    alt="Gato-Mourisco"
+                    fill
+                    sizes="(max-width: 1024px) 100vw, 50vw"
+                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                </div>
+                <p className="text-xs text-gray-500 text-center italic px-2">
+                  Autor: Adriano Gambarini
+                </p>
               </div>
 
               <div className="bg-white border border-gray-200 p-6 rounded-3xl">

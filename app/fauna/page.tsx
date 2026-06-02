@@ -15,7 +15,7 @@ export default function FaunaPage() {
     { name: 'Jaguatirica', href: '#jaguatirica' },
     { name: 'Gato-Mourisco', href: '#gato-mourisco' },
     { name: 'Gato-Maracajá', href: '#gato-maracaja' },
-    { name: 'Gato-do-Mato-Pequeno', href: '#gato-do-mato-pequeno' },
+    { name: 'Gato-do-Mato', href: '#gato-do-mato-pequeno' },
   ];
 
   return (
@@ -31,15 +31,16 @@ export default function FaunaPage() {
             </h2>
           </div>
 
-          <div className="flex flex-col md:flex-row items-center justify-between gap-12 lg:gap-20 bg-gray-50/50 p-8 lg:p-10 rounded-[3rem] border border-gray-100">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-12 lg:gap-20 bg-gray-200 p-8 lg:p-10 rounded-[3rem] border border-gray-300">
             <div className="flex-1 text-center md:text-left space-y-6">
               <p className="text-gray-700 text-xl lg:text-2xl leading-relaxed">
                 No Brasil, temos{' '}
                 <strong className="text-onca-laranja-escuro">
                   nove espécies de felinos
                 </strong>
-                , todas ameaçadas de extinção. Seis delas ocorrem na rica
-                biodiversidade do Parque Nacional do Iguaçu.
+                , todas ameaçadas de extinção.{' '}
+                <span className="font-bold text-onca-preto"> Seis delas </span>
+                ocorrem na rica biodiversidade do Parque Nacional do Iguaçu.
               </p>
               <p className="text-gray-600 text-lg lg:text-xl leading-relaxed">
                 As informações biológicas desta seção são baseadas em dados do{' '}
@@ -49,9 +50,16 @@ export default function FaunaPage() {
                   rel="noopener noreferrer"
                   className="font-bold text-onca-preto hover:text-onca-laranja underline decoration-onca-laranja/30 hover:decoration-onca-laranja decoration-2 underline-offset-4 transition-colors"
                 >
-                  Instituto Pró-Carnívoros
+                  *Instituto Pró-Carnívoros
                 </Link>
                 .
+              </p>
+              <p className="text-onca-preto text-sm lg:text-sm italic opacity-80">
+                *O Projeto Onças do Iguaçu é desenvolvido pelo Parque Nacional
+                do Iguaçu/ICMBio, em parceria com o Instituto Pró-Carnívoros e o
+                CENAP/ICMBio, e financiado majoritariamente com recursos de
+                Encargos Acessórios previstos no Contrato de Concessão nº
+                01/2022 do Parque Nacional do Iguaçu.
               </p>
             </div>
 
@@ -74,18 +82,18 @@ export default function FaunaPage() {
             </div>
           </div>
 
-          <div className="mt-10 lg:mt-12 w-full mx-auto flex flex-col items-center space-y-6">
-            <h3 className="text-sm md:text-base font-bold uppercase tracking-widest text-gray-400 text-center">
-              Saiba mais detalhes dos felinos do Iguaçu:
+          <div className="mt-16 w-full mx-auto flex flex-col items-center space-y-8">
+            <h3 className="text-sm md:text-base font-bold uppercase tracking-widest text-onca-laranja-escuro text-center">
+              Selecione um felino para saber mais detalhes:
             </h3>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-16 lg:gap-32 w-full max-w-2xl mx-auto">
-              <div className="flex flex-col items-center md:items-start space-y-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-x-12 lg:gap-x-24 w-full max-w-3xl mx-auto">
+              <div className="flex flex-col items-center md:items-end space-y-4">
                 {felinosNav.slice(0, 3).map((felino) => (
                   <Link
                     key={felino.href}
                     href={felino.href}
-                    className="text-onca-laranja hover:text-onca-laranja-escuro font-bold uppercase tracking-widest text-sm md:text-base underline decoration-onca-laranja/40 hover:decoration-onca-laranja-escuro decoration-2 underline-offset-8 transition-all duration-300 outline-none focus-visible:ring-2 focus-visible:ring-onca-laranja rounded-sm"
+                    className="w-full md:w-64 text-center px-6 py-3.5 bg-gray-200 hover:bg-onca-laranja/15 border border-gray-300 hover:border-onca-laranja/30 text-gray-700 hover:text-onca-laranja-escuro font-bold uppercase tracking-widest text-sm transition-all duration-300 rounded-full shadow-sm hover:shadow outline-none focus-visible:ring-2 focus-visible:ring-onca-laranja"
                   >
                     {felino.name}
                   </Link>
@@ -97,7 +105,7 @@ export default function FaunaPage() {
                   <Link
                     key={felino.href}
                     href={felino.href}
-                    className="text-onca-laranja hover:text-onca-laranja-escuro font-bold uppercase tracking-widest text-sm md:text-base underline decoration-onca-laranja/40 hover:decoration-onca-laranja-escuro decoration-2 underline-offset-8 transition-all duration-300 outline-none focus-visible:ring-2 focus-visible:ring-onca-laranja rounded-sm"
+                    className="w-full md:w-64 text-center px-6 py-3.5 bg-gray-200 hover:bg-onca-laranja/15 border border-gray-300 hover:border-onca-laranja/30 text-gray-700 hover:text-onca-laranja-escuro font-bold uppercase tracking-widest text-sm transition-all duration-300 rounded-full shadow-sm hover:shadow outline-none focus-visible:ring-2 focus-visible:ring-onca-laranja"
                   >
                     {felino.name}
                   </Link>
