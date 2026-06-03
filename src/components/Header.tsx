@@ -47,7 +47,7 @@ const navigation = [
       { name: 'Boletim A Voz da Onça', href: '/conteudos/boletim' },
       { name: 'Notícias', href: '/conteudos/noticias' },
       { name: 'Materiais para download', href: '/conteudos/downloads' },
-      { name: 'Artigos científicos', href: '/conteudos/artigos' },
+      { name: 'Artigos O Eco', href: '/conteudos/artigos' },
     ],
   },
   {
