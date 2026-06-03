@@ -16,19 +16,21 @@ const materiais = [
   {
     title: 'Guia Atendimento a Predação',
     description:
-      'O guia é dividido em etapas claras e objetivas, que vão desde o atendimento inicial até o monitoramento pós-intervenção, garantindo a segurança tanto dos animais domésticos quanto dos grandes felinos.',
+      'Orientações para garantir a segurança tanto dos animais domésticos quanto dos grandes felinos.',
     image: '/conteudos/downloads/download2.png',
     link: 'https://drive.google.com/file/d/1rv_CAnR_syo-RyQk3yrjT57FPF1jk_tU/view',
   },
   {
     title: 'Folder sobre Segurança',
-    description: 'Orientações sobre encontro com grandes felinos.',
+    description:
+      'Orientações sobre o que fazer se você encontrar grandes felinos.',
     image: '/conteudos/downloads/download3.png',
     link: 'https://drive.google.com/file/d/1Eeu9TFE-DmGEkzMeTA6kRJ4wlEKs83Ug/view',
   },
   {
     title: 'Guia de Coexistência',
-    description: 'Onças e o Homem podem viver em harmonia?',
+    description:
+      'Onças e o Homem podem viver em harmonia? Saiba mais sobre os felinos e como conviver e cuidar deles.',
     image: '/conteudos/downloads/download4.png',
     link: 'https://drive.google.com/file/d/1IKm4Wlm9Lf-XIhpcPpMpg8UXPP49IVxe/view',
   },
@@ -49,7 +51,7 @@ const materiais = [
   {
     title: 'Bichos do Parque Nacional do Iguaçu',
     description:
-      '“Nós devemos proteger os desprotegidos, cuidar daqueles que precisam de cuidados e falar por aqueles que não têm voz. Devemos dar a todos os animais a chance de viver a vida.” – Anthony Douglas Williams',
+      'Este material irá apresentar a você um pouco mais sobre os animais que vivem no Parque Nacional do Iguaçu',
     image: '/conteudos/downloads/download7.png',
     link: 'https://drive.google.com/file/d/1sAqDbufBm3eNuZhbzx_OgIC-8epTfMDF/view',
   },
@@ -64,12 +66,10 @@ const materiais = [
 
 export default function DownloadsPage() {
   return (
-    <div className="bg-gray-50 text-onca-preto min-h-screen pb-24 selection:bg-onca-laranja selection:text-onca-preto">
-      {/* HERO SECTION MODELO PADRÃO */}
+    <div className="bg-gray-50 text-onca-preto min-h-screen pb-10 selection:bg-onca-laranja selection:text-onca-preto">
       <section className="relative bg-onca-preto w-full flex justify-center overflow-hidden">
         <div className="w-full max-w-7xl flex flex-col md:flex-row items-stretch relative">
-          {/* LADO ESQUERDO: Imagem Desktop */}
-          <div className="relative z-10 hidden md:block md:w-[60%] min-h-[500px] shrink-0">
+          <div className="relative z-10 hidden md:block md:w-[60%] min-h-125 shrink-0">
             <div className="absolute inset-y-0 left-0 w-24 bg-linear-to-r from-onca-preto to-transparent z-20 pointer-events-none"></div>
             <div className="absolute inset-y-0 right-0 w-48 bg-linear-to-l from-onca-preto via-onca-preto/90 to-transparent z-20 pointer-events-none"></div>
 
@@ -83,7 +83,6 @@ export default function DownloadsPage() {
             />
           </div>
 
-          {/* LADO DIREITO: Texto e Imagem Mobile */}
           <div className="relative z-20 w-full md:w-[40%] flex flex-col justify-center shrink-0 py-12 md:py-32">
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[80%] bg-onca-laranja/10 blur-[100px] rounded-full z-0 mix-blend-screen pointer-events-none"></div>
 
@@ -98,7 +97,6 @@ export default function DownloadsPage() {
                 </h1>
               </div>
 
-              {/* Imagem Mobile (escondida no desktop) */}
               <div className="relative w-full h-[45vh] md:hidden my-8">
                 <Image
                   src="/conteudos/downloads/hero-downloads.png"
@@ -122,12 +120,12 @@ export default function DownloadsPage() {
         </div>
       </section>
 
-      {/* GRID DE MATERIAIS */}
       <div className="w-full bg-white border-b border-gray-200 relative z-30">
         <div className="mx-auto max-w-7xl px-6 pt-10">
           <VoltarLinkConteudo />
         </div>
       </div>
+
       <section className="mx-auto w-full max-w-7xl px-6 lg:px-8 pt-16">
         <div className="grid lg:grid-cols-2 gap-8">
           {materiais.map((item, index) => (
@@ -138,8 +136,7 @@ export default function DownloadsPage() {
               rel="noopener noreferrer"
               className="group flex flex-col sm:flex-row bg-white rounded-3xl shadow-sm border border-gray-300 overflow-hidden hover:shadow-xl transition-all duration-300 hover:border-onca-laranja/30 outline-none focus-visible:ring-4 focus-visible:ring-onca-laranja/50"
             >
-              {/* Contêiner da Imagem com object-cover e object-top */}
-              <div className="relative w-full sm:w-2/5 aspect-[4/3] sm:aspect-auto shrink-0 bg-gray-200 overflow-hidden">
+              <div className="relative w-full sm:w-2/5 aspect-4/3 sm:aspect-auto shrink-0 bg-gray-200 overflow-hidden">
                 <Image
                   src={item.image}
                   alt={item.title}
@@ -149,7 +146,6 @@ export default function DownloadsPage() {
                 />
               </div>
 
-              {/* Contêiner de Texto */}
               <div className="p-6 md:p-8 flex flex-col justify-between w-full sm:w-3/5">
                 <div className="mb-6">
                   <h3 className="text-2xl font-bold text-onca-preto mb-3 line-clamp-2 group-hover:text-onca-laranja-escuro transition-colors duration-300">
@@ -170,7 +166,8 @@ export default function DownloadsPage() {
           ))}
         </div>
       </section>
-      <div className="w-full bg-gray-50 border-t border-gray-200 py-12">
+
+      <div className="w-full bg-gray-50 border-t border-gray-200 py-8">
         <div className="mx-auto max-w-7xl px-6 flex justify-center md:justify-start">
           <VoltarLinkConteudo />
         </div>
