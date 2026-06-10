@@ -89,10 +89,10 @@ const footerNavigation = {
     { name: 'Comunicação', href: '/conteudos/boletim' },
   ],
   ajude: [
-    { name: 'Doação', href: '/apoie/doacao' },
-    { name: 'Estágio', href: '/apoie/estagio' },
-    { name: 'Voluntariado', href: '/apoie/voluntariado' },
-    { name: 'Parcerias', href: '/apoie/parcerias' },
+    { name: 'Doação', href: '/apoie/#doacao' },
+    { name: 'Estágio', href: '/apoie/#estagioEvoluntariado' },
+    { name: 'Voluntariado', href: '/apoie/#estagioEvoluntariado' },
+    { name: 'Parcerias', href: '/apoie/#parcerias' },
   ],
   social: [
     {

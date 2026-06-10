@@ -125,13 +125,13 @@ export default function DoacaoApoie() {
               className="absolute bottom-0 left-0 w-3/5 h-3/5 rounded-3xl overflow-hidden shadow-2xl border-4 border-onca-laranja z-20 hover:z-30 transition-all duration-500 hover:scale-105 cursor-zoom-in"
               onClick={() =>
                 setModalData({
-                  src: '/apoie/onca1.png',
+                  src: '/apoie/onca2.png',
                   caption: 'Onça-pintada na floresta',
                 })
               }
             >
               <Image
-                src="/apoie/onca1.png"
+                src="/apoie/onca2.png"
                 alt="Onça-pintada na floresta"
                 fill
                 className="object-cover bg-gray-300"

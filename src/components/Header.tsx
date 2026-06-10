@@ -54,10 +54,10 @@ const navigation = [
     name: 'Apoie',
     href: '/apoie',
     children: [
-      { name: 'Doação', href: '/apoie/doacao' },
-      { name: 'Estágio', href: '/apoie/estagio' },
-      { name: 'Voluntariado', href: '/apoie/voluntariado' },
-      { name: 'Parcerias', href: '/apoie/parcerias' },
+      { name: 'Doação', href: '/apoie/#doacao' },
+      { name: 'Estágio', href: '/apoie/#estagioEvoluntariado' },
+      { name: 'Voluntariado', href: '/apoie/#estagioEvoluntariado' },
+      { name: 'Parcerias', href: '/apoie/#parcerias' },
     ],
   },
   { name: 'Loja', href: '/loja' },
@@ -68,7 +68,6 @@ export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [forceHide, setForceHide] = useState<string | null>(null);
 
-  // Trava a rolagem da página quando o menu mobile está aberto
   useEffect(() => {
     if (mobileMenuOpen) {
       document.body.style.overflow = 'hidden';
@@ -76,7 +75,6 @@ export default function Header() {
       document.body.style.overflow = '';
     }
 
-    // Cleanup para garantir que o scroll volte se o componente desmontar
     return () => {
       document.body.style.overflow = '';
     };
@@ -199,7 +197,7 @@ export default function Header() {
 
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <Link
-            href="/apoie/doacao"
+            href="/apoie/#doacao"
             className="rounded-full bg-onca-preto px-6 py-2.5 text-sm font-bold text-white shadow-sm outline-none transition-transform duration-200 hover:scale-105 active:scale-95 focus-visible:ring-2 focus-visible:ring-white whitespace-nowrap"
           >
             DOE AGORA
@@ -239,7 +237,7 @@ export default function Header() {
               </div>
             ))}
             <Link
-              href="/apoie/doacao"
+              href="/apoie/#doacao"
               className="mt-4 block rounded-full bg-onca-preto py-4 text-center text-base font-bold text-white uppercase transition-transform active:scale-95"
               onClick={() => setMobileMenuOpen(false)}
             >
