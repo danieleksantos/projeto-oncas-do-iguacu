@@ -1,5 +1,3 @@
-'use client';
-
 import HeroConteudos from './components/HeroConteudos';
 import DestaquesBoletins from './components/DestaquesBoletins';
 import DestaquesNoticias from './components/DestaquesNoticias';
