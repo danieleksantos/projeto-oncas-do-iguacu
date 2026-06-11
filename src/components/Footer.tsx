@@ -140,6 +140,8 @@ export default function Footer() {
                 <Link
                   key={item.name}
                   href={item.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-onca-laranja hover:text-white transition-colors"
                   aria-label={item.name}
                 >
@@ -149,9 +151,7 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Container das 4 colunas de links - Mantém alinhamento à esquerda e espaçamento desktop */}
           <div className="mt-16 grid grid-cols-2 gap-8 lg:mt-0 lg:grid-cols-4 lg:gap-x-16">
-            {/* Coluna: Acesso Rápido */}
             <div className="text-left">
               <h3 className="text-sm font-bold leading-6 text-onca-laranja uppercase tracking-wider">
                 Acesso rápido
@@ -170,7 +170,6 @@ export default function Footer() {
               </ul>
             </div>
 
-            {/* Coluna: O Projeto */}
             <div className="text-left">
               <h3 className="text-sm font-bold leading-6 text-onca-laranja uppercase tracking-wider">
                 O Projeto
@@ -189,7 +188,6 @@ export default function Footer() {
               </ul>
             </div>
 
-            {/* Coluna: Atuação */}
             <div className="text-left">
               <h3 className="text-sm font-bold leading-6 text-onca-laranja uppercase tracking-wider">
                 Atuação
@@ -208,7 +206,6 @@ export default function Footer() {
               </ul>
             </div>
 
-            {/* Coluna: Como Ajudar */}
             <div className="text-left">
               <h3 className="text-sm font-bold leading-6 text-onca-laranja uppercase tracking-wider">
                 Como Ajudar
@@ -229,7 +226,6 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Barra Inferior: Copyright Centralizado no Mobile */}
         <div className="mt-16 border-t border-white/10 pt-8 sm:mt-20 lg:mt-24 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-xs leading-5 text-gray-400 text-center md:text-left">
             &copy; {new Date().getFullYear()} Projeto Onças do Iguaçu. Todos os

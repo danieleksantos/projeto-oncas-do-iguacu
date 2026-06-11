@@ -48,8 +48,8 @@ export default function HeroApoie() {
 
             <div className="max-w-xl text-center md:text-left mx-auto md:mx-0 px-6 md:px-0">
               <p className="text-gray-300 text-lg drop-shadow-md font-medium">
-                Existem várias formas de apoiar o Projeto Onças do Iguaçu. Escolha como você quer fazer parte dessa
-                história.
+                Existem várias formas de apoiar o Projeto Onças do Iguaçu.
+                Escolha como você quer fazer parte dessa história.
               </p>
             </div>
           </div>
