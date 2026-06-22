@@ -65,7 +65,28 @@ export const noticiaType = defineType({
       name: 'conteudo',
       title: 'Conteúdo da Notícia',
       type: 'array',
-      of: [{ type: 'block' }, { type: 'image' }],
+      of: [
+        { type: 'block' },
+        {
+          type: 'image',
+          fields: [
+            {
+              name: 'alt',
+              type: 'string',
+              title: 'Texto Alternativo (Acessibilidade)',
+              description:
+                'Descreva a imagem para pessoas com deficiência visual.',
+            },
+            {
+              name: 'legenda',
+              type: 'string',
+              title: 'Legenda e Créditos',
+              description:
+                'Ex: Onça Cacau no Parque Nacional. Foto: João Silva',
+            },
+          ],
+        },
+      ],
     }),
   ],
 });

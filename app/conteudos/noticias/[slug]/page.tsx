@@ -3,6 +3,45 @@ import { notFound } from 'next/navigation';
 import { client } from '@/sanity/lib/client';
 import { PortableText } from '@portabletext/react';
 import VoltarLinkNoticias from '../components/VoltarLinkNoticias';
+import { createImageUrlBuilder } from '@sanity/image-url';
+
+// 1. Criamos o construtor de URLs de imagem do Sanity (Atualizado)
+const builder = createImageUrlBuilder(client);
+
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+function urlFor(source: any) {
+  return builder.image(source);
+}
+
+// 2. Criamos as regras de como renderizar blocos customizados dentro do texto
+const myPortableTextComponents = {
+  types: {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    image: ({ value }: any) => {
+      if (!value?.asset?._ref) {
+        return null;
+      }
+      return (
+        <figure className="my-10 w-full">
+          <div className="relative w-full aspect-video bg-gray-100 rounded-xl overflow-hidden shadow-sm">
+            <Image
+              src={urlFor(value).url()}
+              alt={value.alt || 'Imagem da notícia'}
+              fill
+              className="object-cover"
+              sizes="(max-width: 1024px) 100vw, 1024px"
+            />
+          </div>
+          {value.legenda && (
+            <figcaption className="text-xs text-gray-500 mt-3 text-center sm:text-left">
+              {value.legenda}
+            </figcaption>
+          )}
+        </figure>
+      );
+    },
+  },
+};
 
 async function getNoticia(slug: string) {
   const query = `*[_type == "noticia" && slug.current == $slug][0] {
@@ -93,7 +132,10 @@ export default async function NoticiaInternaPage(props: {
           prose-img:rounded-xl prose-img:shadow-sm mx-auto mb-12 md:mb-20"
         >
           {noticia.conteudo ? (
-            <PortableText value={noticia.conteudo} />
+            <PortableText
+              value={noticia.conteudo}
+              components={myPortableTextComponents}
+            />
           ) : (
             <p>O conteúdo desta notícia está sendo preparado.</p>
           )}
