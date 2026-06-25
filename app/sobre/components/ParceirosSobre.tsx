@@ -1,25 +1,85 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-const partnersLogos = [
-  '/sobre/partners/beauval-natura-logo.webp',
-  '/sobre/partners/belgo-logo.webp',
-  '/sobre/partners/Helisul-aviacao-logo.webp',
-  '/sobre/partners/icc-logo.webp',
-  '/sobre/partners/WWF-logo.webp',
-  '/sobre/partners/zooparc-beauval-logo.webp',
+const topParceiros = [
+  { src: '/sobre/partners/Pro Carnivoros.png', alt: 'Pró Carnívoros' },
+  { src: '/sobre/partners/WWF-logo.webp', alt: 'WWF' },
+  { src: '/sobre/partners/CENAP.png', alt: 'CENAP' },
+  {
+    src: '/sobre/partners/Parque-Nacional-do-Iguacu.png',
+    alt: 'Parque Nacional do Iguaçu',
+  },
+  { src: '/sobre/partners/ICMBio.png', alt: 'ICMBio' },
 ];
 
-const tierLogos = [
-  { src: '/sobre/jaguatirica.jpg', alt: 'Jaguatirica' },
-  { src: '/sobre/onca-parda.jpg', alt: 'Onça-Parda' },
-  { src: '/sobre/onca-preta.png', alt: 'Onça-Preta' },
-  { src: '/sobre/onca-pintada.png', alt: 'Onça-Pintada' },
+const parceirosExecutores = [
+  { src: '/sobre/partners/Proyecto Yaguarete.png', alt: 'Proyecto Yaguareté' },
+  {
+    src: '/sobre/partners/Salomao.png',
+    alt: 'Salomão',
+  },
+  { src: '/sobre/partners/ESALQ.png', alt: 'ESALQ' },
+  { src: '/sobre/partners/LEMAC.png', alt: 'LEMaC' },
+];
+
+const principalPatrocinador = [
+  {
+    src: '/sobre/partners/Parque-Nacional-do-Iguacu.png',
+    alt: 'Parque Nacional do Iguaçu',
+  },
+  { src: '/sobre/partners/ICMBio.png', alt: 'ICMBio' },
+];
+
+const categoriasPatrocinioArray = [
+  {
+    id: 'pintada',
+    title: 'Categoria Onça-Pintada',
+    selo: '/sobre/onca-pintada.png',
+    logos: [
+      '/sobre/partners/urbia-cataratas-logo.webp',
+      '/sobre/partners/Itaipu Binacional.png',
+      '/sobre/partners/WWF-logo.webp',
+      '/sobre/partners/WINGS.svg',
+      '/sobre/partners/WFN.png',
+      '/sobre/partners/Inigo.svg',
+      '/sobre/partners/Hotel das Cataratas, a Belmond Hotel.png',
+    ],
+  },
+  {
+    id: 'parda',
+    title: 'Categoria Onça-Parda',
+    selo: '/sobre/onca-parda.jpg',
+    logos: ['/sobre/partners/LOG Nature.png', '/sobre/partners/Skytakes.jpg'],
+  },
+  {
+    id: 'preta',
+    title: 'Categoria Onça-Preta',
+    selo: '/sobre/onca-preta.png',
+    logos: [
+      '/sobre/partners/Itaipu Parquetec.png',
+      '/sobre/partners/Eco Park.png',
+      '/sobre/partners/gedegato.png',
+    ],
+  },
+  {
+    id: 'jaguatirica',
+    title: 'Categoria Jaguatirica',
+    selo: '/sobre/jaguatirica.jpg',
+    logos: [
+      '/sobre/partners/Helisul Experience.png',
+      '/sobre/partners/Visit Iguassu.png',
+      '/sobre/partners/The Owsley Brown II.png',
+      '/sobre/partners/Instituto Conhecer para Conservar.png',
+      '/sobre/partners/Motiva.png',
+      '/sobre/partners/Ron-Magill.png',
+      '/sobre/partners/FAM.png',
+    ],
+  },
 ];
 
 export default function ParceirosSobre() {
   return (
-    <section className="py-24 bg-white text-onca-preto overflow-hidden w-full flex justify-center">
+    <section className="py-24 bg-gray-200 text-onca-preto overflow-hidden w-full flex justify-center">
       <div className="w-full max-w-7xl px-6 lg:px-8">
         <div className="mb-20 text-center md:text-left">
           <h2 className="text-4xl lg:text-5xl font-bold uppercase tracking-tighter mb-6 border-l-4 border-onca-laranja pl-4 inline-block md:block text-onca-preto leading-none">
@@ -37,82 +97,115 @@ export default function ParceirosSobre() {
           </p>
         </div>
 
-        <div className="mb-32 relative">
-          <h3 className="text-[18px] font-bold text-gray-500 uppercase tracking-[0.2em] mb-12 text-center">
-            Nossa rede de apoio
-          </h3>
-
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-20 bg-onca-laranja/5 -rotate-3 blur-2xl rounded-full pointer-events-none" />
-
-          <div className="flex flex-wrap justify-center items-center gap-6 md:gap-10 py-8 relative z-10">
-            {partnersLogos.map((logo, index) => (
+        <div className="flex flex-col gap-12 relative z-10 w-full">
+          <div className="flex flex-wrap justify-center items-center gap-6 md:gap-8 pb-10">
+            {topParceiros.map((partner, index) => (
               <div
                 key={index}
-                className={`group relative flex justify-center items-center w-32 h-32 md:w-40 md:h-40 bg-white rounded-4xl shadow-[0_4px_20px_rgb(0,0,0,0.04)] border border-gray-100 hover:border-onca-laranja/40 transition-all duration-500 hover:scale-110 hover:shadow-xl hover:shadow-onca-laranja/15
-                  ${index % 2 === 0 ? 'translate-y-4 md:translate-y-6' : '-translate-y-4 md:-translate-y-6'}
-                `}
+                className="relative w-28 h-24 md:w-36 md:h-28 transition-all duration-300 hover:scale-105 hover:shadow-[0_8px_30px_rgb(0,0,0,0.06)] border border-transparent hover:border-gray-200 rounded-2xl bg-white p-2 shadow-xs"
               >
                 <Image
-                  src={logo}
-                  alt={`Logo Parceiro ${index + 1}`}
+                  src={partner.src}
+                  alt={partner.alt}
                   fill
-                  sizes="(max-width: 768px) 128px, 160px"
-                  className="object-contain p-6 opacity-90 group-hover:opacity-100 transition-opacity duration-500"
+                  className={`object-contain p-2 md:p-3 ${partner.src.includes('Helisul') ? 'invert' : ''}`}
                 />
               </div>
             ))}
           </div>
-        </div>
 
-        <div className="mt-20 grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center border-t border-gray-200 pt-16">
-          <div>
-            <h3 className="text-2xl lg:text-3xl font-bold uppercase tracking-tight text-onca-preto mb-8">
-              Tipos de parceria
-            </h3>
-            <div className="space-y-6 text-gray-800 leading-relaxed text-lg">
-              <p>
-                O Projeto Onças do Iguaçu estabelece parcerias por meio de cotas
-                de contribuição institucional, nas categorias{' '}
-                <strong>Jaguatirica</strong>, <strong>Onça-Parda</strong>,{' '}
-                <strong>Onça-Preta</strong> e <strong>Onça-Pintada</strong>, com
-                diferentes níveis de apoio e contrapartidas proporcionais.
-              </p>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+            <div className="flex flex-col items-center">
+              <div className="bg-onca-preto w-full text-white text-center py-2.5 font-bold uppercase tracking-widest text-sm rounded-t-xl shadow-md">
+                Parceiros Executores
+              </div>
+              <div className="bg-white w-full grid grid-cols-2 md:grid-cols-4 justify-items-center items-center gap-4 p-6 rounded-b-xl border border-gray-200 border-t-0 shadow-xs h-full">
+                {parceirosExecutores.map((partner, index) => (
+                  <div
+                    key={index}
+                    className="relative w-full aspect-square max-w-24 transition-all duration-300 hover:scale-105 hover:shadow-[0_8px_30px_rgb(0,0,0,0.06)] border border-transparent hover:border-gray-200 rounded-2xl p-2"
+                  >
+                    <Image
+                      src={partner.src}
+                      alt={partner.alt}
+                      fill
+                      className="object-contain p-1"
+                    />
+                  </div>
+                ))}
+              </div>
+            </div>
 
-              <p>
-                Além do apoio financeiro, também são possíveis contribuições
-                institucionais e não-financeiras, como suporte logístico, cessão
-                de espaços, hospedagem, alimentação, transporte, impressão de
-                materiais, fornecimento de insumos, equipamentos, tecnologia e
-                apoio à produção de conteúdo e eventos.
-              </p>
+            <div className="flex flex-col items-center">
+              <div className="bg-onca-preto w-full text-white text-center py-2.5 font-bold uppercase tracking-widest text-sm rounded-t-xl shadow-md">
+                Principal Patrocinador 2026
+              </div>
+              <div className="bg-white w-full flex flex-wrap justify-center items-center gap-6 md:gap-8 p-6 rounded-b-xl border border-gray-200 border-t-0 shadow-xs h-full">
+                {principalPatrocinador.map((partner, index) => (
+                  <div
+                    key={index}
+                    className="relative w-28 h-20 md:w-36 md:h-24 transition-all duration-300 hover:scale-105 hover:shadow-[0_8px_30px_rgb(0,0,0,0.06)] border border-transparent hover:border-gray-200 rounded-2xl p-2"
+                  >
+                    <Image
+                      src={partner.src}
+                      alt={partner.alt}
+                      fill
+                      className="object-contain p-1"
+                    />
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
 
-          <div className="flex flex-col items-center justify-center w-full h-full lg:mt-0">
-            <div className="grid grid-cols-2 gap-3 md:gap-6 w-full max-w-70 md:max-w-[320px] lg:max-w-95 mx-auto">
-              {tierLogos.map((logo) => (
+          <div className="mt-8">
+            <div className="bg-onca-preto w-full text-white text-center py-3 font-bold uppercase tracking-widest text-lg md:text-xl rounded-t-xl shadow-md">
+              Categorias de patrocínio 2026
+            </div>
+
+            <div className="bg-white w-full rounded-b-xl border border-gray-200 border-t-0 p-6 md:p-10 shadow-xs flex flex-col gap-10">
+              {categoriasPatrocinioArray.map((categoria) => (
                 <div
-                  key={logo.alt}
-                  className="aspect-square relative flex items-center justify-center bg-white rounded-xl md:rounded-2xl border border-gray-100 shadow-inner overflow-hidden"
+                  key={categoria.id}
+                  className="flex flex-col border-b-2 border-gray-100 last:border-0 pb-10 last:pb-0"
                 >
-                  <Image
-                    src={logo.src}
-                    alt={`Cota ${logo.alt}`}
-                    fill
-                    sizes="(max-width: 768px) 140px, (max-width: 1024px) 160px, 190px"
-                    className="object-contain p-3 md:p-4"
-                  />
+                  <h4 className="text-base md:text-lg font-bold text-onca-laranja-escuro uppercase tracking-wider mb-6 text-center md:text-left">
+                    {categoria.title}
+                  </h4>
+
+                  <div className="flex flex-col md:flex-row items-center justify-center md:justify-start gap-6 md:gap-10 w-full">
+                    <div className="relative w-24 h-24 md:w-28 md:h-28 shrink-0 hover:scale-105 transition-transform duration-300">
+                      <Image
+                        src={categoria.selo}
+                        alt={categoria.title}
+                        fill
+                        className="object-contain drop-shadow-md"
+                      />
+                    </div>
+
+                    <div className="flex flex-wrap justify-center items-center gap-3 md:gap-4 flex-1">
+                      {categoria.logos.map((src, idx) => (
+                        <div
+                          key={idx}
+                          className="relative w-20 h-16 md:w-24 md:h-20 transition-all duration-300 hover:scale-110 hover:shadow-[0_4px_15px_rgb(0,0,0,0.08)] border border-transparent hover:border-gray-200 rounded-xl bg-white p-1.5"
+                        >
+                          <Image
+                            src={src}
+                            alt="Parceiro do Projeto"
+                            fill
+                            className={`object-contain p-1 ${src.includes('Helisul') ? 'invert' : ''}`}
+                          />
+                        </div>
+                      ))}
+                    </div>
+                  </div>
                 </div>
               ))}
             </div>
-
-            <span className="inline-block mt-4 md:mt-6 text-sm md:text-base text-gray-400 font-medium text-center italic">
-              Selos de cotas de contribuição institucional.
-            </span>
           </div>
         </div>
 
-        <div className="mt-20 border-t border-gray-200 pt-16">
+        <div className="mt-20 pt-16">
           <h3 className="text-2xl lg:text-3xl font-bold uppercase tracking-tight text-onca-preto mb-8 md:text-center">
             Benefícios para a empresa:
           </h3>
