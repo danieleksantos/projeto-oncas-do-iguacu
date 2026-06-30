@@ -39,9 +39,10 @@ export default function DoacaoApoie() {
                 <span className="text-onca-laranja">ações no campo</span>
               </h2>
               <p className="text-lg md:text-xl text-gray-600 leading-relaxed max-w-xl font-medium">
-                Apoie diretamente as ações de conservação da onça-pintada no
-                Parque Nacional do Iguaçu. Sua contribuição fortalece atividades
-                de pesquisa, coexistência e engajamento com as comunidades.
+                Sua contribuição fortalece o trabalho de pesquisa,
+                monitoramento, educação e conservação realizado pelo Projeto
+                Onças do Iguaçu em uma das áreas mais importantes para a
+                onça-pintada na Mata Atlântica.
               </p>
             </div>
 

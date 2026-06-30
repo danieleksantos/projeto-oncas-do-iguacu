@@ -12,7 +12,7 @@ export default function HeroApoie() {
           <div className="absolute inset-y-0 right-0 w-48 bg-linear-to-l from-onca-preto via-onca-preto/90 to-transparent z-20 pointer-events-none"></div>
 
           <Image
-            src="/apoie/onca1.png"
+            src="/apoie/apoe-hero.png"
             alt="Apoie o Projeto Onças do Iguaçu"
             fill
             priority
@@ -37,7 +37,7 @@ export default function HeroApoie() {
 
             <div className="relative w-full h-[45vh] md:hidden my-8">
               <Image
-                src="/apoie/onca1.png"
+                src="/apoie/apoe-hero.png"
                 alt="Apoie o Projeto Onças do Iguaçu"
                 fill
                 priority

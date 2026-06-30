@@ -6,37 +6,37 @@ const membros = [
   {
     nome: 'Yara Barros',
     cargo: 'Coordenadora Executiva | Bióloga',
-    foto: '/logo-laranja.png',
+    foto: '/sobre/equipe/Yara-Barros.jpg',
     bio: 'Bióloga, doutora em Zoologia pela UNESP. Atuou com conservação de fauna ameaçada in situ e ex situ em órgãos governamentais, zoológicos e organizações não governamentais. É pesquisadora associada do Instituto Pró-Carnívoros, coordenadora executiva do Plano de Ação Nacional para a Conservação de Grandes Felinos e integrante do CPSG Brasil (Grupo Especialista em Planejamento para a Conservação/IUCN).',
   },
   {
     nome: 'Thiago Reginato',
     cargo: 'Coordenador de Coexistência | Gestor Ambiental',
-    foto: '/logo-laranja.png',
+    foto: '/sobre/equipe/Thiago-reginato.png',
     bio: 'Gestor Ambiental pela UTFPR (Medianeira), com 10 anos de experiência na área de coexistência entre pessoas e grandes felinos. Atua na mediação de conflitos entre comunidades e grandes felinos, no diagnóstico socioambiental e na implementação de estratégias de manejo voltadas à prevenção de predação e à redução de riscos no meio rural. Coordena a Rede Trinacional de Coexistência, articulando ações entre Brasil, Paraguai e Argentina, com foco na troca de experiências, capacitação de profissionais e fortalecimento de iniciativas na área. Possui experiência em monitoramento de fauna, engajamento comunitário, pesquisa social e educação ambiental, além de atuar na capacitação de diferentes públicos para atuação em contextos de conflito. Também possui conhecimento prático nas áreas agrícola e pecuária, contribuindo para a construção de soluções aplicáveis à realidade do campo.',
   },
   {
     nome: 'Aline Kotz',
     cargo: 'Gestora de Coexistência | Gestora Ambiental',
-    foto: '/logo-laranja.png',
+    foto: '/sobre/equipe/Aline-Kotz.webp',
     bio: 'Gestora Ambiental pela UTFPR (Medianeira), com experiência em coexistência humano–grandes felinos, mediação de conflitos, engajamento comunitário e educação ambiental com crianças e adultos.',
   },
   {
     nome: 'Vânia Foster',
     cargo: 'Coordenadora de Pesquisa | Bióloga',
-    foto: '/logo-laranja.png',
+    foto: '/sobre/equipe/Vania-Foster.webp',
     bio: 'Graduada em Ciências Biológicas pelo Centro Universitário Barão de Mauá (2006), mestre em Biologia, ramo Ecologia, Biodiversidade e Gestão de Ecossistemas, pela Universidade de Aveiro (2012) e doutora em Ecologia e Conservação pela Universidade Federal de Mato Grosso do Sul (2017). Atualmente é pesquisadora no Projeto Onças do Iguaçu, onde atua desde 2019. Responsável pela área de Pesquisa do projeto, desenvolvendo atividades de monitoramento da flutuação populacional dos grandes felinos (onça-pintada e onça-parda) e de suas bases de presas, monitoramento dos corredores de vegetação adjacentes ao Parque Nacional do Iguaçu e estudos de dieta, deslocamento, uso do hábitat e coocorrência dos felinos.',
   },
   {
     nome: 'Patrícia Gomes',
     cargo: 'Veterinária Responsável Técnica',
-    foto: '/logo-laranja.png',
+    foto: '/sobre/equipe/Patricia.webp',
     bio: 'Médica Veterinária formada pela Universidade de Marília (UNIMAR), com pós-graduação em Educação Ambiental pela mesma instituição. Possui mestrado acadêmico na área de Animais Selvagens pela Universidade Estadual Paulista (UNESP) e atualmente é pós-graduanda em Medicina de Animais Silvestres e Exóticos pela Universidade de Americana (FAM). Apresenta ampla experiência na área de fauna silvestre, com atuação em conservação, manejo e reabilitação de animais selvagens.',
   },
   {
     nome: 'Valquíria Marina Nascimento',
     cargo: 'Assistente de Pesquisa',
-    foto: '/logo-laranja.png',
+    foto: '/sobre/equipe/Valquiria.webp',
     bio: 'Gestora Ambiental formada pela UNIMAR e Técnica em Meio Ambiente pelo CEEP Manoel Moreira. Ex-agente ambiental do ICMBio, com experiência em conservação, manejo de fogo e proteção ambiental.',
   },
   {
@@ -95,14 +95,14 @@ export default function EquipeSobre() {
             className={`flex flex-col md:flex-row items-center gap-12 lg:gap-20 
               ${isEven ? 'md:flex-row-reverse' : ''}`}
           >
-            <div className="relative h-64 w-64 lg:h-80 lg:w-80 shrink-0">
+            <div className="relative h-56 w-56 lg:h-72 lg:w-72 shrink-0">
               <div className="absolute inset-0 rounded-full border-[6px] border-onca-laranja/10 scale-110" />
-              <div className="relative h-full w-full overflow-hidden rounded-full bg-gray-50 shadow-xl border-4 border-white">
+              <div className="relative h-full w-full overflow-hidden rounded-full bg-gray-100 shadow-xl border-4 border-white">
                 <Image
                   src={membro.foto}
                   alt={membro.nome}
                   fill
-                  className="object-contain p-8 grayscale hover:grayscale-0 transition-all duration-700 ease-in-out"
+                  className="object-cover transition-transform duration-500 ease-in-out hover:scale-110"
                 />
               </div>
             </div>

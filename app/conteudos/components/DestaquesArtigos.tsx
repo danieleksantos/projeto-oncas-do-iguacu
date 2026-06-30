@@ -23,14 +23,25 @@ export default function DestaquesArtigos() {
   return (
     <section className="w-full py-20 lg:py-32 bg-white flex justify-center pb-32">
       <div className="mx-auto w-full max-w-7xl px-6 lg:px-8">
-        <div className="max-w-2xl mb-12 lg:mb-16 text-center md:text-left mx-auto md:mx-0">
-          <span className="flex items-center justify-center md:justify-start gap-2 text-onca-preto text-sm font-bold uppercase tracking-widest mb-3">
-            <BookOpen className="w-4 h-4 text-onca-laranja" /> Pesquisa &
+        <div className="max-w-2xl mb-12 lg:mb-16 text-center md:text-left mx-auto md:mx-0 flex flex-col items-center md:items-start">
+          <span className="flex items-center justify-center md:justify-start gap-2 text-onca-laranja-escuro text-sm font-bold uppercase tracking-widest mb-4">
+            <BookOpen className="w-4 h-4 text-onca-laranja-escuro" /> Pesquisa &
             Reflexão
           </span>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold uppercase tracking-tight text-onca-preto">
-            Artigos O Eco
-          </h2>
+
+          <div className="flex flex-wrap items-center justify-center md:justify-start gap-4">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold uppercase tracking-tight text-onca-preto leading-none">
+              Artigos
+            </h2>
+            <div className="relative w-28 h-10 md:w-36 md:h-14">
+              <Image
+                src="/conteudos/artigos/oeco-logo.png"
+                alt="O Eco"
+                fill
+                className="object-contain object-center md:object-left"
+              />
+            </div>
+          </div>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-8">

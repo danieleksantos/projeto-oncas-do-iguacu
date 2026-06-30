@@ -95,7 +95,6 @@ const artigos = [
 export default function ArtigosPage() {
   return (
     <div className="bg-gray-50 text-onca-preto min-h-screen selection:bg-onca-laranja selection:text-onca-preto">
-      {/* HERO SECTION */}
       <section className="relative bg-onca-preto w-full flex justify-center overflow-hidden">
         <div className="w-full max-w-7xl flex flex-col md:flex-row items-stretch relative">
           <div className="relative z-10 hidden md:block md:w-[60%] min-h-125 shrink-0">
@@ -103,7 +102,7 @@ export default function ArtigosPage() {
             <div className="absolute inset-y-0 right-0 w-48 bg-linear-to-l from-onca-preto via-onca-preto/90 to-transparent z-20 pointer-events-none"></div>
 
             <Image
-              src="/conteudos/artigos/hero-artigos.png"
+              src="/conteudos/artigos/artigos-hero.png"
               alt="Artigos e publicações do Projeto Onças do Iguaçu"
               fill
               priority
@@ -128,7 +127,7 @@ export default function ArtigosPage() {
 
               <div className="relative w-full h-[45vh] md:hidden my-8">
                 <Image
-                  src="/conteudos/artigos/hero-artigos.png"
+                  src="/conteudos/artigos/artigos-hero.png"
                   alt="Artigos e publicações do Projeto Onças do Iguaçu"
                   fill
                   priority
@@ -148,15 +147,33 @@ export default function ArtigosPage() {
         </div>
       </section>
 
-      {/* BARRA SUPERIOR - VOLTAR */}
       <div className="w-full bg-white border-b border-gray-200 relative z-30">
         <div className="mx-auto max-w-7xl px-6 pt-10 pb-6">
           <VoltarLinkConteudo />
         </div>
       </div>
 
-      {/* GRID DE ARTIGOS */}
-      <section className="mx-auto w-full max-w-7xl px-6 lg:px-8 py-16 lg:pt-14 lg:pb-0">
+      <section className="mx-auto w-full max-w-7xl px-6 lg:px-8 py-16 lg:pt-14 lg:pb-24">
+        <div className="flex flex-col items-center md:items-start mb-12 pb-0 md:pb-4 border-b border-gray-200">
+          <div className="flex flex-wrap items-center justify-center md:justify-start gap-2 md:gap-4 mb-3">
+            <h2 className="text-3xl md:text-4xl font-bold uppercase tracking-tight text-onca-preto leading-none">
+              Artigos
+            </h2>
+            <div className="relative w-28 h-10 md:w-36 md:h-12">
+              <Image
+                src="/conteudos/artigos/oeco-logo.png"
+                alt="O Eco"
+                fill
+                className="object-contain object-center md:object-left"
+              />
+            </div>
+          </div>
+          <p className="text-gray-500 text-center md:text-left text-sm md:text-base font-medium max-w-2xl">
+            Análises, crônicas, notícias e reflexões publicadas em parceria com
+            o portal de jornalismo ambiental O Eco.
+          </p>
+        </div>
+
         <div className="grid lg:grid-cols-2 gap-8">
           {artigos.map((artigo, index) => (
             <Link
@@ -197,7 +214,7 @@ export default function ArtigosPage() {
         </div>
       </section>
 
-      <div className="w-full bg-gray-50 border-t border-gray-200 pt-0 lg:pt-12  pb-10 lg:pb-20">
+      <div className="w-full bg-gray-50 border-t border-gray-200 pt-0 lg:pt-12 pb-10 lg:pb-20">
         <div className="mx-auto max-w-7xl px-6 flex justify-center md:justify-start">
           <VoltarLinkConteudo />
         </div>

@@ -159,8 +159,9 @@ export default function ContatoPage() {
               <div className="max-w-xl text-center md:text-left mx-auto md:mx-0 px-6 md:px-0">
                 <p className="text-white text-2xl font-bold mb-3">Comunique!</p>
                 <p className="text-gray-300 text-lg drop-shadow-md font-medium">
-                  Sua informação é muito importante para nós e nos ajuda a
-                  proteger e monitorar a nossa fauna.
+                  Sua informação é muito importante e nos ajuda a monitorar e
+                  proteger as onças-pintadas e a biodiversidade do Parque
+                  Nacional do Iguaçu.
                 </p>
               </div>
             </div>
@@ -264,7 +265,7 @@ export default function ContatoPage() {
             </div>
           </div>
 
-          <div className="bg-onca-preto text-white rounded-[2.5rem] p-10 lg:p-14 relative overflow-hidden flex flex-col justify-center">
+          <div className="bg-onca-preto text-white rounded-[2.5rem] p-10 lg:p-12 relative overflow-hidden flex flex-col justify-center">
             <div className="absolute -top-24 -right-24 w-64 h-64 bg-onca-laranja/20 blur-3xl rounded-full pointer-events-none" />
             <div className="absolute -bottom-24 -left-24 w-64 h-64 bg-white/5 blur-3xl rounded-full pointer-events-none" />
 
@@ -273,8 +274,8 @@ export default function ContatoPage() {
                 Redes Sociais
               </h2>
               <p className="text-gray-300 font-medium mb-10 leading-relaxed">
-                Acompanhe nosso trabalho diário, veja registros incríveis da
-                nossa equipe em campo e faça parte da nossa comunidade.
+                Acompanhe nosso trabalho diário, veja registros de onças e da
+                fauna local e conheça os bastidores da conservação.
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
