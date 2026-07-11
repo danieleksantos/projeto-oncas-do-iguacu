@@ -20,7 +20,7 @@ const todosParceiros = [
   { src: '/sobre/partners/WFN.png', alt: 'WFN' },
   { src: '/sobre/partners/Inigo.svg', alt: 'Inigo' },
   {
-    src: '/sobre/partners/Hotel das Cataratas, a Belmond Hotel.png',
+    src: '/sobre/partners/Hotel-Cataratas.png',
     alt: 'Hotel das Cataratas',
   },
   { src: '/sobre/partners/LOG Nature.png', alt: 'LOG Nature' },

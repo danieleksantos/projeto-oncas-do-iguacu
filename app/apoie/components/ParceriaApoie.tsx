@@ -20,9 +20,8 @@ export default function ParceriaApoie() {
       id="parcerias"
       className="w-full py-20 lg:py-32 bg-white scroll-mt-10 relative overflow-hidden"
     >
-      <div className="absolute bottom-0 left-0 w-1/3 h-full bg-gray-50 rounded-r-[100px] pointer-events-none hidden lg:block" />
-
       <div className="mx-auto w-full max-w-7xl px-6 lg:px-8 relative z-10">
+        {/* BLOCO SUPERIOR: Grid 2 Colunas (Texto + Imagens) */}
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           <div className="flex flex-col justify-center space-y-8">
             <div className="space-y-4">
@@ -42,54 +41,33 @@ export default function ParceriaApoie() {
               </p>
             </div>
 
-            <div className="bg-gray-50 border border-gray-200 rounded-3xl p-6 md:p-8 space-y-4 relative overflow-hidden group">
+            {/* Card: Empresa Amiga da Onça */}
+            <div className="bg-gray-50 border border-gray-200 rounded-3xl p-6 md:p-8 space-y-5 md:space-y-6 relative overflow-hidden group shadow-sm">
               <div className="absolute -right-10 -bottom-10 w-32 h-32 bg-onca-laranja/5 rounded-full blur-xl pointer-events-none" />
 
-              <div className="flex items-start gap-4">
+              <div className="flex items-center gap-4 relative z-10">
                 <div className="bg-onca-laranja/10 p-3 rounded-2xl shrink-0">
-                  <Award className="w-6 h-6 text-onca-laranja-escuro" />
+                  <Award className="w-6 h-6 md:w-7 md:h-7 text-onca-laranja-escuro" />
                 </div>
-                <div className="space-y-1">
-                  <h4 className="text-lg font-bold text-onca-preto uppercase tracking-tight">
-                    Empresa Amiga da Onça
-                  </h4>
-                  <p className="text-gray-600 text-sm leading-relaxed">
-                    Além de fortalecer ações concretas de conservação, os
-                    parceiros passam a integrar uma rede de impacto positivo e
-                    podem receber reconhecimento institucional e a certificação
-                    de{' '}
-                    <strong className="text-onca-laranja-escuro font-bold">
-                      Empresa Amiga da Onça
-                    </strong>
-                    .
-                  </p>
-                </div>
+                <h4 className="text-xl md:text-2xl font-bold text-onca-preto uppercase tracking-tight">
+                  Empresa Amiga da Onça
+                </h4>
               </div>
-            </div>
 
-            <div className="space-y-6 pt-2 border-t border-gray-100">
-              <h4 className="text-xl font-bold text-onca-preto uppercase tracking-tight">
-                Interessado em apoiar o projeto? Entre em contato com nossa
-                equipe!
-              </h4>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Link
-                  href={whatsappUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-onca-laranja border-2 border-onca-preto rounded-full font-bold uppercase tracking-widest text-sm transition-all duration-300 hover:scale-105 hover:bg-onca-laranja hover:text-onca-preto hover:shadow-xl focus-visible:ring-4 focus-visible:ring-onca-laranja/50 outline-none group"
-                >
-                  <MessageCircle className="w-5 h-5" />
-                  WhatsApp
-                </Link>
-
-                <Link
-                  href={emailUrl}
-                  className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-onca-laranja text-onca-preto border-2 border-onca-preto rounded-full font-bold uppercase tracking-widest text-sm transition-all duration-300 hover:scale-105 hover:shadow-xl focus-visible:ring-4 focus-visible:ring-onca-preto/30 outline-none group"
-                >
-                  <Mail className="w-5 h-5" />
-                  E-mail
-                </Link>
+              <div className="space-y-3 text-gray-600 text-sm md:text-base leading-relaxed relative z-10">
+                <p>
+                  O programa Empresa Amiga da Onça reúne empresas que apoiam a
+                  conservação da onça-pintada e fortalecem as ações do Projeto
+                  Onças do Iguaçu. As empresas parceiras recebem certificação
+                  oficial, reconhecimento institucional, agregam valor à sua
+                  marca e passam a integrar uma rede comprometida com a
+                  conservação e o desenvolvimento sustentável da região.
+                </p>
+                <p>
+                  O apoio pode ser financeiro ou não financeiro, por meio do
+                  fornecimento de produtos, serviços, estrutura ou outras formas
+                  de parceria que contribuam para as atividades do Projeto.
+                </p>
               </div>
             </div>
           </div>
@@ -140,6 +118,32 @@ export default function ParceriaApoie() {
             </div>
 
             <div className="absolute -bottom-8 -right-8 w-32 h-32 bg-onca-laranja/20 rounded-full blur-2xl z-0 pointer-events-none" />
+          </div>
+        </div>
+
+        <div className="mt-14 md:mt-18 flex flex-col items-center text-center space-y-6">
+          <h4 className="text-[16px] md:text-2xl font-bold text-onca-preto uppercase tracking-tight max-w-3xl">
+            Tem interesse em se tornar uma Empresa Amiga da Onça? Entre em
+            contato com nossa equipe!
+          </h4>
+          <div className="flex flex-col sm:flex-row justify-center gap-4 w-full sm:w-auto">
+            <Link
+              href={whatsappUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-onca-laranja border-2 border-onca-preto rounded-full font-bold uppercase tracking-widest text-sm transition-all duration-300 hover:scale-105 hover:bg-onca-laranja hover:text-onca-preto hover:shadow-xl focus-visible:ring-4 focus-visible:ring-onca-laranja/50 outline-none group"
+            >
+              <MessageCircle className="w-5 h-5" />
+              WhatsApp
+            </Link>
+
+            <Link
+              href={emailUrl}
+              className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-onca-laranja text-onca-preto border-2 border-onca-preto rounded-full font-bold uppercase tracking-widest text-sm transition-all duration-300 hover:scale-105 hover:shadow-xl focus-visible:ring-4 focus-visible:ring-onca-preto/30 outline-none group"
+            >
+              <Mail className="w-5 h-5" />
+              E-mail
+            </Link>
           </div>
         </div>
       </div>

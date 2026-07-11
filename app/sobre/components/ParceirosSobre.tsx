@@ -42,7 +42,8 @@ const categoriasPatrocinioArray = [
       '/sobre/partners/WINGS.svg',
       '/sobre/partners/WFN.png',
       '/sobre/partners/Inigo.svg',
-      '/sobre/partners/Hotel das Cataratas, a Belmond Hotel.png',
+      '/sobre/partners/Hotel-Cataratas.png',
+      '/sobre/partners/ICMBio.png',
     ],
   },
   {
