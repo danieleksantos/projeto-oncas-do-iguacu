@@ -67,9 +67,9 @@ export default function ParceirosHome() {
             Quem faz acontecer
           </h2>
           <p className="text-gray-600 font-medium max-w-2xl mx-auto">
-            A conservação do maior felino das Américas só é possível graças a
-            uma rede de instituições, apoiadores e empresas que acreditam no
-            nosso projeto.
+            A conservação do maior felino das Américas no Parque Iguaçu só é
+            possível graças a uma rede de instituições, apoiadores e empresas
+            que acreditam no nosso projeto.
           </p>
         </div>
 

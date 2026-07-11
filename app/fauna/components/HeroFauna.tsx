@@ -8,7 +8,7 @@ export default function HeroFauna() {
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[80%] bg-onca-laranja/10 blur-[100px] rounded-full z-0 mix-blend-screen pointer-events-none"></div>
 
           <div className="relative z-10 mx-auto w-full px-0 md:px-6 lg:pl-12 lg:pr-8">
-            <div className="max-w-xl text-center md:text-left mx-auto md:mx-0 px-6 md:px-0">
+            <div className="max-w-xl text-center md:text-left mx-auto md:mx-0 px-6 md:px-0 mb-5">
               <span className="inline-block text-onca-laranja text-sm font-bold uppercase tracking-[0.3em] mb-4 drop-shadow-md">
                 Biodiversidade
               </span>
