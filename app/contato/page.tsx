@@ -169,7 +169,10 @@ export default function ContatoPage() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-7xl px-6 lg:px-8 py-20 lg:py-32">
+      <section
+        className="mx-auto max-w-7xl px-6 lg:px-8 py-20 lg:py-32"
+        id="nossos-canais"
+      >
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16">
           <div className="space-y-8">
             <div>

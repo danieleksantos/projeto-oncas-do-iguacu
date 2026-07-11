@@ -1,6 +1,10 @@
 import AtuacaoHome from './components/home/AtuacaoHome';
+import ConhecaOncasHome from './components/home/ConhecaOncasHome';
+import CtaFinalHome from './components/home/CtaFinalHome';
+import FaqHome from './components/home/FaqHome';
 import HeroHome from './components/home/HeroHome';
 import ImpactoHome from './components/home/ImpactoHome';
+import ParceirosHome from './components/home/ParceirosHome';
 import ResumoHome from './components/home/ResumoHome';
 import SliderHome from './components/home/SliderHome';
 
@@ -16,6 +20,10 @@ export default function Home() {
       <ResumoHome />
       <AtuacaoHome />
       <SliderHome />
+      <ConhecaOncasHome />
+      <FaqHome />
+      <ParceirosHome />
+      <CtaFinalHome />
     </main>
   );
 }
