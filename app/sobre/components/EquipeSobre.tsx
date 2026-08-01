@@ -61,7 +61,7 @@ const membros = [
     nome: 'Ana Catarine Franzini',
     cargo: 'Assessora Técnica',
     foto: '/sobre/equipe/Ana.jpeg',
-    bio: 'Bióloga e Gestora Ambiental, pós-graduada em Ecologia e Biodiversidade e Mestranda em Conservação e Manejo pela UNIOESTE. Possui experiência em projetos de pesquisa e atuação técnica nas áreas de gestão ambiental pública, adaptação climática, áreas protegidas e conservação e manejo de fauna silvestre. Atua também como analista ambiental em atividades de assessoria e consultoria.',
+    bio: 'Bióloga, Gestora Ambiental, pós-graduada em Ecologia e Biodiversidade e mestranda em Conservação e Manejo de Recursos Naturais. Possui experiência em projetos de pesquisa e atuação técnica nas áreas de gestão ambiental pública, adaptação climática, áreas protegidas e conservação de fauna silvestre, bem como em serviços de análise, assessoria e consultoria ambiental.',
   },
   {
     nome: 'Claudiani Tavares',

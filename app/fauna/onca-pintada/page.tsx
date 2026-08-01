@@ -301,20 +301,20 @@ export default function OncaPintadaDetalhesPage() {
                 className="relative w-full aspect-square rounded-3xl overflow-hidden cursor-zoom-in group"
                 onClick={() =>
                   setModalData({
-                    src: '/fauna/mapa-americas.webp',
+                    src: '/fauna/mapa-americas.png',
                     caption:
                       'Distribuição histórica e atual da onça-pintada nas Américas',
                   })
                 }
               >
                 <Image
-                  src="/fauna/mapa-americas.webp"
+                  src="/fauna/mapa-americas.png"
                   alt="Mapa de distribuição nas Américas"
                   fill
                   className="object-cover transition-transform duration-500 group-hover:scale-105"
                 />
               </div>
-              <p className="text-xs text-gray-500 text-center italic">
+              <p className="text-xs text-gray-300 text-center italic">
                 Distribuição histórica (verde claro) e atual (verde escuro).
               </p>
             </div>
