@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-export default function HeroLoja() {
+export default function HeroProdutos() {
   return (
     <section className="relative bg-onca-preto w-full flex justify-center overflow-hidden">
       <div className="w-full max-w-7xl flex flex-col md:flex-row items-stretch relative">
@@ -9,7 +9,7 @@ export default function HeroLoja() {
           <div className="absolute inset-y-0 right-0 w-48 bg-linear-to-l from-onca-preto via-onca-preto/90 to-transparent z-20 pointer-events-none"></div>
 
           <Image
-            src="/loja/hero-loja.webp"
+            src="/loja/hero-produtos.webp"
             alt="Produtos oficiais do Projeto Onças do Iguaçu"
             fill
             priority
@@ -24,11 +24,11 @@ export default function HeroLoja() {
           <div className="relative z-10 mx-auto w-full px-0 md:px-6 lg:pr-12 lg:pl-8">
             <div className="max-w-xl text-center md:text-left mx-auto md:mx-0 px-6 md:px-0">
               <span className="inline-block text-onca-laranja text-sm font-bold uppercase tracking-[0.3em] mb-4 drop-shadow-md">
-                Produtos Oficiais
+                Recompensas
               </span>
               <h1 className="text-white text-5xl md:text-6xl font-bold uppercase tracking-tighter leading-tight lg:leading-[0.9] mb-2 md:mb-6 drop-shadow-lg">
-                Nossa <br />
-                <span className="text-onca-laranja">Loja</span>
+                Nossos <br />
+                <span className="text-onca-laranja">Produtos</span>
               </h1>
             </div>
 
@@ -45,9 +45,10 @@ export default function HeroLoja() {
 
             <div className="max-w-xl text-center md:text-left mx-auto md:mx-0 px-6 md:px-0">
               <p className="text-gray-300 text-lg drop-shadow-md font-medium">
-                Cada produto que você adquire é uma doação direta para o Projeto
-                Onças do Iguaçu. Os recursos são revertidos integralmente para
-                as nossas equipes em campo e ações com a comunidade.
+                Cada item que você escolhe é uma forma de agradecimento pela sua
+                doação direta ao Projeto Onças do Iguaçu. Os recursos são
+                revertidos integralmente para as nossas equipes em campo e ações
+                com a comunidade.
               </p>
             </div>
           </div>

@@ -55,12 +55,12 @@ const navigation = [
     href: '/apoie',
     children: [
       { name: 'Doação', href: '/apoie/#doacao' },
+      { name: 'Produtos', href: '/apoie/produtos' },
       { name: 'Estágio', href: '/apoie/#estagioEvoluntariado' },
       { name: 'Voluntariado', href: '/apoie/#estagioEvoluntariado' },
       { name: 'Parcerias', href: '/apoie/#parcerias' },
     ],
   },
-  { name: 'Loja', href: '/loja' },
   { name: 'Contato', href: '/contato' },
 ];
 

@@ -73,7 +73,7 @@ const footerNavigation = {
   acessoRapido: [
     { name: 'Início', href: '/' },
     { name: 'Contato', href: '/contato' },
-    { name: 'Loja', href: '/loja' },
+    { name: 'Produtos', href: '/apoie/produtos' },
     { name: 'As onças', href: '/oncas' },
   ],
   projeto: [
