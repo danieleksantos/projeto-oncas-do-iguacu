@@ -36,7 +36,7 @@ const categoriasPatrocinioArray = [
     title: 'Categoria Onça-Pintada',
     selo: '/sobre/onca-pintada.png',
     logos: [
-      '/sobre/partners/urbia-cataratas-logo.webp',
+      '/sobre/partners/Urbia-Cataratas.png',
       '/sobre/partners/Itaipu Binacional.png',
       '/sobre/partners/WWF-logo.webp',
       '/sobre/partners/WINGS.svg',

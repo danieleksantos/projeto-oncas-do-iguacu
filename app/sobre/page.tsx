@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import Link from 'next/link';
 import CounterSobre from '@/app/sobre/components/CounterSobre';
 import EquipeSobre from '@/app/sobre/components/EquipeSobre';
 import ParceirosSobre from '@/app/sobre/components/ParceirosSobre';
@@ -333,41 +332,6 @@ export default function SobrePage() {
                   resultados, fortalecendo o vínculo com a sociedade e com quem
                   apoia a causa.
                 </p>
-              </div>
-
-              <div className="bg-white border border-gray-200 rounded-3xl p-8 sm:p-10 shadow-sm flex flex-col sm:flex-row items-center justify-between gap-8 mt-4 group">
-                <div>
-                  <h4 className="font-bold text-xl text-onca-preto mb-3">
-                    Portal de Transparência
-                  </h4>
-                  <p className="text-gray-600 text-sm leading-relaxed max-w-md">
-                    Acesse nossos relatórios de atividades, indicadores de
-                    impacto, documentos institucionais e detalhes sobre
-                    parcerias estratégicas.
-                  </p>
-                </div>
-
-                <div className="shrink-0 w-full sm:w-auto">
-                  <Link
-                    href="/transparencia"
-                    className="inline-flex items-center justify-center w-full sm:w-auto gap-3 bg-onca-preto text-white px-8 py-4 rounded-full font-bold uppercase tracking-widest text-xs hover:scale-105 hover:bg-onca-laranja hover:text-onca-preto transition-all duration-300"
-                  >
-                    Acessar Portal
-                    <svg
-                      width="18"
-                      height="18"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    >
-                      <line x1="5" y1="12" x2="19" y2="12"></line>
-                      <polyline points="12 5 19 12 12 19"></polyline>
-                    </svg>
-                  </Link>
-                </div>
               </div>
             </div>
           </div>

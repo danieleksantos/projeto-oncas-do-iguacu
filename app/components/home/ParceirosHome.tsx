@@ -14,7 +14,7 @@ const todosParceiros = [
   { src: '/sobre/partners/Salomao.png', alt: 'Salomão' },
   { src: '/sobre/partners/ESALQ.png', alt: 'ESALQ' },
   { src: '/sobre/partners/LEMAC.png', alt: 'LEMaC' },
-  { src: '/sobre/partners/urbia-cataratas-logo.webp', alt: 'Urbia Cataratas' },
+  { src: '/sobre/partners/Urbia-Cataratas.png', alt: 'Urbia Cataratas' },
   { src: '/sobre/partners/Itaipu Binacional.png', alt: 'Itaipu Binacional' },
   { src: '/sobre/partners/WINGS.svg', alt: 'WINGS' },
   { src: '/sobre/partners/WFN.png', alt: 'WFN' },
