@@ -22,11 +22,13 @@ export default function EngajamentoAtuacao() {
               Engajamento
             </h2>
             <p className="text-xl text-gray-600 leading-relaxed font-medium">
-              O engajamento é uma das bases do Projeto Onças do Iguaçu. As ações
-              são voltadas às comunidades dos municípios do entorno do Parque
-              Nacional do Iguaçu, com o objetivo de transformar o medo em
-              conexão e fortalecer o vínculo entre as pessoas e a conservação
-              das onças.
+              O engajamento é um dos pilares do Projeto Onças do Iguaçu. Nossas
+              ações aproximam as pessoas da conservação por meio da educação, do
+              diálogo e da participação comunitária. Trabalhamos com escolas,
+              comunidades, produtores rurais, povos indígenas, visitantes e
+              diferentes setores da sociedade para transformar o medo em
+              conhecimento, o conhecimento em participação e fortalecer a
+              coexistência entre pessoas e onças-pintadas.
             </p>
           </div>
 
@@ -96,6 +98,35 @@ export default function EngajamentoAtuacao() {
                   leva essas ações para espaços públicos e eventos, ampliando o
                   alcance junto à população.
                 </p>
+              </div>
+              <div className="flex flex-col gap-5 shadow-sm mt-8">
+                <p className="text-gray-600 text-base leading-relaxed">
+                  Tem interesse em receber as atividades do{' '}
+                  <strong className="text-onca-preto">Onça na Escola </strong>
+                  na sua instituição?
+                </p>
+                <div className="pt-2">
+                  <a
+                    href="mailto:projetooncasdoiguacu@gmail.com"
+                    className="inline-flex items-center justify-center gap-3 bg-onca-preto text-white px-8 py-4 rounded-full font-bold uppercase tracking-widest text-xs transition-all duration-300 hover:scale-105 shadow-lg focus-visible:ring-4 focus-visible:ring-onca-laranja/50 outline-none"
+                  >
+                    <svg
+                      className="w-4 h-4 shrink-0"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                      />
+                    </svg>
+                    Fale Conosco
+                  </a>
+                </div>
               </div>
 
               <div className="space-y-4">

@@ -11,7 +11,7 @@ export default function CapacitacaoAtuacao() {
     <>
       <section
         id="capacitacao"
-        className="w-full py-24 bg-white text-onca-preto scroll-mt-20 flex justify-center"
+        className="w-full py-24 bg-gray-300 text-onca-preto scroll-mt-20 flex justify-center"
       >
         <div className="mx-auto w-full max-w-7xl px-6 lg:px-8 space-y-16">
           <div className="max-w-3xl mx-auto text-center space-y-6">

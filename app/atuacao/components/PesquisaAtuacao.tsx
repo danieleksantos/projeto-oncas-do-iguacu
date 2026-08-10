@@ -33,29 +33,33 @@ export default function PesquisaAtuacao() {
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div className="space-y-6">
               <h3 className="text-3xl font-bold uppercase tracking-tight border-l-4 border-onca-laranja pl-4">
-                Monitoramento de fauna
+                Monitoramento contínuo de fauna
               </h3>
               <p className="text-gray-600 leading-relaxed text-lg">
-                Realizado de forma sistemática desde 2019 com o uso de
-                armadilhas fotográficas distribuídas no Parque Nacional do
-                Iguaçu. Esse esforço de longo prazo permite não apenas
-                identificar individualmente as onças, mas também acompanhar
-                eventos reprodutivos, dispersão, sobrevivência e comportamento
-                dos animais. Ao longo dos anos, o monitoramento foi aprimorado,
-                aumentando o esforço amostral e a robustez das análises
-                ecológicas .
+                Realizado de forma sistemática desde 2019, o monitoramento de
+                fauna utiliza uma rede permanente de armadilhas fotográficas
+                distribuídas pelo Parque Nacional do Iguaçu. Esse esforço
+                contínuo permite identificar individualmente as onças-pintadas e
+                acompanhar aspectos como reprodução, dispersão, sobrevivência,
+                uso do habitat e comportamento ao longo do tempo.
               </p>
               <p className="text-gray-600 leading-relaxed text-lg pt-2">
-                Além de estimar o tamanho populacional, esses dados possibilitam
-                análises mais refinadas, como os padrões de atividade das
-                onças-pintadas. Os registros mostram, por exemplo, uma
-                predominância de atividade noturna, informação essencial para
-                entender como a espécie utiliza a paisagem e evita a presença
-                humana .
+                Ao longo dos anos, a rede de monitoramento foi ampliada,
+                aumentando o esforço amostral e a qualidade das informações
+                geradas. Além das onças-pintadas, centenas de registros de
+                outras espécies ajudam a compreender a dinâmica da fauna e a
+                saúde do ecossistema.
+              </p>
+              <p className="text-gray-600 leading-relaxed text-lg pt-2">
+                Os dados obtidos subsidiam pesquisas científicas e orientam
+                estratégias de conservação, permitindo entender como as onças
+                utilizam a paisagem, avaliar o sucesso reprodutivo da população
+                e embasar ações para reduzir conflitos entre pessoas e grandes
+                felinos.
               </p>
             </div>
 
-            <div className="grid grid-cols-2 gap-6">
+            <div className="grid grid-cols-2 gap-6 pt-20">
               <div className="col-span-2 space-y-2">
                 <div
                   className="relative h-64 w-full cursor-zoom-in group overflow-hidden rounded-3xl shadow-xl"
@@ -192,17 +196,19 @@ export default function PesquisaAtuacao() {
                 Censo de Onças-Pintadas
               </h3>
               <p className="text-gray-600 leading-relaxed text-lg">
-                O censo de onças-pintadas é uma das principais ferramentas do
-                Projeto Onças do Iguaçu. Realizado a cada dois anos, em parceria
-                com o Proyecto Yaguareté (Argentina), ele monitora a população
-                da espécie em todo o Corredor Verde da Mata Atlântica.
+                O Censo de Onças-Pintadas é uma das principais ações de pesquisa
+                do Projeto Onças do Iguaçu. Realizado a cada dois anos em
+                parceria com o Proyecto Yaguareté (Argentina), ele monitora a
+                população da espécie em todo o Corredor Verde da Mata Atlântica,
+                formando o maior esforço binacional de monitoramento de
+                onças-pintadas desse bioma.
               </p>
               <p className="text-gray-600 leading-relaxed text-lg">
                 Por meio da instalação de centenas de armadilhas fotográficas,
-                identificamos individualmente os animais e estimamos o tamanho
-                da população, acompanhando sua evolução ao longo do tempo. Os
-                resultados do censo orientam estratégias de conservação e ajudam
-                a garantir o futuro da espécie na região.
+                identificamos individualmente cada animal e estimamos o tamanho
+                e a dinâmica da população ao longo do tempo. Esses dados
+                orientam estratégias de conservação, avaliam a efetividade das
+                ações de manejo e apoiam a proteção da espécie em toda a região.
               </p>
             </div>
           </div>
@@ -217,25 +223,33 @@ export default function PesquisaAtuacao() {
                 Estudo de base de presas
               </h3>
               <p className="text-gray-700 leading-relaxed grow">
-                Desenvolvemos estudos sobre a base de presas, fator determinante
-                para a manutenção de populações viáveis de grandes predadores. O
-                monitoramento da fauna revela a presença e dinâmica de
-                espécies-chave como queixadas, veados e antas, permitindo
-                compreender as relações ecológicas que sustentam o ecossistema e
-                influenciam diretamente a presença das onças .
+                A disponibilidade de presas é um dos principais fatores para a
+                manutenção de populações viáveis de onças-pintadas. Em parceria
+                com instituições de pesquisa, desenvolvemos estudos que estimam
+                a abundância e a biomassa das principais espécies que compõem
+                sua dieta, como queixadas, catetos, veados, antas e pacas.
+              </p>
+              <p className="text-gray-700 leading-relaxed grow">
+                Os resultados demonstraram que o Corredor Verde da Mata
+                Atlântica abriga a maior disponibilidade de presas entre as
+                áreas estudadas, reforçando seu papel como uma das regiões mais
+                importantes para a conservação da onça-pintada. Além disso,
+                evidenciaram que a redução da pressão humana é fundamental para
+                manter populações saudáveis de presas e, consequentemente,
+                garantir a persistência da espécie
               </p>
               <div className="space-y-3 mt-auto">
                 <div
                   className="relative w-full aspect-square max-w-125 mx-auto cursor-zoom-in overflow-hidden rounded-3xl shadow-xl border border-gray-100 group"
                   onClick={() =>
                     setModalData({
-                      src: '/atuacao/grid-amostral-base-de-presas.webp',
+                      src: '/atuacao/pesquisa/Estudo-base-de-presas.png',
                       caption: 'Grid amostral do estudo de base de presas',
                     })
                   }
                 >
                   <Image
-                    src="/atuacao/grid-amostral-base-de-presas.webp"
+                    src="/atuacao/pesquisa/Estudo-base-de-presas.png"
                     alt="Grid presas"
                     fill
                     sizes="(max-width: 1024px) 100vw, 50vw"
@@ -253,12 +267,23 @@ export default function PesquisaAtuacao() {
                 Dieta e ecologia isotópica
               </h3>
               <p className="text-gray-700 leading-relaxed grow">
-                São realizados estudos de dieta e ecologia isotópica, que
-                permitem entender com maior precisão o que as onças estão
-                consumindo e como se estruturam as cadeias alimentares na
-                região. Esse tipo de informação é fundamental para avaliar a
-                saúde do ecossistema e orientar estratégias de manejo.
+                Em parceria com a ESALQ/CENA-USP, por meio do Laboratório de
+                Ecologia, Manejo e Conservação da Fauna (LEMaC), desenvolvemos
+                estudos sobre a dieta e a ecologia isotópica das onças-pintadas
+                e onças-pardas do Parque Nacional do Iguaçu.
               </p>
+              <p className="text-gray-700 leading-relaxed grow">
+                As pesquisas revelam como esses predadores utilizam os recursos
+                alimentares e compartilham o ambiente. Os resultados mostram que
+                a onça-pintada depende principalmente de presas de grande porte,
+                como catetos e queixadas, enquanto a onça-parda apresenta maior
+                flexibilidade alimentar. As análises também evidenciam a
+                importância dos ambientes florestais na manutenção de cadeias
+                alimentares saudáveis, fornecendo informações essenciais para
+                orientar estratégias de conservação dos grandes felinos e de
+                suas presas.
+              </p>
+
               <div className="space-y-3 mt-auto">
                 <div
                   className="relative w-full aspect-square max-w-125 mx-auto cursor-zoom-in overflow-hidden rounded-3xl shadow-xl border border-gray-100 group"
@@ -294,22 +319,34 @@ export default function PesquisaAtuacao() {
           <div className="grid lg:grid-cols-12 gap-8 lg:gap-16 items-center">
             <div className="lg:col-span-7 space-y-6">
               <h3 className="text-4xl font-bold uppercase tracking-tight text-onca-laranja mb-4">
-                Captura e Colarização
+                Captura e monitoramento por telemetria
               </h3>
               <div className="space-y-4">
                 <p className="text-gray-300 leading-relaxed text-lg">
-                  A captura e colarização de onças-pintadas é uma ferramenta
-                  fundamental para entender como esses animais vivem na
-                  natureza. Realizada com protocolos rigorosos de bem-estar
-                  animal e segurança, essa atividade permite equipar as onças
-                  com colares GPS que registram seus deslocamentos.
+                  A captura e o monitoramento de onças-pintadas com colares GPS
+                  são ferramentas fundamentais para compreender a ecologia da
+                  espécie e promover a coexistência entre pessoas e grandes
+                  felinos. Realizada seguindo rigorosos protocolos de bem-estar
+                  animal e segurança, essa atividade permite acompanhar, em
+                  tempo real, os deslocamentos e o uso da paisagem por cada
+                  indivíduo.
                 </p>
                 <p className="text-gray-300 leading-relaxed text-lg">
-                  Esses dados mostram como as onças utilizam o território,
-                  identificam áreas prioritárias para conservação e ajudam a
-                  orientar ações para reduzir conflitos com pessoas. Durante a
-                  captura, também são realizadas avaliações de saúde e coleta de
-                  amostras, contribuindo para estudos genéticos e sanitários.
+                  Essas informações revelam como as onças utilizam o território,
+                  identificam áreas prioritárias para conservação, corredores
+                  ecológicos e regiões com maior potencial de conflito com
+                  atividades humanas. O monitoramento também permite antecipar
+                  situações de risco, orientar ações preventivas junto às
+                  comunidades rurais e subsidiar medidas que protegem as onças,
+                  os produtores, os rebanhos e outros animais domésticos.
+                </p>
+                <p className="text-gray-300 leading-relaxed text-lg">
+                  Durante a captura, também são realizados exames clínicos e a
+                  coleta de amostras biológicas, gerando informações sobre
+                  saúde, genética, reprodução e doenças. Esses dados ampliam o
+                  conhecimento científico sobre a espécie e fornecem subsídios
+                  para o manejo e a conservação da população de onças-pintadas
+                  do Iguaçu.
                 </p>
               </div>
             </div>
@@ -383,14 +420,21 @@ export default function PesquisaAtuacao() {
                   O colar de monitoramento machuca a onça-pintada?
                 </h4>
                 <p className="text-gray-300 leading-relaxed text-lg">
-                  <strong className="text-white">Não.</strong> Os colares são
-                  desenvolvidos especificamente para pesquisa e conservação da
-                  fauna, seguindo protocolos veterinários rigorosos para
-                  garantir o bem-estar do animal. Eles são leves, ajustados
-                  individualmente e não limitam os movimentos da onça-pintada. O
-                  monitoramento por colar é uma ferramenta essencial para
-                  entender o comportamento da espécie e criar estratégias mais
-                  eficientes de conservação.
+                  <strong className="text-white">Não.</strong> Os colares
+                  utilizados em pesquisas científicas são desenvolvidos
+                  especificamente para grandes felinos e seguem rigorosos
+                  protocolos veterinários e de bem-estar animal. Cada
+                  equipamento é ajustado individualmente ao animal, pesa menos
+                  de 3% do seu peso corporal e não interfere em seus movimentos,
+                  alimentação, caça ou comportamento natural.
+                </p>
+                <p className="text-gray-300 leading-relaxed text-lg mt-2">
+                  Durante todo o período de monitoramento, as onças são
+                  acompanhadas pela equipe técnica para verificar seu estado de
+                  saúde e o funcionamento do equipamento. Ao final do estudo, os
+                  colares são removidos ou possuem mecanismos de desprendimento
+                  programado, evitando que permaneçam no animal por tempo
+                  indeterminado.
                 </p>
               </div>
             </div>
@@ -398,9 +442,131 @@ export default function PesquisaAtuacao() {
         </div>
       </section>
 
-      <section className="w-full py-24 bg-white text-onca-preto flex justify-center">
+      {/* NOVA SEÇÃO: SAÚDE ÚNICA / CÃOSERVAÇÃO */}
+      <section className="w-full py-24 bg-gray-50 text-onca-preto flex justify-center border-b border-gray-200">
+        <div className="mx-auto w-full max-w-7xl px-6 lg:px-8 space-y-16">
+          <div className="max-w-4xl space-y-6">
+            <h3 className="text-3xl font-bold uppercase tracking-tight border-l-4 border-onca-laranja pl-4">
+              Saúde Única
+            </h3>
+            <p className="text-xl text-gray-700 leading-relaxed">
+              O Projeto integra ciência e manejo ao investigar a interface entre
+              fauna silvestre e atividades humanas. Compreendemos que a saúde
+              dos ecossistemas, da fauna silvestre e dos animais domésticos
+              estão profundamente interligadas, e essas informações subsidiam
+              ações diretas de manejo e redução de impactos.
+            </p>
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
+            {/* Texto Cãoservação */}
+            <div className="space-y-6">
+              <h4 className="text-2xl font-bold uppercase tracking-tight text-onca-preto">
+                Programa Cãoservação
+              </h4>
+              <div className="space-y-4">
+                <p className="text-gray-600 leading-relaxed text-lg">
+                  O Cãoservação é um programa do Projeto Onças do Iguaçu criado
+                  para ampliar as estratégias de conservação da onça-pintada e
+                  de outros carnívoros silvestres por meio da Saúde Única.
+                  Surgiu após a identificação de que muitos cães e gatos das
+                  comunidades do entorno do Parque Nacional do Iguaçu
+                  apresentavam condições sanitárias precárias, baixa cobertura
+                  vacinal e acesso limitado à castração, representando riscos à
+                  fauna silvestre devido à intensa interação entre animais
+                  domésticos, vida silvestre e pessoas.
+                </p>
+                <p className="text-gray-600 leading-relaxed text-lg">
+                  O programa busca conhecer o perfil demográfico e sanitário dos
+                  cães e gatos domiciliados, monitorar a circulação de agentes
+                  infecciosos e desenvolver ações preventivas para reduzir esses
+                  riscos. Para isso, promove campanhas de vacinação contra a
+                  raiva e outras doenças infecciosas, incentivo à castração,
+                  educação em saúde e guarda responsável.
+                </p>
+                <p className="text-gray-600 leading-relaxed text-lg">
+                  Desde sua criação, o Cãoservação já imunizou mais de mil
+                  animais, protegendo a saúde das comunidades, dos animais
+                  domésticos e da fauna silvestre. Além disso, fortalece o
+                  vínculo com os moradores do entorno, mostrando que a
+                  conservação da onça-pintada depende também do cuidado com os
+                  animais domésticos e do engajamento das pessoas, promovendo a
+                  coexistência entre pessoas, fauna silvestre e animais
+                  domésticos.
+                </p>
+              </div>
+            </div>
+
+            {/* Imagens (Grid) */}
+            <div className="pt-30 grid grid-cols-2 gap-6">
+              <div className="col-span-2 space-y-2">
+                <div
+                  className="relative h-64 sm:h-80 w-full cursor-zoom-in group overflow-hidden rounded-3xl shadow-xl"
+                  onClick={() =>
+                    setModalData({
+                      src: '/atuacao/pesquisa/Caoservacao.jpeg',
+                      caption: 'Programa Cãoservação em ação',
+                    })
+                  }
+                >
+                  <Image
+                    src="/atuacao/pesquisa/Caoservacao.jpeg"
+                    alt="Programa Cãoservação"
+                    fill
+                    sizes="(max-width: 1024px) 100vw, 50vw"
+                    className="object-cover transition-transform duration-300 group-hover:scale-105"
+                  />
+                </div>
+              </div>
+
+              <div className="space-y-2">
+                <div
+                  className="relative h-48 w-full cursor-zoom-in group overflow-hidden rounded-3xl shadow-lg"
+                  onClick={() =>
+                    setModalData({
+                      src: '/atuacao/pesquisa/logo-caaoservacao.jpeg',
+                      caption: 'Ações de vacinação e cuidados',
+                    })
+                  }
+                >
+                  <Image
+                    src="/atuacao/pesquisa/logo-caaoservacao.jpeg"
+                    alt="Vacinação de animais"
+                    fill
+                    sizes="(max-width: 1024px) 50vw, 25vw"
+                    className="object-cover transition-transform duration-300 group-hover:scale-105"
+                  />
+                </div>
+              </div>
+
+              <div className="space-y-2">
+                <div
+                  className="relative h-48 w-full cursor-zoom-in group overflow-hidden rounded-3xl shadow-lg"
+                  onClick={() =>
+                    setModalData({
+                      src: '/atuacao/pesquisa/Caoservacao-3.jpg',
+                      caption: 'Engajamento com a comunidade local',
+                    })
+                  }
+                >
+                  <Image
+                    src="/atuacao/pesquisa/Caoservacao-3.jpg"
+                    alt="Engajamento com a comunidade"
+                    fill
+                    sizes="(max-width: 1024px) 50vw, 25vw"
+                    className="object-cover transition-transform duration-300 group-hover:scale-105"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* OUTRAS PESQUISAS (Agora apenas 2 cards) */}
+      <section className="w-full py-14 bg-white text-onca-preto flex justify-center">
         <div className="mx-auto w-full max-w-7xl px-6 lg:px-8">
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
             <div className="bg-onca-laranja/10 hover:bg-onca-laranja/20 transition-colors duration-300 p-8 sm:p-10 rounded-3xl flex flex-col h-full border border-onca-laranja/20">
               <h4 className="text-2xl font-bold uppercase tracking-tight mb-4">
                 Pesquisas em Parceria
@@ -412,21 +578,6 @@ export default function PesquisaAtuacao() {
                 status sanitário dos animais, contribuindo para avaliar a
                 viabilidade da população a longo prazo e identificar possíveis
                 riscos, como doenças ou perda de variabilidade genética.
-              </p>
-            </div>
-
-            <div className="bg-onca-laranja/10 hover:bg-onca-laranja/20 transition-colors duration-300 p-8 sm:p-10 rounded-3xl flex flex-col h-full border border-onca-laranja/20">
-              <h4 className="text-2xl font-bold uppercase tracking-tight mb-4">
-                Saúde Única
-              </h4>
-              <p className="font-medium leading-relaxed opacity-90 grow">
-                O Projeto integra ciência e manejo ao investigar a interface
-                entre fauna silvestre e atividades humanas. Nesse contexto,
-                iniciativas como o Programa CãoServação monitoram a presença de
-                cães domésticos no interior do parque e entorno — um fator
-                crítico, tanto pelo risco de transmissão de doenças quanto pela
-                pressão de caça sobre a fauna nativa. Esses dados subsidiam
-                ações diretas de manejo e estratégias de redução de impactos.
               </p>
             </div>
 
