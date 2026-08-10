@@ -1,10 +1,15 @@
 import Link from 'next/link';
 import Image from 'next/image';
+
 export default function HeroHome() {
   return (
     <section className="relative bg-onca-preto w-full flex justify-center overflow-hidden">
       <div className="w-full max-w-7xl flex flex-col md:flex-row items-stretch relative">
         <div className="relative z-10 hidden md:block md:w-[60%] min-h-125 shrink-0">
+          <span className="absolute top-6 left-6 z-30 text-white text-xs font-medium tracking-wide bg-black/40 px-3 py-1.5 rounded-full backdrop-blur-sm shadow-lg border border-white/10">
+            Foto: Emílio White
+          </span>
+
           <div className="absolute inset-y-0 left-0 w-24 bg-linear-to-r from-onca-preto to-transparent z-20 pointer-events-none"></div>
           <div className="absolute inset-y-0 right-0 w-48 bg-linear-to-l from-onca-preto via-onca-preto/90 to-transparent z-20 pointer-events-none"></div>
 
@@ -30,6 +35,10 @@ export default function HeroHome() {
             </div>
 
             <div className="relative w-full h-[45vh] md:hidden my-8">
+              <span className="absolute bottom-4 right-4 z-30 text-white text-[10px] sm:text-xs font-medium tracking-wide bg-black/40 px-3 py-1.5 rounded-full backdrop-blur-sm shadow-lg border border-white/10">
+                Foto: Emílio White
+              </span>
+
               <Image
                 src="/home/hero-home3.jpg"
                 alt="Onça-pintada na Mata Atlântica"

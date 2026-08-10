@@ -25,12 +25,11 @@ export default function ResumoHome() {
             <span className="text-onca-laranja-escuro">vida</span>
           </h2>
           <p className="text-gray-600 text-lg leading-relaxed mb-8">
-            O Projeto Onças do Iguaçu atua há mais de três décadas na
-            conservação da onça-pintada. Nossa missão vai além do monitoramento:
-            trabalhamos lado a lado com as comunidades lindeiras, promovendo a
-            coexistência, o engajamento e a pesquisa científica para garantir
-            que o maior felino das Américas continue a reinar no Parque Nacional
-            do Iguaçu.
+            O Projeto Onças do Iguaçu atua há quase 10 anos na conservação da
+            onça-pintada. Nossa missão vai além do monitoramento: trabalhamos
+            lado a lado com as comunidades lindeiras, promovendo a coexistência,
+            o engajamento e a pesquisa científica para garantir que o maior
+            felino das Américas continue a reinar no Parque Nacional do Iguaçu.
           </p>
 
           <Link

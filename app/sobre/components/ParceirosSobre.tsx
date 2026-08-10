@@ -208,7 +208,7 @@ export default function ParceirosSobre() {
 
         <div className="mt-20 pt-16">
           <h3 className="text-2xl lg:text-3xl font-bold uppercase tracking-tight text-onca-preto mb-8 md:text-center">
-            Benefícios para a empresa:
+            Benefícios para a Empresa Amiga da Onça:
           </h3>
           <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6 text-gray-800 text-lg max-w-5xl mx-auto">
             {[

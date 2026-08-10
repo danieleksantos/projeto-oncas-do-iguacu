@@ -7,8 +7,21 @@ import { ChevronDown, MessageCircle, ArrowRight } from 'lucide-react';
 const faqs = [
   {
     question: 'O que fazer ao encontrar uma onça?',
-    answer:
-      'Mantenha a calma e dê espaço ao animal. Afaste-se devagar, sem correr ou fazer movimentos bruscos, e evite se aproximar. Onças evitam o contato com pessoas e, ao perceberem sua presença, tendem a se afastar.',
+    answer: (
+      <>
+        Mantenha a calma e dê espaço ao animal. Afaste-se devagar, sem correr ou
+        fazer movimentos bruscos, e evite se aproximar. Onças evitam o contato
+        com pessoas e, ao perceberem sua presença, tendem a se afastar.{' '}
+        <a
+          href="https://drive.google.com/file/d/1Eeu9TFE-DmGEkzMeTA6kRJ4wlEKs83Ug/view"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-onca-laranja-escuro font-bold hover:underline transition-colors"
+        >
+          Clique aqui para acessar nosso folder com mais informações.
+        </a>
+      </>
+    ),
   },
   {
     question: 'Onças atacam pessoas?',

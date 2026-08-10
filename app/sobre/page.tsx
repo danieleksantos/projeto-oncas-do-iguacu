@@ -1,116 +1,50 @@
-import Image from 'next/image';
-import CounterSobre from '@/app/sobre/components/CounterSobre';
 import EquipeSobre from '@/app/sobre/components/EquipeSobre';
 import ParceirosSobre from '@/app/sobre/components/ParceirosSobre';
+import HeroSobre from './components/HeroSobre';
 
 export default function SobrePage() {
   return (
     <div className="bg-onca-preto text-white">
-      <section className="relative bg-onca-preto w-full flex justify-center overflow-hidden">
-        <div className="w-full max-w-7xl flex flex-col md:flex-row items-stretch relative">
-          <div className="relative z-20 w-full md:w-[40%] flex flex-col justify-center shrink-0 py-12 md:py-32">
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[80%] bg-onca-laranja/10 blur-[100px] rounded-full z-0 mix-blend-screen pointer-events-none"></div>
-
-            <div className="relative z-10 mx-auto w-full px-0 md:px-6 lg:pl-12 lg:pr-8">
-              <div className="max-w-xl text-center md:text-left mx-auto md:mx-0 px-6 md:px-0">
-                <span className="inline-block text-onca-laranja text-sm font-bold uppercase tracking-[0.3em] mb-4 drop-shadow-md">
-                  Nossa Missão
-                </span>
-                <h1 className="text-white text-5xl md:text-6xl font-bold uppercase tracking-tighter leading-tight lg:leading-[0.9] mb-2 md:mb-6 drop-shadow-lg">
-                  Prosperar <br />
-                  <span className="text-onca-laranja">Juntos</span>
-                </h1>
-              </div>
-
-              <div className="relative w-full h-[45vh] md:hidden my-8">
-                <Image
-                  src="/sobre/onca-hero-sobre.jpg"
-                  alt="Onça-pintada na floresta"
-                  fill
-                  priority
-                  className="object-cover"
-                  sizes="100vw"
-                />
-              </div>
-
-              <div className="max-w-xl text-center md:text-left mx-auto md:mx-0 px-6 md:px-0">
-                <p className="text-gray-300 text-lg drop-shadow-md font-medium">
-                  Trabalhamos para garantir a conservação da onça-pintada,
-                  protegendo a espécie-chave da biodiversidade do Parque
-                  Nacional do Iguaçu e região.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div className="relative z-10 hidden md:block md:w-[60%] min-h-[500px] shrink-0">
-            <div className="absolute inset-y-0 left-0 w-48 bg-linear-to-r from-onca-preto via-onca-preto/90 to-transparent z-20 pointer-events-none"></div>
-            <div className="absolute inset-y-0 right-0 w-24 bg-linear-to-l from-onca-preto to-transparent z-20 pointer-events-none"></div>
-
-            <Image
-              src="/sobre/onca-hero-sobre.jpg"
-              alt="Onça-pintada na floresta"
-              fill
-              priority
-              className="object-cover object-[center_30%] z-10"
-              sizes="(max-width: 1280px) 60vw, 1500px"
-            />
-          </div>
-        </div>
-      </section>
+      <HeroSobre />
 
       <section
         id="quem-somos"
-        className="py-24 bg-white text-onca-preto w-full flex justify-center"
+        className="py-24 lg:py-32 bg-white text-onca-preto w-full flex justify-center"
       >
         <div className="w-full max-w-7xl px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <div>
-              <h2 className="text-3xl font-bold uppercase border-l-4 border-onca-laranja pl-4 mb-8">
+          <div className="max-w-4xl mx-auto">
+            <div className="mb-14">
+              <h2 className="text-3xl md:text-4xl font-bold uppercase border-l-4 border-onca-laranja pl-5 mb-8 tracking-tight">
                 Quem somos
               </h2>
-              <p className="text-xl text-gray-700 leading-relaxed">
-                O Projeto Onças do Iguaçu, que nasceu em 2018, é uma iniciativa
-                de conservação dedicada à proteção da onça-pintada na região do
-                Parque Nacional do Iguaçu e seu entorno, atuando de forma
-                integrada em pesquisa, coexistência e engajamento social.
+              <p className="text-xl md:text-2xl text-gray-700 leading-relaxed font-medium">
+                Somos um projeto institucional do ICMBio, desenvolvido em
+                parceria pelo Parque Nacional do Iguaçu, Instituto
+                Pró-Carnívoros e CENAP/ICMBio. Atuamos no Parque Nacional do
+                Iguaçu e nos dez municípios lindeiros, por meio de Acordo de
+                Cooperação Técnica. Acordo de Cooperação nº 47/2020, celebrado
+                entre ICMBio e Instituto Pró-Carnívoros.
               </p>
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-              <div className="border-t border-gray-200 pt-6">
-                <dd className="text-5xl font-bold text-onca-laranja flex items-baseline">
-                  <CounterSobre end={30} prefix="+" />{' '}
-                  <span className="ml-2 text-lg">anos</span>
-                </dd>
-                <dt className="text-xs font-bold uppercase text-gray-500 mt-2">
-                  Histórico de pesquisa na região
-                </dt>
+
+            <div className="pt-3 border-t border-gray-200 flex flex-col gap-6">
+              <div className="flex flex-col sm:flex-row sm:items-start gap-2 sm:gap-6">
+                <strong className="text-onca-preto uppercase tracking-widest text-sm shrink-0 sm:w-24 sm:pt-1.5">
+                  Missão:
+                </strong>
+                <p className="text-lg md:text-xl text-gray-600 leading-relaxed">
+                  Conservação da onça-pintada como espécie-chave da
+                  biodiversidade do Parque Nacional do Iguaçu.
+                </p>
               </div>
-              <div className="border-t border-gray-200 pt-6">
-                <dd className="text-5xl font-bold text-onca-laranja">
-                  <CounterSobre end={10} />
-                </dd>
-                <dt className="text-xs font-bold uppercase text-gray-500 mt-2">
-                  Municípios de atuação no entorno do Parque
-                </dt>
-              </div>
-              <div className="border-t border-gray-200 pt-6">
-                <dd className="text-5xl font-bold text-onca-laranja flex items-baseline">
-                  <CounterSobre end={600} />{' '}
-                  <span className="ml-2 text-lg">mil</span>
-                </dd>
-                <dt className="text-xs font-bold uppercase text-gray-500 mt-2">
-                  Hectares monitorados em um dos maiores censos de onças do
-                  mundo
-                </dt>
-              </div>
-              <div className="border-t border-gray-200 pt-6">
-                <dd className="text-5xl font-bold text-onca-laranja flex items-baseline">
-                  <CounterSobre end={100} prefix="+" />
-                </dd>
-                <dt className="text-xs font-bold uppercase text-gray-500 mt-2">
-                  Onças-pintadas no Corredor Verde (Brasil + Argentina)
-                </dt>
+
+              <div className="flex flex-col sm:flex-row sm:items-start gap-2 sm:gap-6">
+                <strong className="text-onca-preto uppercase tracking-widest text-sm shrink-0 sm:w-24 sm:pt-1.5">
+                  Visão:
+                </strong>
+                <p className="text-lg md:text-xl text-gray-600 leading-relaxed">
+                  Onças, pessoas e Parque Nacional prosperando juntos.
+                </p>
               </div>
             </div>
           </div>
@@ -125,42 +59,50 @@ export default function SobrePage() {
                 O que fazemos
               </h3>
               <p className="text-onca-preto mb-6 font-semibold text-[18px]">
-                Trabalhamos para garantir a sobrevivência da onça-pintada na
-                Mata Atlântica por meio de:
+                Nossa atuação integra ciência, coexistência, educação e
+                comunicação para conservar a população de onças-pintadas do
+                Iguaçu. Fazemos isso por meio de:
               </p>
-              <ul className="space-y-4 text-onca-preto">
+              <ul className="space-y-5 text-onca-preto">
                 {[
-                  'Monitoramento científico da população e de suas presas',
-                  'Redução de conflitos entre pessoas e grandes felinos',
-                  'Ações de educação e engajamento com comunidades locais',
-                  'Produção e disseminação de conhecimento técnico e científico',
+                  'Pesquisa e monitoramento da população de onças e de suas presas',
+                  'Coexistência, desenvolvendo soluções para reduzir conflitos com produtores rurais',
+                  'Engajamento e educação, aproximando pessoas da conservação da fauna',
+                  'Comunicação e disseminação de conhecimento, transformando ciência em informação acessível e apoio à tomada de decisão',
                 ].map((item) => (
-                  <li key={item} className="flex items-start gap-3">
-                    <span className="text-onca-laranja font-bold">/</span>{' '}
-                    {item}
+                  <li
+                    key={item}
+                    className="flex items-start gap-3 leading-relaxed"
+                  >
+                    <span className="text-onca-laranja font-bold mt-0.5">
+                      /
+                    </span>{' '}
+                    <span>{item}</span>
                   </li>
                 ))}
               </ul>
             </div>
+
             <div className="bg-onca-laranja p-10 rounded-2xl text-onca-preto flex flex-col justify-center">
               <h3 className="font-bold uppercase mb-6 tracking-widest text-sm text-onca-preto">
                 Por que isso importa
               </h3>
               <p className="text-xl font-bold mb-4 leading-tight">
-                A onça-pintada é uma espécie-chave para o equilíbrio dos
-                ecossistemas.
+                A onça-pintada é uma espécie-chave para a conservação da Mata
+                Atlântica.
               </p>
               <p className="leading-relaxed font-medium">
-                Sua presença indica a integridade ambiental da região e sua
-                conservação contribui diretamente para a proteção da
-                biodiversidade da Mata Atlântica.
+                Como predador de topo da cadeia alimentar, ela ajuda a manter o
+                equilíbrio dos ecossistemas. Proteger a onça significa conservar
+                a floresta, sua biodiversidade e os benefícios que ela
+                proporciona às pessoas.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="py-24 bg-white text-onca-preto w-full flex justify-center">
+      <section className="py-24 bg-gray-300 text-onca-preto w-full flex justify-center">
         <div className="w-full max-w-7xl px-6 lg:px-8 space-y-20">
           <div>
             <h2 className="text-3xl font-bold uppercase border-l-4 border-onca-laranja pl-4 mb-8">
@@ -197,27 +139,6 @@ export default function SobrePage() {
                 amplando sua atuação e consolidando parcerias nacionais e
                 internacionais.
               </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="py-24 bg-onca-preto border-t border-white/10 w-full flex justify-center">
-        <div className="w-full max-w-7xl px-6 lg:px-8 text-center">
-          <h2 className="text-onca-laranja text-[20px] font-bold uppercase tracking-[0.2em] mb-12">
-            Base Institucional
-          </h2>
-          <div className="max-w-4xl mx-auto space-y-8">
-            <p className="text-white text-lg leading-relaxed">
-              O Projeto Onças do Iguaçu é desenvolvido* pelo Parque Nacional do
-              Iguaçu/ICMBio, em parceria com o Instituto Pró-Carnívoros e o
-              CENAP/ICMBio, e financiado majoritariamente com recursos de
-              Encargos Acessórios previstos no Contrato de Concessão nº 01/2022
-              do Parque Nacional do Iguaçu.
-            </p>
-            <div className="p-8 border border-white/10 rounded-2xl bg-white/5 italic text-sm text-gray-400">
-              *Acordo de Cooperação nº 47/2020, celebrado entre ICMBio e
-              Instituto Pró-Carnívoros.
             </div>
           </div>
         </div>

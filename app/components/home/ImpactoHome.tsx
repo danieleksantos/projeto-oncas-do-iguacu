@@ -6,7 +6,7 @@ export default function ImpactoHome() {
   const impactos = [
     {
       prefix: '+',
-      end: 30,
+      end: 9,
       suffix: '',
       texto: (
         <>
@@ -18,7 +18,7 @@ export default function ImpactoHome() {
     },
     {
       prefix: '+',
-      end: 600,
+      end: 170,
       suffix: ' mil',
       texto: (
         <>
