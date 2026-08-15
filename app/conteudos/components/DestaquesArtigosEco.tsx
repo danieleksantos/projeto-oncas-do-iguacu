@@ -19,7 +19,7 @@ const destaquesArtigos = [
   },
 ];
 
-export default function DestaquesArtigos() {
+export default function DestaquesArtigosEco() {
   return (
     <section className="w-full py-20 lg:py-32 bg-white flex justify-center pb-32">
       <div className="mx-auto w-full max-w-7xl px-6 lg:px-8">
@@ -85,8 +85,8 @@ export default function DestaquesArtigos() {
 
         <div className="mt-12 lg:mt-16 flex justify-center">
           <Link
-            href="/conteudos/artigos"
-            className="inline-flex items-center gap-3 px-8 py-4 bg-onca-preto text-white rounded-full font-bold uppercase tracking-widest text-sm transition-all duration-300 hover:scale-105 hover:bg-onca-laranja hover:text-onca-preto hover:shadow-xl focus-visible:ring-4 focus-visible:ring-onca-laranja/50 outline-none group"
+            href="/conteudos/artigos-eco"
+            className="inline-flex items-center gap-3 px-8 py-4 bg-onca-preto text-white rounded-full font-bold uppercase tracking-widest text-sm transition-all duration-300 hover:scale-105 hover:shadow-xl focus-visible:ring-4 focus-visible:ring-onca-laranja/50 outline-none group"
           >
             Ver todos os artigos
             <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />

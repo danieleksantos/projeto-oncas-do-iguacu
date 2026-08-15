@@ -56,8 +56,8 @@ export default function OncaPardaFauna() {
                   <span className="text-xs font-bold text-gray-700 uppercase tracking-widest mb-1">
                     Status Global
                   </span>
-                  <span className="text-sm font-bold text-green-600 uppercase">
-                    Pouco Preocupante
+                  <span className="text-sm font-bold text-orange-500 uppercase">
+                    Lista Brasileira de Espécies Ameaçadas
                   </span>
                 </div>
               </div>
@@ -89,13 +89,13 @@ export default function OncaPardaFauna() {
                   className="relative w-full aspect-4/3 cursor-zoom-in overflow-hidden rounded-3xl shadow-xl border border-gray-200 group"
                   onClick={() =>
                     setModalData({
-                      src: '/fauna/onca-parda.webp',
+                      src: '/fauna/onca-parda-2.jpg',
                       caption: 'Onça-Parda (Puma concolor)',
                     })
                   }
                 >
                   <Image
-                    src="/fauna/onca-parda.webp"
+                    src="/fauna/onca-parda-2.jpg"
                     alt="Onça-Parda"
                     fill
                     sizes="(max-width: 1024px) 100vw, 50vw"

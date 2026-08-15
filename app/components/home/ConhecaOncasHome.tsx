@@ -40,7 +40,7 @@ export default function ConhecaOncasHome() {
 
             <h2 className="text-4xl md:text-5xl lg:text-5xl font-bold uppercase tracking-tighter text-onca-preto leading-[1.1] mb-6">
               A Onça-pintada e <br />
-              <span className="text-onca-laranja">Nossa Fauna</span>
+              <span className="text-onca-laranja">Nossos Felinos</span>
             </h2>
 
             <p className="text-gray-600 text-lg md:text-xl font-medium leading-relaxed max-w-xl">
@@ -92,7 +92,7 @@ export default function ConhecaOncasHome() {
 
             <div className="mt-4 lg:mt-auto md:ml-auto w-full md:w-auto relative z-20">
               <Link
-                href="/fauna"
+                href="/felinos"
                 className="group w-full md:w-auto inline-flex items-center justify-center gap-4 bg-onca-laranja text-onca-preto px-8 py-5 rounded-full font-bold uppercase tracking-widest text-sm transition-transform duration-300 hover:scale-105 outline-none focus-visible:ring-4 focus-visible:ring-onca-laranja/50"
               >
                 Explorar Espécies

@@ -74,7 +74,7 @@ const footerNavigation = {
     { name: 'Início', href: '/' },
     { name: 'Contato', href: '/contato' },
     { name: 'Produtos', href: '/apoie/produtos' },
-    { name: 'As onças', href: '/oncas' },
+    { name: 'As onças', href: '/felinos' },
   ],
   projeto: [
     { name: 'Quem somos', href: '/sobre/quem-somos' },

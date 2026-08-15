@@ -20,16 +20,16 @@ export default function EstagioVoluntariadoApoie() {
             <div className="absolute top-10 -left-10 w-64 h-64 bg-onca-laranja/10 rounded-full blur-3xl z-0 pointer-events-none" />
 
             <div
-              className="relative w-full h-full rounded-3xl overflow-hidden shadow-xl z-10 group cursor-zoom-in border-4 border-onca-laranja"
+              className="relative w-full h-full rounded-3xl overflow-hidden shadow-xl z-10 group cursor-zoom-in"
               onClick={() =>
                 setModalData({
-                  src: '/apoie/voluntariado.webp',
+                  src: '/apoie/estagio-voluntariado.jpg',
                   caption: 'Voluntários e estagiários em atividade de campo.',
                 })
               }
             >
               <Image
-                src="/apoie/voluntariado.webp"
+                src="/apoie/estagio-voluntariado.jpg"
                 alt="Voluntários e estagiários do projeto"
                 fill
                 className="object-cover transition-transform duration-500 group-hover:scale-105 bg-gray-200"

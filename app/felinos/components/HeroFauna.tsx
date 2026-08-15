@@ -13,7 +13,7 @@ export default function HeroFauna() {
                 Biodiversidade
               </span>
               <h1 className="text-white text-5xl md:text-6xl font-bold uppercase tracking-tighter leading-tight lg:leading-[0.9] mb-2 md:mb-0 drop-shadow-lg">
-                Fauna do <br />
+                Felinos do <br />
                 <span className="text-onca-laranja">Iguaçu</span>
               </h1>
             </div>

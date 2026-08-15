@@ -29,15 +29,15 @@ const navigation = [
     ],
   },
   {
-    name: 'Fauna do Iguaçu',
-    href: '/fauna',
+    name: 'Felinos do Iguaçu',
+    href: '/felinos',
     children: [
-      { name: 'Onça-Pintada', href: '/fauna/#onca-pintada' },
-      { name: 'Onça-Parda', href: '/fauna/#onca-parda' },
-      { name: 'Jaguatirica', href: '/fauna/#jaguatirica' },
-      { name: 'Gato-Mourisco', href: '/fauna/#gato-mourisco' },
-      { name: 'Gato-Maracajá', href: '/fauna/#gato-maracaja' },
-      { name: 'Gato-do-Mato', href: '/fauna/#gato-do-mato-pequeno' },
+      { name: 'Onça-Pintada', href: '/felinos/#onca-pintada' },
+      { name: 'Onça-Parda', href: '/felinos/#onca-parda' },
+      { name: 'Jaguatirica', href: '/felinos/#jaguatirica' },
+      { name: 'Gato-Mourisco', href: '/felinos/#gato-mourisco' },
+      { name: 'Gato-Maracajá', href: '/felinos/#gato-maracaja' },
+      { name: 'Gato-do-Mato', href: '/felinos/#gato-do-mato-pequeno' },
     ],
   },
   {
@@ -47,7 +47,8 @@ const navigation = [
       { name: 'Boletim A Voz da Onça', href: '/conteudos/boletim' },
       { name: 'Notícias', href: '/conteudos/noticias' },
       { name: 'Materiais para download', href: '/conteudos/downloads' },
-      { name: 'Artigos ((O)) Eco', href: '/conteudos/artigos' },
+      { name: 'Artigos ((O)) Eco', href: '/conteudos/artigos-eco' },
+      { name: 'Artigos cientificos', href: '/conteudos/artigos-cientificos' },
     ],
   },
   {

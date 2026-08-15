@@ -94,7 +94,7 @@ export default function OncaPintadaFauna() {
                 </div>
                 <div className="bg-white p-5 rounded-2xl shadow-sm border border-gray-100 flex flex-col">
                   <span className="text-xs font-bold text-gray-700 uppercase tracking-widest mb-1">
-                    Status Iguaçu
+                    Status Mata Atlântica
                   </span>
                   <span className="text-sm font-bold text-red-600 uppercase">
                     Criticamente em Perigo

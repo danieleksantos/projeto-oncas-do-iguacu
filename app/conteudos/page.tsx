@@ -2,7 +2,8 @@ import HeroConteudos from './components/HeroConteudos';
 import DestaquesBoletins from './components/DestaquesBoletins';
 import DestaquesNoticias from './components/DestaquesNoticias';
 import DestaquesDownloads from './components/DestaquesDownloads';
-import DestaquesArtigos from './components/DestaquesArtigos';
+import DestaquesArtigosEco from './components/DestaquesArtigosEco';
+import DestaquesArtigosCientificos from './components/DestaquesArtigosCientificos';
 
 export default function ConteudosHubPage() {
   return (
@@ -11,7 +12,8 @@ export default function ConteudosHubPage() {
       <DestaquesBoletins />
       <DestaquesNoticias />
       <DestaquesDownloads />
-      <DestaquesArtigos />
+      <DestaquesArtigosEco />
+      <DestaquesArtigosCientificos />
     </div>
   );
 }

@@ -88,7 +88,7 @@ export default async function DestaquesNoticias() {
         <div className="mt-12 lg:mt-16 flex justify-center">
           <Link
             href="/conteudos/noticias"
-            className="inline-flex items-center gap-3 px-8 py-4 bg-onca-preto text-white rounded-full font-bold uppercase tracking-widest text-sm transition-all duration-300 hover:scale-105 hover:bg-onca-laranja hover:text-onca-preto hover:shadow-xl focus-visible:ring-4 focus-visible:ring-onca-laranja/50 outline-none group"
+            className="inline-flex items-center gap-3 px-8 py-4 bg-onca-preto text-white rounded-full font-bold uppercase tracking-widest text-sm transition-all duration-300 hover:scale-105 hover:shadow-xl focus-visible:ring-4 focus-visible:ring-onca-laranja/50 outline-none group"
           >
             Ver todas as notícias
             <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
