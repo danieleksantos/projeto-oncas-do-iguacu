@@ -16,15 +16,14 @@ export default function CoexistenciaAtuacao() {
         <div className="mx-auto w-full max-w-7xl px-6 lg:px-8 space-y-16">
           <div className="max-w-3xl mx-auto text-center space-y-6">
             <span className="inline-block text-onca-laranja text-sm font-bold uppercase tracking-[0.3em]">
-              Humanos e Felinos em Harmonia
+              Pessoas e onças dividindo essa terra
             </span>
             <h2 className="text-4xl lg:text-5xl font-bold uppercase tracking-tighter text-onca-preto">
               Coexistência
             </h2>
             <p className="text-xl text-gray-600 leading-relaxed font-medium">
-              A coexistência entre pessoas e grandes felinos é essencial para a
-              conservação da onça-pintada. Atuamos junto às comunidades do
-              entorno para reduzir conflitos, promover segurança e fortalecer
+              Atuamos junto às comunidades do entorno do Parque Nacional do
+              Iguaçu para reduzir conflitos, promover segurança e fortalecer
               relações de confiança, com base no diálogo e na presença constante
               no território.
             </p>
@@ -68,7 +67,7 @@ export default function CoexistenciaAtuacao() {
                 />
               </div>
               <p className="text-xs text-gray-500 text-center italic">
-                Visita técnica e diálogo constante com moradores do entorno
+                Contato contínuo e direto com moradores da região
               </p>
             </div>
           </div>
@@ -129,25 +128,16 @@ export default function CoexistenciaAtuacao() {
             <div className="order-1 lg:order-2 space-y-8">
               <div className="space-y-4">
                 <h3 className="text-3xl font-bold uppercase tracking-tight border-l-4 border-onca-laranja pl-4">
-                  Prevenção e monitoramento
+                  Manejo Preventivo
                 </h3>
                 <p className="text-gray-600 leading-relaxed text-lg">
-                  As propriedades são avaliadas para identificar
-                  vulnerabilidades e implementar soluções práticas, como
-                  melhorias no manejo e medidas de proteção. Além disso,
-                  utilizamos armadilhas fotográficas para compreender a dinâmica
-                  dos predadores e antecipar riscos.
-                </p>
-              </div>
-
-              <div className="space-y-4">
-                <h3 className="text-3xl font-bold uppercase tracking-tight border-l-4 border-onca-laranja pl-4">
-                  Resposta a conflitos
-                </h3>
-                <p className="text-gray-600 leading-relaxed text-lg">
-                  Atuamos em situações sensíveis, como avistamentos e momentos
-                  de tensão, seguindo protocolos que orientam respostas rápidas
-                  e seguras, reduzindo riscos para as pessoas e para a fauna.
+                  Durante as visitas às propriedades rurais do entorno, nossa
+                  equipe orienta os produtores sobre boas práticas de manejo
+                  para prevenir conflitos com animais silvestres. Também são
+                  identificadas vulnerabilidades, implementadas medidas de
+                  proteção e realizado o acompanhamento das áreas para reduzir
+                  riscos e fortalecer a coexistência entre pessoas e grandes
+                  felinos.
                 </p>
               </div>
             </div>

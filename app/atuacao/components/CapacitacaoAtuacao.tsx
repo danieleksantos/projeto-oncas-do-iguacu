@@ -123,7 +123,7 @@ export default function CapacitacaoAtuacao() {
             </div>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 pt-8 border-t border-gray-200">
+          <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-6 lg:gap-8 pt-8 border-t border-gray-200">
             <div className="bg-onca-laranja p-8 rounded-3xl shadow-sm border border-onca-laranja-escuro hover:shadow-lg transition-shadow duration-300 flex flex-col h-full">
               <h4 className="text-xl font-bold uppercase tracking-tight mb-3">
                 Ciscando o Futuro
@@ -143,28 +143,6 @@ export default function CapacitacaoAtuacao() {
                 Fortalece o trabalho e a autonomia financeira de mulheres da
                 região do entorno por meio da valorização da produção artesanal
                 em crochê.
-              </p>
-            </div>
-
-            <div className="bg-onca-laranja p-8 rounded-3xl shadow-sm border border-onca-laranja-escuro hover:shadow-lg transition-shadow duration-300 flex flex-col h-full">
-              <h4 className="text-xl font-bold uppercase tracking-tight mb-3">
-                Artesãs da Onça
-              </h4>
-              <p className="text-dark leading-relaxed grow text-sm">
-                Conecta saberes tradicionais e geração de renda com a produção
-                artesanal diretamente associada à identidade visual e cultural
-                da onça-pintada.
-              </p>
-            </div>
-
-            <div className="bg-onca-laranja p-8 rounded-3xl shadow-sm border border-onca-laranja-escuro hover:shadow-lg transition-shadow duration-300 flex flex-col h-full">
-              <h4 className="text-xl font-bold uppercase tracking-tight mb-3">
-                De Flor em Flor
-              </h4>
-              <p className="text-dark leading-relaxed grow text-sm">
-                Iniciativa que engloba a produção do "Mel da Onça" e promove
-                ações voltadas à proteção e conscientização sobre a importância
-                dos polinizadores nativos.
               </p>
             </div>
 

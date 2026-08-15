@@ -17,9 +17,10 @@ export default function ComunicacaoAtuacao() {
             Comunicação
           </h2>
           <p className="text-xl text-gray-700 leading-relaxed font-medium">
-            A comunicação do Projeto Onças do Iguaçu é orientada pela construção
-            de conexão emocional entre as pessoas e as onças, buscando
-            transformar percepções e aproximar a sociedade da conservação.
+            A comunicação é uma das frentes estratégicas do Projeto Onças do
+            Iguaçu. Atuamos como elo entre ciência, território e sociedade,
+            aproximando as pessoas da conservação por meio de uma linguagem
+            acessível, sensível e baseada em evidências.
           </p>
         </div>
 
@@ -30,11 +31,11 @@ export default function ComunicacaoAtuacao() {
                 Estratégia
               </h3>
               <p className="text-gray-700 leading-relaxed text-lg">
-                A abordagem prioriza a linguagem acessível e a narrativa
-                sensível, reduzindo barreiras entre ciência e público. Em vez de
-                uma comunicação técnica, o projeto compartilha experiências de
-                campo, histórias e registros que despertam interesse e
-                identificação.
+                Mais do que divulgar informações, buscamos construir conexão
+                emocional entre as pessoas e as onças-pintadas. Compartilhamos
+                histórias, experiências de campo, registros da fauna e conteúdos
+                educativos que aproximam o público da conservação e reduzem as
+                barreiras entre a ciência e a sociedade.
               </p>
             </div>
 
@@ -43,9 +44,11 @@ export default function ComunicacaoAtuacao() {
                 Objetivo
               </h3>
               <p className="text-gray-700 leading-relaxed text-lg">
-                Essa estratégia busca substituir o medo pelo encantamento,
-                ampliar o entendimento sobre a importância da espécie e
-                fortalecer o apoio às ações de conservação.
+                Nossa comunicação busca transformar o medo em compreensão,
+                fortalecer a coexistência entre pessoas e grandes felinos,
+                ampliar a visibilidade da conservação e gerar engajamento em
+                favor da proteção da onça-pintada e da biodiversidade do Parque
+                Nacional do Iguaçu.
               </p>
             </div>
           </div>

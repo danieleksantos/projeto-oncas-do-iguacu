@@ -169,69 +169,11 @@ export default function SobrePage() {
       </div>
 
       <section
-        id="governanca"
+        id="transparencia"
         className="relative py-24 bg-gray-50 overflow-hidden border-t border-gray-200 w-full flex justify-center"
       >
-        <div className="w-full max-w-7xl px-6 lg:px-8 space-y-24">
+        <div className="w-full max-w-7xl px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
-            <div className="lg:col-span-4 lg:sticky lg:top-32">
-              <h2 className="text-3xl lg:text-4xl font-bold uppercase tracking-tighter text-onca-preto mb-6 flex items-center gap-4">
-                <span className="w-8 h-1 bg-onca-laranja inline-block shrink-0"></span>
-                Governança
-              </h2>
-              <p className="text-xl font-medium text-gray-800 leading-relaxed border-l-2 border-onca-laranja pl-4">
-                Nossas decisões estratégicas são orientadas por planejamento
-                técnico e evidências científicas.
-              </p>
-            </div>
-
-            <div className="lg:col-span-8 space-y-10">
-              <p className="text-lg text-gray-700 leading-relaxed max-w-3xl">
-                A governança do Projeto Onças do Iguaçu é estruturada por meio
-                de parcerias institucionais e cooperação entre organizações
-                responsáveis pela execução, apoio técnico e gestão das ações.
-              </p>
-
-              <div>
-                <h4 className="font-bold uppercase text-xs text-gray-500 mb-6 tracking-[0.2em]">
-                  Estrutura de gestão
-                </h4>
-                <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-4">
-                  {[
-                    'Coordenação executiva',
-                    'Equipe técnica multidisciplinar',
-                    'Instituições parceiras',
-                    'Órgãos públicos vinculados',
-                  ].map((item, idx) => (
-                    <li key={idx} className="flex items-start gap-3">
-                      <span className="text-onca-laranja mt-1 shrink-0">
-                        <svg
-                          width="18"
-                          height="18"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          stroke="currentColor"
-                          strokeWidth="2.5"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        >
-                          <polyline points="9 18 15 12 9 6"></polyline>
-                        </svg>
-                      </span>
-                      <span className="font-medium text-gray-900">{item}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div className="w-full h-px bg-gray-200"></div>
-
-          <div
-            id="transparencia"
-            className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start"
-          >
             <div className="lg:col-span-4 lg:sticky lg:top-32">
               <h2 className="text-3xl lg:text-4xl font-bold uppercase tracking-tighter text-onca-preto mb-6 flex items-center gap-4">
                 <span className="w-8 h-1 bg-onca-laranja inline-block shrink-0"></span>
@@ -242,17 +184,64 @@ export default function SobrePage() {
               </p>
             </div>
 
-            <div className="lg:col-span-8 space-y-10">
-              <div className="text-lg text-gray-700 leading-relaxed max-w-3xl space-y-4">
-                <p>
-                  Reconhecemos a transparência como um princípio fundamental
-                  para a credibilidade e efetividade dos nossos esforços.
-                </p>
-                <p>
-                  Buscamos garantir total clareza na comunicação de atividades e
-                  resultados, fortalecendo o vínculo com a sociedade e com quem
-                  apoia a causa.
-                </p>
+            <div className="lg:col-span-8 space-y-8">
+              <p className="text-lg text-gray-700 leading-relaxed">
+                Baixe os sumários executivos dos nossos relatórios anuais e
+                acompanhe os resultados do projeto.
+              </p>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                {[
+                  {
+                    ano: '2025',
+                    link: 'https://drive.google.com/file/d/1zPxrDrEfQSi0XosX6lJ_NyqUL4X2uX5p/view?usp=sharing',
+                  },
+                  {
+                    ano: '2024',
+                    link: 'https://drive.google.com/file/d/1v92vNh8h-Faza7Ne5C5LC-I4255Bmy67/view?usp=sharing',
+                  },
+                  {
+                    ano: '2023',
+                    link: 'https://drive.google.com/file/d/1DbfObLKXuvty9qxRr0NJ34qI7I7liZsB/view?usp=sharing',
+                  },
+                  {
+                    ano: '2022',
+                    link: 'https://drive.google.com/file/d/19LMsMtouPy6UMdeeFsPX1TYNhIY9IvkZ/view?usp=sharing',
+                  },
+                  {
+                    ano: '2021',
+                    link: 'https://drive.google.com/file/d/1LkaX3rbbmlxpZcUO74kRDS7TiAZhcHHs/view?usp=sharing',
+                  },
+                  {
+                    ano: '2020',
+                    link: 'https://drive.google.com/file/d/1ZLlde4d_8uFgqSMeaS4WfbKAFB2khUn2/view?usp=sharing',
+                  },
+                ].map((item) => (
+                  <a
+                    key={item.ano}
+                    href={item.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-between px-6 py-4 bg-gray-200 border border-gray-200 rounded-2xl shadow-sm hover:shadow-md hover:border-onca-laranja transition-all group outline-none focus-visible:ring-2 focus-visible:ring-onca-laranja"
+                  >
+                    <span className="font-bold text-onca-preto">
+                      Relatório {item.ano}
+                    </span>
+                    <svg
+                      className="w-5 h-5 text-gray-400 group-hover:text-onca-laranja transition-colors"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                      />
+                    </svg>
+                  </a>
+                ))}
               </div>
             </div>
           </div>
