@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Newspaper, ArrowRight, CalendarDays } from 'lucide-react';
 import { client } from '@/sanity/lib/client';
+import VoltarLinkConteudo from '../components/VoltarLinkConteudo';
 
 async function getNoticias() {
   const query = `*[_type == "noticia"] | order(dataPublicacao desc) {
@@ -74,9 +75,15 @@ export default async function NoticiasPage() {
         </div>
       </section>
 
+      <div className="w-full border-b border-gray-200 relative z-30">
+        <div className="mx-auto max-w-7xl px-6 pt-10">
+          <VoltarLinkConteudo />
+        </div>
+      </div>
+
       <section
         id="lista-de-noticias"
-        className="mx-auto w-full max-w-7xl px-6 lg:px-8 py-20 lg:py-32 scroll-mt-24"
+        className="mx-auto w-full max-w-7xl px-6 lg:px-8 py-15 lg:py-18 scroll-mt-24"
       >
         {noticias.length === 0 ? (
           <div className="text-center py-20 bg-white rounded-3xl border border-gray-200">
@@ -138,6 +145,11 @@ export default async function NoticiasPage() {
             })}
           </div>
         )}
+        <div className="w-full border-b border-gray-200 relative z-30">
+          <div className="mx-auto max-w-7xl px-6 pt-20">
+            <VoltarLinkConteudo />
+          </div>
+        </div>
       </section>
     </div>
   );
