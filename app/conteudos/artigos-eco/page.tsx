@@ -7,6 +7,20 @@ import VoltarLinkConteudo from '../components/VoltarLinkConteudo';
 
 const artigos = [
   {
+    title: 'O que cai do mundo não volta mais',
+    description:
+      'Em um incidente ainda cheio de incertezas e indefinições, uma pessoa perdeu a vida. É devastador.',
+    image: '/conteudos/artigos/artigo13.jpeg',
+    link: 'https://oeco.org.br/analises/o-que-cai-do-mundo-nao-volta-mais/',
+  },
+  {
+    title: 'Quando o medo não decide sozinho',
+    description:
+      'Coexistência não se sustenta apenas com boas técnicas de manejo, mas da construção de relações. Ela depende de confiança, e confiança leva tempo e esforço',
+    image: '/conteudos/artigos/artigo14.jpeg',
+    link: 'https://oeco.org.br/colunas/quando-o-medo-nao-decide-sozinho/',
+  },
+  {
     title: 'Acho que vi um gatinho',
     description:
       'O Projeto Onças do Iguaçu instala colar GPS no macho "Croissant" para monitorar seus deslocamentos.',

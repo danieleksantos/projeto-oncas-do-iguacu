@@ -4,18 +4,18 @@ import { ArrowRight, BookOpen } from 'lucide-react';
 
 const destaquesArtigos = [
   {
-    title: 'Acho que vi um gatinho',
+    title: 'O que cai do mundo não volta mais',
     description:
-      'Após inúmeras tentativas frustradas, conseguimos capturar uma onça, um macho. Ele recebeu um colar que nos permite acompanhar sua movimentação, tanto por GPS quanto VHS. Onças-pintadas são figuras meio mágicas e que mexem com emoções e imaginação...',
-    image: '/conteudos/artigos/artigo1.webp',
-    link: 'https://oeco.org.br/analises/acho-que-vi-um-gatinho/',
+      'Em um incidente ainda cheio de incertezas e indefinições, uma pessoa perdeu a vida. É devastador.',
+    image: '/conteudos/artigos/artigo13.jpeg',
+    link: 'https://oeco.org.br/analises/o-que-cai-do-mundo-nao-volta-mais/',
   },
   {
-    title: 'Um é pouco, dois é bom, três é demais (de lindo)',
+    title: 'Quando o medo não decide sozinho',
     description:
-      'O nascimento de três filhotes de onça-pintada no Parque Nacional do Iguaçu precisa ser comemorado. É um acontecimento a ser celebrado, especialmente quando isso acontece na Mata Atlântica, bioma onde a espécie está criticamente ameaçada...',
-    image: '/conteudos/artigos/artigo2.webp',
-    link: 'https://oeco.org.br/analises/um-e-pouco-dois-e-bom-tres-e-demais-de-lindo/',
+      'Coexistência não se sustenta apenas com boas técnicas de manejo, mas da construção de relações. Ela depende de confiança, e confiança leva tempo e esforço',
+    image: '/conteudos/artigos/artigo14.jpeg',
+    link: 'https://oeco.org.br/colunas/quando-o-medo-nao-decide-sozinho/',
   },
 ];
 

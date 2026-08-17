@@ -4,18 +4,18 @@ import { ArrowRight, BookOpen } from 'lucide-react';
 
 const destaquesBoletins = [
   {
-    title: 'Boletim A Voz da Onça - Edição 12',
+    title: 'Boletim A Voz da Onça - Julho 2022',
     description:
-      'Acompanhe as últimas novidades do projeto, resgates marcantes e os resultados das nossas ações de conservação no último trimestre.',
-    image: '/conteudos/boletins/boletim1.webp',
-    href: '/conteudos/boletim',
+      'Acompanhe as últimas novidades do projeto, resgates marcantes e os resultados das nossas ações de conservação nesta edição.',
+    image: '/conteudos/boletins/boletim1.png',
+    href: 'https://drive.google.com/file/d/1w7SElcnONaWrCMd7thTXj7YcSQYiJrNd/view?usp=sharing',
   },
   {
-    title: 'Boletim A Voz da Onça - Edição 11',
+    title: 'Boletim A Voz da Onça - Março 2022',
     description:
-      'Descubra como o engajamento da comunidade tem ajudado a reduzir os conflitos e conheça as novas onças catalogadas no parque.',
-    image: '/conteudos/boletins/boletim2.webp',
-    href: '/conteudos/boletim',
+      'Acompanhe as últimas novidades do projeto, resgates marcantes e os resultados das nossas ações de conservação nesta edição.',
+    image: '/conteudos/boletins/boletim2.png',
+    href: 'https://drive.google.com/file/d/1F7jdEsI5lSn8ysHvtQ8Cxrc5Di39h-3T/view?usp=sharing',
   },
 ];
 
@@ -37,6 +37,8 @@ export default function DestaquesBoletins() {
             <Link
               key={index}
               href={boletim.href}
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-white rounded-3xl shadow-sm border border-gray-300 overflow-hidden flex flex-col sm:flex-row group hover:shadow-xl transition-all duration-300 hover:-translate-y-1 hover:border-onca-laranja/30 focus-visible:ring-4 focus-visible:ring-onca-laranja/50 outline-none"
             >
               <div className="relative w-full sm:w-2/5 min-h-62.5 shrink-0 bg-gray-100 overflow-hidden">
@@ -45,6 +47,7 @@ export default function DestaquesBoletins() {
                   alt={boletim.title}
                   fill
                   className="object-contain p-6 transition-transform duration-500 group-hover:scale-105"
+                  sizes="(max-width: 640px) 100vw, 33vw"
                 />
               </div>
 
@@ -70,7 +73,7 @@ export default function DestaquesBoletins() {
 
         <div className="mt-12 lg:mt-16 flex justify-center">
           <Link
-            href="/conteudos/boletim"
+            href="/conteudos/boletins"
             className="inline-flex items-center gap-3 px-8 py-4 bg-onca-preto text-white rounded-full font-bold uppercase tracking-widest text-sm transition-all duration-300 hover:scale-105 hover:shadow-xl focus-visible:ring-4 focus-visible:ring-onca-laranja/50 outline-none group"
           >
             Ver todos os boletins
