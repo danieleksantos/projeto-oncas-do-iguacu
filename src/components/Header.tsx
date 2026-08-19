@@ -44,7 +44,7 @@ const navigation = [
     name: 'Conteúdos',
     href: '/conteudos',
     children: [
-      { name: 'Boletim A Voz da Onça', href: '/conteudos/boletim' },
+      { name: 'Boletim A Voz da Onça', href: '/conteudos/boletins' },
       { name: 'Notícias', href: '/conteudos/noticias' },
       { name: 'Materiais para download', href: '/conteudos/downloads' },
       { name: 'Artigos ((O)) Eco', href: '/conteudos/artigos-eco' },

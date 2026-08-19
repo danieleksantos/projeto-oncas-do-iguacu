@@ -105,13 +105,13 @@ export default function DoacaoApoie() {
               className="absolute top-0 right-0 w-4/5 h-4/5 rounded-3xl overflow-hidden shadow-2xl border-4 border-onca-laranja z-10 hover:z-30 transition-all duration-500 hover:scale-105 cursor-zoom-in"
               onClick={() =>
                 setModalData({
-                  src: '/atuacao/hero-atuacao.jpeg',
+                  src: '/apoie/equipe-campo-rio.jpg',
                   caption: 'Equipe do projeto trabalhando em campo',
                 })
               }
             >
               <Image
-                src="/atuacao/hero-atuacao.jpeg"
+                src="/apoie/equipe-campo-rio.jpg"
                 alt="Equipe do projeto trabalhando em campo"
                 fill
                 className="object-cover bg-gray-200"

@@ -11,13 +11,13 @@ const membros = [
   },
   {
     nome: 'Vânia Foster',
-    cargo: 'Coordenadora de Pesquisa | Bióloga',
+    cargo: 'Ponto Focal de Pesquisa | Bióloga',
     foto: '/sobre/equipe/Vania.JPG',
     bio: 'Graduada em Ciências Biológicas pelo Centro Universitário Barão de Mauá (2006), mestre em Biologia, ramo Ecologia, Biodiversidade e Gestão de Ecossistemas, pela Universidade de Aveiro (2012) e doutora em Ecologia e Conservação pela Universidade Federal de Mato Grosso do Sul (2017). Atualmente é pesquisadora no Projeto Onças do Iguaçu, onde atua desde 2019. Responsável pela área de Pesquisa do projeto, desenvolvendo atividades de monitoramento da flutuação populacional dos grandes felinos (onça-pintada e onça-parda) e de suas bases de presas, monitoramento dos corredores de vegetação adjacentes ao Parque Nacional do Iguaçu e estudos de dieta, deslocamento, uso do hábitat e coocorrência dos felinos.',
   },
   {
     nome: 'Patrícia Gomes',
-    cargo: 'Veterinária Responsável Técnica',
+    cargo: 'Responsável Técnica de Medicina da Conservação',
     foto: '/sobre/equipe/Patricia.jpeg',
     bio: 'Médica Veterinária formada pela Universidade de Marília (UNIMAR), com pós-graduação em Educação Ambiental pela mesma instituição. Possui mestrado acadêmico na área de Animais Selvagens pela Universidade Estadual Paulista (UNESP) e atualmente é pós-graduanda em Medicina de Animais Silvestres e Exóticos pela Universidade de Americana (FAM). Apresenta ampla experiência na área de fauna silvestre, com atuação em conservação, manejo e reabilitação de animais selvagens.',
   },
@@ -34,22 +34,16 @@ const membros = [
     bio: 'Cursando Análise e Desenvolvimento de sistemas pela UNIFATECIE, ex-agente ambiental do ICMBio, com experiência em manejo de fogo, proteção e conservação ambiental.',
   },
   {
+    nome: 'Eduardo Bogoni',
+    cargo: 'Ponto Focal de Coexistência',
+    foto: '/sobre/equipe/Eduardo.png',
+    bio: 'Graduado em Turismo pela Universidade Estadual do Oeste do Paraná (UNIOESTE) e atualmente graduando em Biologia. Possui experiência em conservação, manejo e monitoramento de fauna silvestre, coexistência entre pessoas e grandes felinos, atividades de campo e educação ambiental com crianças e adultos. Conta ainda com formação complementar e cursos nas áreas de manejo de animais silvestres, auxiliar veterinário, condicionamento e bem-estar animal.',
+  },
+  {
     nome: 'Katlin Fernandes',
-    cargo: 'Coordenadora de Educação e Engajamento',
+    cargo: 'Ponto Focal de Engajamento e Educação',
     foto: '/sobre/equipe/Katlin.png',
     bio: 'Bióloga, mestre em Biodiversidade Neotropical pela UNILA, com especializações em Gestão Ambiental e Ensino de Biologia. Ao longo da sua trajetória profissional, já trabalhou com licenciamento e gestão ambiental em obras de infraestrutura, conservação ex situ, inventário de anuros durante a graduação e também como professora de Ciências e Biologia na rede pública estadual.',
-  },
-  {
-    nome: 'Tainah de Souza',
-    cargo: 'Gestora de Educação e Engajamento',
-    foto: '/sobre/equipe/Tainah.jpeg',
-    bio: 'Bióloga graduada pela União Dinâmica de Faculdades Cataratas (UDC Anglo Americano), com dupla especialização: pós-graduação em Bem-Estar de Animais Silvestres e Exóticos e em Manejo de Animais Silvestres e Exóticos. Possui sólida experiência no desenvolvimento de programas de educação ambiental voltados a zoológicos, além de atuar na comunicação estratégica e turismo institucional. Complementa sua atuação técnica com competências em design e ilustração, aplicando recursos visuais para promover a acessibilidade e a divulgação do conhecimento biológico.',
-  },
-  {
-    nome: 'Luiz Gustavo Betanin',
-    cargo: 'Coordenador de Comunicação',
-    foto: '/sobre/equipe/Guga.jpeg',
-    bio: 'Documentarista de natureza, formado em Cinema e Audiovisual pela UFPE. Vencedor do Prêmio Vasconcelos Sobrinho 2025 (Governo de Pernambuco), na categoria Destaque em Comunicação Ambiental. Dirigiu documentários e séries voltados à vida selvagem e conservação. Atuou na concepção e execução de projetos de comunicação audiovisual para Ibama/PE, ICMBio/PE, GRAD e instituições de pesquisa. Possui experiência na interface entre audiovisual, ciência e conservação da biodiversidade.',
   },
   {
     nome: 'Igor Moreno',
@@ -59,13 +53,25 @@ const membros = [
   },
   {
     nome: 'Ana Catarine Franzini',
-    cargo: 'Assessora Técnica',
+    cargo: 'Assessora Técnica Executiva',
     foto: '/sobre/equipe/Ana.jpeg',
     bio: 'Bióloga, Gestora Ambiental, pós-graduada em Ecologia e Biodiversidade e mestranda em Conservação e Manejo de Recursos Naturais. Possui experiência em projetos de pesquisa e atuação técnica nas áreas de gestão ambiental pública, adaptação climática, áreas protegidas e conservação de fauna silvestre, bem como em serviços de análise, assessoria e consultoria ambiental.',
   },
   {
+    nome: 'Tainah de Souza',
+    cargo: 'Assistente de Engajamento, Educação e Comunicação',
+    foto: '/sobre/equipe/Tainah.jpeg',
+    bio: 'Bióloga graduada pela União Dinâmica de Faculdades Cataratas (UDC Anglo Americano), com dupla especialização: pós-graduação em Bem-Estar de Animais Silvestres e Exóticos e em Manejo de Animais Silvestres e Exóticos. Possui sólida experiência no desenvolvimento de programas de educação ambiental voltados a zoológicos, além de atuar na comunicação estratégica e turismo institucional. Complementa sua atuação técnica com competências em design e ilustração, aplicando recursos visuais para promover a acessibilidade e a divulgação do conhecimento biológico.',
+  },
+  {
+    nome: 'Luiz Gustavo Betanin',
+    cargo: 'Ponto Focal de Comunicação',
+    foto: '/sobre/equipe/Guga.jpeg',
+    bio: 'Documentarista de natureza, formado em Cinema e Audiovisual pela UFPE. Vencedor do Prêmio Vasconcelos Sobrinho 2025 (Governo de Pernambuco), na categoria Destaque em Comunicação Ambiental. Dirigiu documentários e séries voltados à vida selvagem e conservação. Atuou na concepção e execução de projetos de comunicação audiovisual para Ibama/PE, ICMBio/PE, GRAD e instituições de pesquisa. Possui experiência na interface entre audiovisual, ciência e conservação da biodiversidade.',
+  },
+  {
     nome: 'Claudiani Tavares',
-    cargo: 'Coordenadora das Crocheteiras da Onça',
+    cargo: 'Ponto Focal Crocheteiras da Onça',
     foto: '/sobre/equipe/Claudiani.jpeg',
     bio: 'Agricultora e artesã. Atualmente é Coordenadora do grupo Crocheteiras da Onça e do grupo Artesãs da Onça.',
   },

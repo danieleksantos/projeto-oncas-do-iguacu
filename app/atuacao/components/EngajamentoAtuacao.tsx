@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import { useState } from 'react';
+import { Copy, Check } from 'lucide-react';
 import ImageModal, { ModalData } from '@/src/components/ImageModal';
 
 const iniciativasEngajamento = [
@@ -73,8 +74,8 @@ const iniciativasEngajamento = [
   },
   {
     titulo: 'Ciscando o Futuro',
-    imagem: '/atuacao/Ciscando-o-Futuro.png',
-    isLogo: true,
+    imagem: '/atuacao/Ciscando-o-Futuro-2.jpg',
+    isLogo: false,
     paragrafos: [
       'O Ciscando o Futuro é uma iniciativa do Projeto Onças do Iguaçu voltada à agricultura familiar, que promove segurança alimentar, geração de renda complementar e coexistência entre pessoas e grandes felinos.',
       'O programa apoia pequenos produtores na implantação de galinheiros protegidos, que garantem o bem-estar das aves e reduzem significativamente o risco de predação por onças, jaguatiricas, graxains, gambás e outros predadores. Durante o dia, as galinhas permanecem em áreas de pastejo; à noite, ficam protegidas em estruturas seguras, conciliando produção e conservação.',
@@ -84,7 +85,7 @@ const iniciativasEngajamento = [
   },
   {
     titulo: 'Crocheteiras da Onça',
-    imagem: '/atuacao/crocheteiras-da-onca.jpg',
+    imagem: '/atuacao/crocheteiras-da-onca-2.jpeg',
     paragrafos: [
       'As Crocheteiras da Onça são um exemplo de como a conservação pode gerar oportunidades para as comunidades. O programa identifica e fortalece talentos locais, transformando o crochê — uma habilidade já presente entre muitas mulheres da região — em uma fonte de renda associada à conservação da onça-pintada.',
       'Criado pelo Projeto Onças do Iguaçu, o grupo reúne atualmente 18 artesãs de Foz do Iguaçu, Serranópolis do Iguaçu e Matelândia, que produzem amigurumis e outras peças inspiradas na fauna brasileira. O Projeto oferece capacitação, apoio na organização do grupo e faz a ponte entre as crocheteiras e os compradores, ampliando o acesso ao mercado. Um dos princípios da iniciativa é que 100% da renda obtida com as vendas permaneça com as artesãs. O papel do Projeto é apoiar o desenvolvimento do grupo e fortalecer a conexão entre o artesanato e a conservação, mostrando que manter as onças vivas também pode gerar oportunidades para quem vive ao seu redor.',
@@ -113,6 +114,35 @@ const iniciativasEngajamento = [
   },
 ];
 
+// Sub-componente de Link copiável
+function CopyEmailLink() {
+  const [copiado, setCopiado] = useState(false);
+  const email = 'projetooncasdoiguacu@gmail.com';
+
+  const handleCopiar = (e: React.MouseEvent) => {
+    e.preventDefault(); // Evita abrir o Outlook/App de Email
+    navigator.clipboard.writeText(email);
+    setCopiado(true);
+    setTimeout(() => setCopiado(false), 2500); // Volta ao normal após 2.5s
+  };
+
+  return (
+    <a
+      href={`mailto:${email}`}
+      onClick={handleCopiar}
+      className="inline-flex items-center gap-1.5 font-bold text-onca-laranja-escuro hover:text-onca-preto transition-colors cursor-pointer group"
+      title="Clique para copiar"
+    >
+      {copiado ? 'E-mail copiado!' : email}
+      {copiado ? (
+        <Check className="w-4 h-4 text-green-600" />
+      ) : (
+        <Copy className="w-4 h-4 opacity-50 group-hover:opacity-100 transition-opacity" />
+      )}
+    </a>
+  );
+}
+
 export default function EngajamentoAtuacao() {
   const [modalData, setModalData] = useState<ModalData | null>(null);
 
@@ -122,7 +152,7 @@ export default function EngajamentoAtuacao() {
         id="engajamento"
         className="w-full py-24 bg-white text-onca-preto scroll-mt-20 flex justify-center"
       >
-        <div className="mx-auto w-full max-w-7xl px-6 lg:px-8 space-y-24">
+        <div className="mx-auto w-full max-w-7xl px-6 lg:px-8 space-y-16">
           <div className="max-w-3xl mx-auto text-center space-y-6">
             <span className="inline-block text-onca-laranja text-sm font-bold uppercase tracking-[0.3em]">
               O Lado Humano da Conservação
@@ -141,35 +171,28 @@ export default function EngajamentoAtuacao() {
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
-            <div className="grid grid-cols-2 gap-4 lg:gap-6 relative">
-              <div className="flex flex-col gap-3 mt-8 lg:mt-16">
-                <div
-                  className="relative w-full aspect-4/5 cursor-zoom-in overflow-hidden rounded-3xl shadow-xl group"
-                  onClick={() =>
-                    setModalData({
-                      src: '/atuacao/onca-na-escola.webp',
-                      caption:
-                        'Atividades lúdicas de educação ambiental no programa Onça na Escola',
-                    })
-                  }
-                >
-                  <Image
-                    src="/atuacao/onca-na-escola.webp"
-                    alt="Onça na Escola"
-                    fill
-                    sizes="(max-width: 1024px) 50vw, 25vw"
-                    className="object-cover transition-transform duration-500 group-hover:scale-105"
-                  />
-                </div>
-                <p className="text-xs text-gray-500 text-center italic px-2">
-                  Atividades lúdicas do programa Onça na Escola
-                </p>
-              </div>
+          <div className="space-y-20 pt-8">
+            <div className="space-y-4">
+              <h3 className="text-3xl font-bold uppercase tracking-tight border-l-4 border-onca-laranja pl-4">
+                Conexão com a comunidade
+              </h3>
+              <p className="text-gray-600 leading-relaxed text-lg max-w-5xl">
+                O projeto desenvolve iniciativas voltadas a diferentes públicos,
+                levando informação e experiência direta com a temática da
+                conservação. O programa{' '}
+                <strong className="text-onca-preto">Onça na Escola</strong> atua
+                em instituições de ensino com atividades como palestras, teatro
+                e exposições, enquanto o{' '}
+                <strong className="text-onca-preto">Onça Itinerante</strong>{' '}
+                leva essas ações para espaços públicos e eventos, ampliando o
+                alcance junto à população.
+              </p>
+            </div>
 
+            <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
               <div className="flex flex-col gap-3">
                 <div
-                  className="relative w-full aspect-4/5 cursor-zoom-in overflow-hidden rounded-3xl shadow-xl group"
+                  className="relative w-full aspect-4/3 cursor-zoom-in overflow-hidden rounded-3xl shadow-xl group"
                   onClick={() =>
                     setModalData({
                       src: '/atuacao/trilha-da-onca.webp',
@@ -181,7 +204,7 @@ export default function EngajamentoAtuacao() {
                     src="/atuacao/trilha-da-onca.webp"
                     alt="Trilha da Onça"
                     fill
-                    sizes="(max-width: 1024px) 50vw, 25vw"
+                    sizes="(max-width: 1024px) 100vw, 50vw"
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                 </div>
@@ -189,52 +212,101 @@ export default function EngajamentoAtuacao() {
                   Imersão na natureza durante a Trilha da Onça
                 </p>
               </div>
-            </div>
 
-            <div>
               <div className="space-y-4">
                 <h3 className="text-3xl font-bold uppercase tracking-tight border-l-4 border-onca-laranja pl-4">
-                  Conexão com a comunidade
+                  Experiência no território
                 </h3>
                 <p className="text-gray-600 leading-relaxed text-lg">
-                  O projeto desenvolve iniciativas voltadas a diferentes
-                  públicos, levando informação e experiência direta com a
-                  temática da conservação. O programa{' '}
-                  <strong className="text-onca-preto">Onça na Escola</strong>{' '}
-                  atua em instituições de ensino com atividades como palestras,
-                  teatro e exposições, enquanto o{' '}
-                  <strong className="text-onca-preto">Onça Itinerante</strong>{' '}
-                  leva essas ações para espaços públicos e eventos, ampliando o
-                  alcance junto à população.
+                  A aproximação com o ambiente natural é promovida por meio da{' '}
+                  <strong className="text-onca-preto">Trilha da Onça</strong>,
+                  que proporciona vivências no Parque Nacional do Iguaçu,
+                  incluindo observação da fauna, acompanhamento de atividades de
+                  monitoramento e conversas sobre a importância da conservação.
                 </p>
               </div>
-              <div className="flex flex-col gap-5 shadow-sm mt-8">
-                <p className="text-gray-600 text-base leading-relaxed">
-                  Tem interesse em receber as atividades do{' '}
-                  <strong className="text-onca-preto">Onça na Escola </strong>
-                  na sua instituição?
-                </p>
-                <div className="pt-2">
-                  <a
-                    href="mailto:projetooncasdoiguacu@gmail.com"
-                    className="inline-flex items-center justify-center gap-3 bg-onca-preto text-white px-8 py-4 rounded-full font-bold uppercase tracking-widest text-xs transition-all duration-300 hover:scale-105 shadow-lg focus-visible:ring-4 focus-visible:ring-onca-laranja/50 outline-none"
+            </div>
+
+            <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start pt-12 border-t border-gray-100">
+              <div className="space-y-6">
+                <h3 className="text-3xl font-bold uppercase tracking-tight border-l-4 border-onca-laranja pl-4">
+                  Programa Onça na Escola
+                </h3>
+                <div className="space-y-4 text-gray-600 leading-relaxed text-lg">
+                  <p>
+                    O Programa Onça na Escola é uma iniciativa do Programa de
+                    Coexistência do Projeto Onças do Iguaçu, voltada à
+                    comunidade escolar da rede pública dos dez municípios
+                    lindeiros ao Parque Nacional do Iguaçu.
+                  </p>
+                  <p>
+                    O programa nasceu da necessidade de ampliar o acesso a
+                    informações sobre as onças, sua importância para o
+                    território e os desafios de sua conservação. Por meio de
+                    atividades educativas, aproxima ciência, escola e
+                    comunidade, estimulando a reflexão, o vínculo com a fauna e
+                    o protagonismo de crianças, jovens e professores.
+                  </p>
+                  <p>
+                    As ações são orientadas por três pilares: Educação Ambiental
+                    Crítica, Pedagogia do Afeto e Teoria da Mudança. Juntos,
+                    eles estruturam atividades que vão além da transmissão de
+                    informações, buscando estimular conhecimentos, sentimentos,
+                    atitudes e comportamentos favoráveis à conservação.
+                  </p>
+                  <p>
+                    A proposta é contribuir, no médio e longo prazo, para
+                    reduzir a percepção de risco em relação às onças, fortalecer
+                    atitudes positivas em relação à fauna e ampliar a
+                    participação da comunidade na conservação. Assim, o Onça na
+                    Escola busca pavimentar o caminho para um futuro de
+                    coexistência entre pessoas e onças no território do Parque
+                    Nacional do Iguaçu.
+                  </p>
+                </div>
+              </div>
+
+              <div className="w-full max-w-md mx-auto lg:mx-0 flex flex-col gap-8 lg:sticky lg:top-24">
+                <div className="flex flex-col gap-3">
+                  <div
+                    className="relative w-full aspect-4/3 cursor-zoom-in overflow-hidden rounded-3xl shadow-xl group lg:mt-15"
+                    onClick={() =>
+                      setModalData({
+                        src: '/atuacao/onca-na-escola.webp',
+                        caption:
+                          'Atividades lúdicas de educação ambiental no programa Onça na Escola',
+                      })
+                    }
                   >
-                    <svg
-                      className="w-4 h-4 shrink-0"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                      />
-                    </svg>
-                    Fale Conosco
-                  </a>
+                    <Image
+                      src="/atuacao/onca-na-escola.webp"
+                      alt="Onça na Escola"
+                      fill
+                      sizes="(max-width: 1024px) 100vw, 30vw"
+                      className="object-cover transition-transform duration-500 group-hover:scale-105"
+                    />
+                  </div>
+                  <p className="text-xs text-gray-500 text-center italic px-2">
+                    Atividades lúdicas do programa Onça na Escola
+                  </p>
+                </div>
+
+                <div className="bg-gray-50 border border-gray-200 rounded-3xl p-8 flex flex-col gap-4 shadow-sm">
+                  <h4 className="text-xl font-bold text-onca-preto tracking-tight">
+                    Leve nossos projeto até você!
+                  </h4>
+                  <p className="text-gray-600 text-base leading-relaxed">
+                    Tem interesse em receber as atividades do{' '}
+                    <strong className="text-onca-preto">Onça na Escola</strong>{' '}
+                    ou do{' '}
+                    <strong className="text-onca-preto">Onça Itinerante</strong>
+                    ?
+                  </p>
+                  <p className="text-gray-600 text-base leading-relaxed">
+                    Entre em contato conosco através do e-mail:{' '}
+                    <br className="sm:hidden" />
+                    <CopyEmailLink />
+                  </p>
                 </div>
               </div>
             </div>
@@ -242,7 +314,7 @@ export default function EngajamentoAtuacao() {
         </div>
       </section>
 
-      <section className="w-full py-24 bg-gray-50 text-onca-preto border-y border-gray-200 flex justify-center">
+      <section className="w-full py-24 bg-gray-200 text-onca-preto border-y border-gray-200 flex justify-center">
         <div className="mx-auto w-full max-w-7xl px-6 lg:px-8 space-y-16">
           <div className="max-w-2xl">
             <h3 className="text-4xl font-bold uppercase tracking-tight mb-4 text-onca-preto">

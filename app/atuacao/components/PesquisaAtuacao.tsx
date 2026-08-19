@@ -3,6 +3,7 @@
 import Image from 'next/image';
 import { useState } from 'react';
 import ImageModal, { ModalData } from '@/src/components/ImageModal';
+import Link from 'next/link';
 
 export default function PesquisaAtuacao() {
   const [modalData, setModalData] = useState<ModalData | null>(null);
@@ -140,20 +141,21 @@ export default function PesquisaAtuacao() {
       <section className="w-full py-24 bg-gray-100 text-onca-preto border-y border-gray-200 flex justify-center">
         <div className="mx-auto w-full max-w-7xl px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+            {/* Coluna das Imagens */}
             <div className="order-2 lg:order-1 space-y-10 flex flex-col items-center">
               <div className="w-full max-w-125 space-y-3">
                 <div
                   className="cursor-zoom-in overflow-hidden rounded-3xl shadow-xl border border-gray-200 group"
                   onClick={() =>
                     setModalData({
-                      src: '/atuacao/evolucao-populacao-oncas.jpg',
+                      src: '/atuacao/evolucao-populacao-oncas.jpeg',
                       caption:
                         'Evolução da população de onças-pintadas no Parque Nacional do Iguaçu',
                     })
                   }
                 >
                   <Image
-                    src="/atuacao/evolucao-populacao-oncas.jpg"
+                    src="/atuacao/evolucao-populacao-oncas.jpeg"
                     alt="Gráfico Evolução"
                     width={800}
                     height={500}
@@ -210,6 +212,29 @@ export default function PesquisaAtuacao() {
                 orientam estratégias de conservação, avaliam a efetividade das
                 ações de manejo e apoiam a proteção da espécie em toda a região.
               </p>
+
+              <div className="pt-4">
+                <Link
+                  href="/conteudos/artigos-cientificos"
+                  className="inline-flex items-center gap-2 bg-onca-preto text-white px-6 py-3 rounded-full font-bold uppercase tracking-widest text-xs transition-all duration-300 hover:scale-105 shadow-lg focus-visible:ring-4 focus-visible:ring-onca-laranja/50 outline-none"
+                >
+                  Ver Artigos Científicos Publicados
+                  <svg
+                    className="w-4 h-4"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M14 5l7 7m0 0l-7 7m7-7H3"
+                    />
+                  </svg>
+                </Link>
+              </div>
             </div>
           </div>
         </div>

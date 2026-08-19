@@ -28,21 +28,10 @@ export default function ImpactoHome() {
         </>
       ),
     },
-    {
-      prefix: '',
-      end: 100,
-      suffix: '%',
-      texto: (
-        <>
-          Compromisso com
-          <br />a Coexistência
-        </>
-      ),
-    },
   ];
 
   return (
-    <section className="w-full bg-onca-laranja py-8 md:py-10 relative z-20 mt-8 md:-mt-10 mx-auto max-w-6xl rounded-[2.5rem] shadow-2xl px-6 lg:px-8">
+    <section className="w-full bg-onca-laranja py-8 md:py-10 relative z-20 mt-8 md:-mt-10 mx-auto max-w-3xl rounded-[2.5rem] shadow-2xl px-6 lg:px-8">
       <div className="flex flex-col md:flex-row w-full divide-y md:divide-y-0 md:divide-x divide-onca-preto/20 text-center">
         {impactos.map((item, index) => (
           <div

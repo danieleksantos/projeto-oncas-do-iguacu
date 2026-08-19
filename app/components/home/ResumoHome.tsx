@@ -10,7 +10,7 @@ export default function ResumoHome() {
           <div className="absolute inset-0 bg-onca-laranja rounded-[3rem] -rotate-3 scale-105 opacity-20"></div>
           <div className="relative aspect-square md:aspect-4/3 w-full rounded-[3rem] overflow-hidden shadow-xl">
             <Image
-              src="/atuacao/hero-atuacao.jpeg"
+              src="/home/equipe-campo.jpg"
               alt="Equipe do Projeto Onças do Iguaçu em campo"
               fill
               className="object-cover"
