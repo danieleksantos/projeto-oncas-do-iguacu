@@ -7,6 +7,27 @@ import VoltarLinkConteudo from '../components/VoltarLinkConteudo';
 
 const boletins = [
   {
+    title: 'Boletim A Voz da Onça - Junho 2025',
+    description:
+      'Acompanhe as últimas novidades do projeto, resgates marcantes e os resultados das nossas ações de conservação nesta edição.',
+    image: '/conteudos/boletins/boletim24.png',
+    link: 'https://drive.google.com/file/d/1awd_miU9GQPFnj982xabgx4hSkmebSWR/view?usp=sharing',
+  },
+  {
+    title: 'Boletim A Voz da Onça - Julho 2024',
+    description:
+      'Acompanhe as últimas novidades do projeto, resgates marcantes e os resultados das nossas ações de conservação nesta edição.',
+    image: '/conteudos/boletins/boletim23.png',
+    link: 'https://drive.google.com/file/d/1I6OTaP2OHE2E39blAVj2K9sxf6wnB0Xu/view?usp=sharing',
+  },
+  {
+    title: 'Boletim A Voz da Onça - Julho 2023',
+    description:
+      'Acompanhe as últimas novidades do projeto, resgates marcantes e os resultados das nossas ações de conservação nesta edição.',
+    image: '/conteudos/boletins/boletim22.png',
+    link: 'https://drive.google.com/file/d/11KMArwkjkk_2I2wjH33QawQ7wsj38zvr/view?usp=sharing',
+  },
+  {
     title: 'Boletim A Voz da Onça - Julho 2022',
     description:
       'Acompanhe as últimas novidades do projeto, resgates marcantes e os resultados das nossas ações de conservação nesta edição.',

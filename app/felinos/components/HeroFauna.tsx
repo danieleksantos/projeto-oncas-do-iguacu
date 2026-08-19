@@ -20,7 +20,7 @@ export default function HeroFauna() {
 
             <div className="relative w-full h-auto md:hidden my-6">
               <Image
-                src="/fauna/faura-hero.jpg"
+                src="/fauna/fauna-hero.jpg"
                 alt="Onça-pintada observando a floresta do Parque Nacional do Iguaçu"
                 width={906}
                 height={423}
@@ -45,7 +45,7 @@ export default function HeroFauna() {
           <div className="absolute inset-y-0 right-0 w-16 bg-linear-to-l from-onca-preto to-transparent z-20 pointer-events-none"></div>
 
           <Image
-            src="/fauna/faura-hero.jpg"
+            src="/fauna/fauna-hero.jpg"
             alt="Onça-pintada observando a floresta do Parque Nacional do Iguaçu"
             width={906}
             height={423}
