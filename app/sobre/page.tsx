@@ -18,12 +18,12 @@ export default function SobrePage() {
                 Quem somos
               </h2>
               <p className="text-xl md:text-2xl text-gray-700 leading-relaxed font-medium">
-                Somos um projeto institucional do ICMBio, desenvolvido em
-                parceria pelo Parque Nacional do Iguaçu, Instituto
-                Pró-Carnívoros e CENAP/ICMBio. Atuamos no Parque Nacional do
-                Iguaçu e nos dez municípios lindeiros, por meio de Acordo de
-                Cooperação Técnica. Acordo de Cooperação nº 47/2020, celebrado
-                entre ICMBio e Instituto Pró-Carnívoros.
+                Somos um projeto do Parque Nacional do Iguaçu/ICMBio,
+                desenvolvido em parceria com o Instituto Pró-Carnívoros e o
+                CENAP/ICMBio. Atuamos para conservar as onças e os grandes
+                felinos no Parque Nacional do Iguaçu e nos dez municípios
+                lindeiros com ações integradas de pesquisa, coexistência,
+                engajamento e comunicação.
               </p>
             </div>
 
