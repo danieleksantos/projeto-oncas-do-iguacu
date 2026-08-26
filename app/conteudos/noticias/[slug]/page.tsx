@@ -5,7 +5,6 @@ import { PortableText } from '@portabletext/react';
 import VoltarLinkNoticias from '../components/VoltarLinkNoticias';
 import { createImageUrlBuilder } from '@sanity/image-url';
 
-// 1. Criamos o construtor de URLs de imagem do Sanity (Atualizado)
 const builder = createImageUrlBuilder(client);
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -13,7 +12,6 @@ function urlFor(source: any) {
   return builder.image(source);
 }
 
-// 2. Criamos as regras de como renderizar blocos customizados dentro do texto
 const myPortableTextComponents = {
   types: {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any

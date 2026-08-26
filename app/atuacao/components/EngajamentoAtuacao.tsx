@@ -114,16 +114,15 @@ const iniciativasEngajamento = [
   },
 ];
 
-// Sub-componente de Link copiável
 function CopyEmailLink() {
   const [copiado, setCopiado] = useState(false);
   const email = 'projetooncasdoiguacu@gmail.com';
 
   const handleCopiar = (e: React.MouseEvent) => {
-    e.preventDefault(); // Evita abrir o Outlook/App de Email
+    e.preventDefault();
     navigator.clipboard.writeText(email);
     setCopiado(true);
-    setTimeout(() => setCopiado(false), 2500); // Volta ao normal após 2.5s
+    setTimeout(() => setCopiado(false), 2500);
   };
 
   return (

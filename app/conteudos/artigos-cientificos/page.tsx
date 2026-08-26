@@ -133,7 +133,6 @@ export default function ArtigosCientificosPage() {
         </div>
       </section>
 
-      {/* NAVEGAÇÃO DE VOLTA (TOP) */}
       <div className="w-full bg-white border-b border-gray-200 relative z-30">
         <div className="mx-auto max-w-7xl px-6 pt-10">
           <VoltarLinkConteudo />

@@ -44,7 +44,6 @@ export default function DestaquesArtigosCientificos() {
           </p>
         </div>
 
-        {/* Grid de Cards */}
         <div className="grid lg:grid-cols-2 gap-8">
           {artigosCientificos.map((artigo, index) => (
             <Link

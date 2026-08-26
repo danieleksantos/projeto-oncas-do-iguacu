@@ -1,6 +1,5 @@
 import Image from 'next/image';
 
-// Juntamos todos os parceiros em uma única lista limpa
 const todosParceiros = [
   { src: '/sobre/partners/Pro Carnivoros.png', alt: 'Pró Carnívoros' },
   { src: '/sobre/partners/WWF-logo.webp', alt: 'WWF' },

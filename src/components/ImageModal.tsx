@@ -2,7 +2,6 @@
 
 import Image from 'next/image';
 
-// Exportamos o tipo para poder usar nos outros arquivos sem precisar recriar
 export type ModalData = {
   src: string;
   caption: string;

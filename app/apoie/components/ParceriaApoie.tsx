@@ -21,7 +21,6 @@ export default function ParceriaApoie() {
       className="w-full py-20 lg:py-32 bg-white scroll-mt-10 relative overflow-hidden"
     >
       <div className="mx-auto w-full max-w-7xl px-6 lg:px-8 relative z-10">
-        {/* BLOCO SUPERIOR: Grid 2 Colunas (Texto + Imagens) */}
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           <div className="flex flex-col justify-center space-y-8">
             <div className="space-y-4">
@@ -41,7 +40,6 @@ export default function ParceriaApoie() {
               </p>
             </div>
 
-            {/* Card: Empresa Amiga da Onça */}
             <div className="bg-gray-50 border border-gray-200 rounded-3xl p-6 md:p-8 space-y-5 md:space-y-6 relative overflow-hidden group shadow-sm">
               <div className="absolute -right-10 -bottom-10 w-32 h-32 bg-onca-laranja/5 rounded-full blur-xl pointer-events-none" />
 

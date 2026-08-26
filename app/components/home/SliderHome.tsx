@@ -4,11 +4,9 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowRight, ChevronLeft, ChevronRight } from 'lucide-react';
 
-// Importações cruciais do Swiper
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 
-// Estilos obrigatórios do Swiper
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -77,7 +75,6 @@ export default function SliderHome() {
           width: 32px;
           border-radius: 8px;
         }
-        /* Esconde as setas nativas porque criamos as nossas */
         .swiper-button-next, .swiper-button-prev {
           display: none;
         }

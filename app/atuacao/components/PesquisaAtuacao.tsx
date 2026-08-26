@@ -141,7 +141,6 @@ export default function PesquisaAtuacao() {
       <section className="w-full py-24 bg-gray-100 text-onca-preto border-y border-gray-200 flex justify-center">
         <div className="mx-auto w-full max-w-7xl px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-            {/* Coluna das Imagens */}
             <div className="order-2 lg:order-1 space-y-10 flex flex-col items-center">
               <div className="w-full max-w-125 space-y-3">
                 <div
@@ -467,7 +466,6 @@ export default function PesquisaAtuacao() {
         </div>
       </section>
 
-      {/* NOVA SEÇÃO: SAÚDE ÚNICA / CÃOSERVAÇÃO */}
       <section className="w-full py-24 bg-gray-50 text-onca-preto flex justify-center border-b border-gray-200">
         <div className="mx-auto w-full max-w-7xl px-6 lg:px-8 space-y-16">
           <div className="max-w-4xl space-y-6">
@@ -484,7 +482,6 @@ export default function PesquisaAtuacao() {
           </div>
 
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
-            {/* Texto Cãoservação */}
             <div className="space-y-6">
               <h4 className="text-2xl font-bold uppercase tracking-tight text-onca-preto">
                 Programa Cãoservação
@@ -522,7 +519,6 @@ export default function PesquisaAtuacao() {
               </div>
             </div>
 
-            {/* Imagens (Grid) */}
             <div className="pt-30 grid grid-cols-2 gap-6">
               <div className="col-span-2 space-y-2">
                 <div
@@ -588,7 +584,6 @@ export default function PesquisaAtuacao() {
         </div>
       </section>
 
-      {/* OUTRAS PESQUISAS (Agora apenas 2 cards) */}
       <section className="w-full py-14 bg-white text-onca-preto flex justify-center">
         <div className="mx-auto w-full max-w-7xl px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
