@@ -1,5 +1,5 @@
 <div align="center">
-<img src="https://github.com/user-attachments/assets/802ded9b-df11-4bff-a0a3-7487ac8e8120" alt="Projeto Onças do Iguaçu Logo" width="320"/>
+<img src="https://github.com/user-attachments/assets/802ded9b-df11-4bff-a0a3-7487ac8e8120" alt="Projeto Onças do Iguaçu Logo" width="220"/>
   
 # Projeto Onças do Iguaçu — Plataforma Digital & Hub de Conservação
 
