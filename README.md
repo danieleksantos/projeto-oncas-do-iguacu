@@ -78,12 +78,12 @@ projeto-oncas-do-iguacu/
 ## 📸 Preview
 <p align="center">Desktop Experience</p>
 <p align="center"> 
-<img src="[https://github.com/user-attachments/assets/d140353b-84b6-4898-a264-9ce8bf7716fa](https://github.com/user-attachments/assets/66fd25a5-ff1d-4374-ad9b-0b857ce97484)" alt="Desktop Preview" width="700" /></p>
+<img src="https://github.com/user-attachments/assets/310d54fb-8a87-4daa-af22-50d84166755b" alt="Desktop Preview" width="700" /></p>
 <p align="center">Mobile Experience (Responsive Design)
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/6178471d-e26f-4517-b503-ac4f617cc7ca" alt="Mobile" width="200" />
+  <img src="https://github.com/user-attachments/assets/a3af98ef-2e41-4162-9a21-39f0b0118c21" alt="Mobile" width="200" />
   &nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="https://github.com/user-attachments/assets/6178471d-e26f-4517-b503-ac4f617cc7ca" alt="Mobile Menu" width="200" />
+  <img src="https://github.com/user-attachments/assets/d0738a9b-bae0-4d39-953c-3c4ebb7939e6" alt="Mobile Menu" width="200" />
 </p>
 
 
