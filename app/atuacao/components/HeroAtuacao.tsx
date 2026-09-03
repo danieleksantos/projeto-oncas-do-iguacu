@@ -10,7 +10,7 @@ export default function HeroAtuacao() {
           <div className="absolute inset-y-0 right-0 w-48 bg-linear-to-l from-onca-preto via-onca-preto/90 to-transparent z-20 pointer-events-none"></div>
 
           <Image
-            src="/atuacao/hero-atuacao.jpg"
+            src="/atuacao/hero-atuacao-new.jpg"
             alt="Atuação do Projeto Onças do Iguaçu na floresta"
             fill
             priority
@@ -35,7 +35,7 @@ export default function HeroAtuacao() {
 
             <div className="relative w-full h-[45vh] md:hidden my-8">
               <Image
-                src="/atuacao/hero-atuacao.jpg"
+                src="/atuacao/hero-atuacao-new.jpg"
                 alt="Atuação do Projeto Onças do Iguaçu na floresta"
                 fill
                 priority
