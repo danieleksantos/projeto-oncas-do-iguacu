@@ -1,6 +1,18 @@
-🐾 Projeto Onças do Iguaçu — Plataforma Digital & Hub de Conservação
+<div align="center">
+<img src="https://github.com/user-attachments/assets/802ded9b-df11-4bff-a0a3-7487ac8e8120" alt="Projeto Onças do Iguaçu Logo" width="120"/>
+  
+# Projeto Onças do Iguaçu — Plataforma Digital & Hub de Conservação
 
-Plataforma web institucional desenvolvida para o **Projeto Onças do Iguaçu**, iniciativa de conservação das onças-pintadas no Parque Nacional do Iguaçu (PNI), associada ao **Instituto Pró-Carnívoros**.
+<p>
+<img src="https://img.shields.io/badge/Next.js_16-black?style=for-the-badge&logo=next.js" alt="Next.js">
+<img src="https://img.shields.io/badge/React_19-blue?style=for-the-badge&logo=react" alt="React">
+<img src="https://img.shields.io/badge/Sanity_v4-f03e2f?style=for-the-badge&logo=sanity&logoColor=white" alt="Sanity">
+<img src="https://img.shields.io/badge/Tailwind_4-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind">
+</p>
+
+
+## Sobre o Projeto
+Plataforma web institucional desenvolvida para o **Projeto Onças do Iguaçu**, iniciativa de conservação das onças-pintadas no Parque Nacional do Iguaçu (PNI), associada ao [Instituto Pró-Carnívoros](https://procarnivoros.org.br/) .
 
 O projeto realizou a migração completa da presença digital da ONG — saindo do antigo ambiente WordPress/cPanel — para uma infraestrutura moderna, performática, **100% responsiva** e focada na comunicação afetiva e humana da instituição.
 
@@ -64,19 +76,16 @@ projeto-oncas-do-iguacu/
 ---
 
 ## 📸 Preview
+<p align="center">Desktop Experience</p>
+<p align="center"> 
+<img src="[https://github.com/user-attachments/assets/d140353b-84b6-4898-a264-9ce8bf7716fa](https://github.com/user-attachments/assets/66fd25a5-ff1d-4374-ad9b-0b857ce97484)" alt="Desktop Preview" width="700" /></p>
+<p align="center">Mobile Experience (Responsive Design)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/6178471d-e26f-4517-b503-ac4f617cc7ca" alt="Mobile" width="200" />
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="https://github.com/user-attachments/assets/6178471d-e26f-4517-b503-ac4f617cc7ca" alt="Mobile Menu" width="200" />
+</p>
 
-<div align="center">
-  <br />
-  <h3>📱 Responsividade Mobile & 💻 Experiência Desktop</h3>
-  <br />
-  <img src="https://github.com/user-attachments/assets/66fd25a5-ff1d-4374-ad9b-0b857ce97484" alt="Preview Desktop" width="80%" />
-  <br /><br />
-  <img src="https://github.com/user-attachments/assets/6178471d-e26f-4517-b503-ac4f617cc7ca" alt="Preview Mobile" width="30%" />
-  <br /><br />
-  <h3>🎥 Navegação pela Plataforma</h3>
-  <img src="https://github.com/user-attachments/assets/05838941-4a0d-4ba4-9653-5b963ef1b100" alt="GIF da Navegação" width="85%" />
-  <br />
-</div>
 
 ---
 
