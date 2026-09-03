@@ -1,7 +1,7 @@
 <div align="center">
 <img src="https://github.com/user-attachments/assets/802ded9b-df11-4bff-a0a3-7487ac8e8120" alt="Projeto Onças do Iguaçu Logo" width="220"/>
   
-# Projeto Onças do Iguaçu — Plataforma Digital & Hub de Conservação
+# Projeto Onças do Iguaçu: Plataforma Digital & Hub de Conservação
 
 <p>
 <img src="https://img.shields.io/badge/Next.js_16-black?style=for-the-badge&logo=next.js" alt="Next.js">
@@ -14,7 +14,7 @@
 ## Sobre o Projeto
 Plataforma web institucional desenvolvida para o **Projeto Onças do Iguaçu**, iniciativa de conservação das onças-pintadas no Parque Nacional do Iguaçu (PNI), associada ao [Instituto Pró-Carnívoros](https://procarnivoros.org.br/) .
 
-O projeto realizou a migração completa da presença digital da ONG — saindo do antigo ambiente WordPress/cPanel — para uma infraestrutura moderna, performática, **100% responsiva** e focada na comunicação afetiva e humana da instituição.
+O projeto realizou a migração completa da presença digital da ONG, saindo do antigo ambiente WordPress/cPanel, para uma infraestrutura moderna, performática, **100% responsiva** e focada na comunicação afetiva e humana da instituição.
 
 ---
 
