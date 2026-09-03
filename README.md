@@ -72,7 +72,7 @@ projeto-oncas-do-iguacu/
 ├── sanity.config.ts      # Configuração global do CMS
 ├── next.config.ts        # Otimização de imagens e rotas do Next.js
 └── package.json          # Dependências e scripts de execução
-
+```
 ---
 
 ## 📸 Preview
