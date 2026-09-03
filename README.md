@@ -12,7 +12,7 @@
 </div>
 
 ## Sobre o Projeto
-Plataforma web institucional desenvolvida para o **Projeto Onças do Iguaçu**, iniciativa de conservação das onças-pintadas no Parque Nacional do Iguaçu (PNI), associada ao [Instituto Pró-Carnívoros](https://procarnivoros.org.br/) .
+Plataforma web institucional desenvolvida para o **Projeto Onças do Iguaçu**, iniciativa de conservação das onças-pintadas no Parque Nacional do Iguaçu (PNI), associada ao [Instituto Pró-Carnívoros](https://procarnivoros.org.br/).
 
 O projeto realizou a migração completa da presença digital da ONG, saindo do antigo ambiente WordPress/cPanel, para uma infraestrutura moderna, performática, **100% responsiva** e focada na comunicação afetiva e humana da instituição.
 
