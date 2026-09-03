@@ -83,7 +83,7 @@ projeto-oncas-do-iguacu/
 <p align="center">
   <img src="https://github.com/user-attachments/assets/a3af98ef-2e41-4162-9a21-39f0b0118c21" alt="Mobile" width="200" />
   &nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="https://github.com/user-attachments/assets/d0738a9b-bae0-4d39-953c-3c4ebb7939e6" alt="Mobile Menu" width="200" />
+  <img src="https://github.com/user-attachments/assets/84f3bede-e763-41a5-b2e0-92c7bcc24d54" alt="Mobile Menu" width="200" />
 </p>
 
 
